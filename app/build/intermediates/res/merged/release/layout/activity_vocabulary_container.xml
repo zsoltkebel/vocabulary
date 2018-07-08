@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+
+    <LinearLayout android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/light"
+        android:orientation="vertical"
+        android:paddingTop="5dp">
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/back_oval_dark"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:onClick="backToDictionaries"
+                android:padding="15dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/sel_back_arrow" />
+
+
+            <Space
+                android:layout_width="28dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center" />
+
+            <com.example.kebelzsolt.dictionary20.ExtendedEditText
+                android:id="@+id/editText"
+                style="@android:style/TextAppearance.Widget.EditText"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center"
+                android:hint="Search"
+                android:inputType="textPersonName"
+                android:textColor="@android:color/white"
+                android:textColorHint="@color/search"
+                android:textSize="18dp" />
+
+            <ImageView
+                android:id="@+id/imgvClear"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:clickable="true"
+                android:onClick="clearSearch"
+                android:padding="5dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/sel_delete"
+                android:visibility="invisible" />
+
+
+            <ImageButton
+                style="@android:style/Widget.Material.Button.Borderless"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:onClick="openMenu"
+                android:padding="17dp"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/menu" />
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listView"
+            style="@android:style/Widget.Material.Light.ListView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:alwaysDrawnWithCache="true"
+            android:clickable="true"
+            android:divider="#00000000"
+            android:dividerHeight="0dp"
+            android:focusable="true"
+            android:horizontalSpacing="3dp"
+            android:scrollingCache="true"
+            android:smoothScrollbar="true"
+            android:fastScrollEnabled="true"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="3dp"
+            tools:listitem="@layout/row"
+            android:listSelector="@color/transplarent"
+            android:paddingBottom="2dp"/>
+
+
+        <LinearLayout
+            android:id="@+id/layout_options"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/light3"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Selected:"
+                    android:textColor="@color/dark"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_numOfSelected"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/colorAccent" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/btn_edit"
+                style="@android:style/Widget.Material.Button.Borderless"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:onClick="editWord"
+                android:padding="10dp"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/ic_edit" />
+
+            <ImageButton
+                android:id="@+id/btn_delSelected"
+                style="@android:style/Widget.Material.Button.Borderless"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:onClick="deleteSelected"
+                android:padding="10dp"
+
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/del_2" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layout_title"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:background="@color/btn_back"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:paddingStart="10dp">
+
+            <ImageView
+                android:id="@+id/imageView_wordList_flag"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/united_kingdom" />
+
+            <TextView
+                android:id="@+id/txt_language"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="2dp"
+                android:text="English"
+                android:textColor="@color/dark"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="1dp"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/dotdark" />
+
+            <TextView
+                android:id="@+id/txt_num_of_words"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingBottom="2dp"
+                android:text="14 words"
+                android:textColor="@color/dark" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_alignParentBottom="true"
+            android:alpha="0.3"
+            android:scaleType="fitXY"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/shadow2" />
+    </RelativeLayout>
+
+
+</FrameLayout>

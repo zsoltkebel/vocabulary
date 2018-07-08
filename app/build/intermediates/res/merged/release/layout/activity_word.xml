@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_word"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.kbelzsolt.translater.DisplayWord">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:padding="10dp">
+
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/back"
+        android:rotation="-90"
+        android:scaleType="centerInside"
+        android:id="@+id/imageButton"
+        android:rotationY="180"
+        android:layout_alignParentRight="true"
+        style="@android:style/Widget.Material.Button.Borderless"
+        android:onClick="showPopup"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:text="@string/txt_word"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:padding="10dp"
+            android:gravity="center" />
+
+        <TextView android:id="@+id/txtvWord"
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:textColor="@color/colorAccent"
+            android:gravity="center"/>
+
+        <TextView
+            android:text="@string/txt_meaning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:padding="10dp"
+            android:gravity="center"/>
+
+        <TextView android:id="@+id/txtvMeaning"
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Add">Hozzáadás</string>
+    <string name="Biology">Biológia</string>
+    <string name="Chemistry">Kémia</string>
+    <string name="Chinese">Kínai</string>
+    <string name="English">Angol</string>
+    <string name="French">Francia</string>
+    <string name="Geography">Földrajz</string>
+    <string name="German">Német</string>
+    <string name="Grammar">Nyelvtan</string>
+    <string name="Hungarian">Magyar</string>
+    <string name="IT">Informatika</string>
+    <string name="Italian">Olasz</string>
+    <string name="Literature">Irodalom</string>
+    <string name="Maths">Matek</string>
+    <string name="No">Nem</string>
+    <string name="Phrase">Kifejezés</string>
+    <string name="Phrases">Kifejezések</string>
+    <string name="Physics">Fizika</string>
+    <string name="Spanish">Spanyol</string>
+    <string name="Yes"><b>Igen</b></string>
+    <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Ugrás a főoldalra"</string>
+    <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s, %2$s"</string>
+    <string msgid="6623331958280229229" name="abc_action_bar_home_subtitle_description_format">"%1$s, %2$s, %3$s"</string>
+    <string msgid="1594238315039666878" name="abc_action_bar_up_description">"Felfelé mozgatás"</string>
+    <string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"További lehetőségek"</string>
+    <string msgid="4076576682505996667" name="abc_action_mode_done">"Kész"</string>
+    <string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"Összes megtekintése"</string>
+    <string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"Válasszon ki egy alkalmazást"</string>
+    <string msgid="121134116657445385" name="abc_capital_off">"KI"</string>
+    <string msgid="3405795526292276155" name="abc_capital_on">"BE"</string>
+    <string msgid="7723749260725869598" name="abc_search_hint">"Keresés…"</string>
+    <string msgid="3691816814315814921" name="abc_searchview_description_clear">"Lekérdezés törlése"</string>
+    <string msgid="2550479030709304392" name="abc_searchview_description_query">"Keresési lekérdezés"</string>
+    <string msgid="8264924765203268293" name="abc_searchview_description_search">"Keresés"</string>
+    <string msgid="8928215447528550784" name="abc_searchview_description_submit">"Lekérdezés küldése"</string>
+    <string msgid="893419373245838918" name="abc_searchview_description_voice">"Hangalapú keresés"</string>
+    <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Megosztás a következővel:"</string>
+    <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Megosztás a következővel: %s"</string>
+    <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Összecsukás"</string>
+    <string name="add"><b>Hozzáad</b></string>
+    <string name="all">Mind</string>
+    <string name="app_name">MyVocabulary</string>
+    <string name="are_you_sure_delete">Biztosan törölni akarod?</string>
+    <string name="asksfor">Kérdezze a ...</string>
+    <string name="back">Vissza</string>
+    <string name="btn_cancel">Mégse</string>
+    <string name="btn_delete"><b>Törlés</b></string>
+    <string name="btn_done"><b>Done</b></string>
+    <string name="btn_menu"><b>Menu</b></string>
+    <string name="btn_safe_delete"><b>Exportálás és Törlés</b></string>
+    <string name="button_add">Add</string>
+    <string name="cancel">Mégse</string>
+    <string name="cheating">Csalás</string>
+    <string name="custom">Egyedi</string>
+    <string name="delete">Törlés</string>
+    <string name="delete_warning_text">Ha még nem exportáltad a szótárat, akkor végleg elveszik!</string>
+    <string name="dialog_add_phrase_positive_btn">Add</string>
+    <string name="dialog_add_phrase_title">Kifejezés hozzáadása</string>
+    <string name="dialog_append_phrase_title">Ez a kifejezés már szerepel a szótárban. Kibővíti a jelentését?</string>
+    <string name="disabled">Kikapcsolva</string>
+    <string name="edit"><b>Kész</b></string>
+    <string name="edit_title">Cím megváltoztatása</string>
+    <string name="enabled">Engedélyezve</string>
+    <string name="export">Exportálás</string>
+    <string name="female">Nő</string>
+    <string name="gender">Nem</string>
+    <string name="import_from_txt">Importálás .txt-ből</string>
+    <string name="language">Nyelv</string>
+    <string name="learn">Tanulás</string>
+    <string name="letsgo">Gyerünk</string>
+    <string name="male">Férfi</string>
+    <string name="meaning">Jelentés</string>
+    <string name="message_deleted"><b>Deleted</b></string>
+    <string name="name">Név</string>
+    <string name="num_of_asked">A kérdezendő kifejezések száma:</string>
+    <string name="number_of_phrases">Kifejezések száma</string>
+    <string name="phrase">kifejezés</string>
+    <string name="rename_text">A szótár címe:</string>
+    <string name="rename_warning_text">Kérlek figyelj rá, hogy a szótár címe el kell hogy térjen az eddig az adott tantárgyban szereplő címektől!</string>
+    <string name="save">Mentés</string>
+    <string name="search">Keresés</string>
+    <string msgid="146198913615257606" name="search_menu_title">"Keresés"</string>
+    <string name="set_title">Állítsd be a szótár címét</string>
+    <string name="share">Megosztás</string>
+    <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="time_to_answer">Idő a válaszadásra</string>
+    <string name="title_import">Importálás</string>
+    <string name="title_learn_config">Tanulás Konfiguráció</string>
+    <string name="title_settings">Beállítások</string>
+    <string name="title_subjects">Tantárgyak</string>
+    <string name="title_user_setting">Felhasználói Beállítások</string>
+    <string name="title_vocabularies">Szótárak</string>
+    <string name="txt_addnew"><b>New</b></string>
+    <string name="txt_delete">Delete</string>
+    <string name="txt_meaning"><b>Meaning:</b></string>
+    <string name="txt_search">Kereses</string>
+    <string name="txt_word"><b>Word:</b></string>
+    <string name="yes"><b>Igen</b></string>
+</resources>

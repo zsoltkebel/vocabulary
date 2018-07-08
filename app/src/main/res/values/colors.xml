@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="page1">#3C4448</color>
+    <color name="page1_dark">#2e3538</color>
+    <color name="page2">#008080</color>
+    <color name="page2_dark">#006666</color>
+    <color name="page3">#E2BC22</color>
+    <color name="page3_dark">#cba81a</color>
+
+
+    <color name="purple">#6b0078</color>
+    <color name="purple_dark">#45004d</color>
+
+
+    <color name="colorPrimary">#006666</color>
+    <color name="colorPrimaryDark">#006666</color>
+    <color name="colorAccent">#e62e00</color>
+    <color name="black">#000000</color>
+    <color name="dark">#008080</color>
+    <color name="darker">#006666</color>
+    <color name="back_white">#ffffff</color>
+    <color name="back_grey">#CCffffff</color>
+    <color name="accent_light">#ffd6cc</color>
+
+    <color name="shadow">#33000000</color>
+
+    <color name="dark2">#D91c3158</color>
+    <color name="deleted">#303f9f</color>
+    <color name="search">#d9e2f3</color>
+    <color name="divider">#e7e6e6</color>
+    <color name="transplarent">#00FFFFFF</color>
+
+    <color name="light">#fdeae7</color>
+    <color name="light2">#f0f4f4</color>
+
+    <color name="light3">#f2f2f2</color>
+    <color name="light4">#dfe8f4</color>
+
+    <color name="btn_back">#1A000000</color>
+    <color name="btn_back_pressed">#33000000</color>
+
+    <color name="black3">#595959</color>
+    <color name="text_grey">#595959</color>
+    <color name="text_grey_light">#999999</color>
+
+    <color name="background">#ffffff</color>
+    <color name="background_darker">#d9d9d9</color>
+
+
+    <color name="green">#ffffff</color>
+    <color name="red">#ffffff</color>
+</resources>

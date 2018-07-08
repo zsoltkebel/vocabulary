@@ -1,0 +1,21 @@
+{
+  "languages":
+  [
+    {"subject": "English",      "res": "united_kingdom",    "type": "language"},
+    {"subject": "Spanish",      "res": "spain",             "type": "language"},
+    {"subject": "French",       "res": "france",            "type": "language"},
+    {"subject": "German",       "res": "germany",           "type": "language"},
+    {"subject": "Italian",      "res": "italy",             "type": "language"},
+    {"subject": "Chinese",      "res": "china",             "type": "language"},
+    {"subject": "Hungarian",    "res": "hungary",           "type": "language"},
+
+    {"subject": "Maths",        "res": "maths",             "type": "subject"},
+    {"subject": "IT",           "res": "it",                "type": "subject"},
+    {"subject": "Physics",      "res": "physics",           "type": "subject"},
+    {"subject": "Literature",   "res": "literature",        "type": "subject"},
+    {"subject": "Grammar",      "res": "grammar",           "type": "subject"},
+    {"subject": "Geography",    "res": "geography",         "type": "subject"},
+    {"subject": "Chemistry",    "res": "chemistry",         "type": "subject"},
+    {"subject": "Biology",      "res": "biology",           "type": "subject"}
+  ]
+}

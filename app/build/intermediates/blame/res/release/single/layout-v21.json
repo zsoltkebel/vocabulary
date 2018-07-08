@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\layout-v21\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b5113657a1268165749d96254815f390\\res\\layout-v21\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\layout-v21\\notification_template_custom_big.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b5113657a1268165749d96254815f390\\res\\layout-v21\\notification_template_custom_big.xml"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\layout-v21\\notification_action.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b5113657a1268165749d96254815f390\\res\\layout-v21\\notification_action.xml"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\layout-v21\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b5113657a1268165749d96254815f390\\res\\layout-v21\\notification_template_icon_group.xml"
+    }
+]

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.0.aar\b6bcc6f3140b3cb920d5867f196a85cc\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="93c10d68ab5ea070f15782ae6d3a28d1f1d8f45e">
+        <dex dex="C:\dictionaryRegi\Dictionary2.0\app\build\intermediates\transforms\preDex\release\20.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\transition-25.1.0.aar\1f53efd9112c0987d4d4d675f8663556\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="d38084015027549951cbaea5d5f6fb795cc81151">
+        <dex dex="C:\dictionaryRegi\Dictionary2.0\app\build\intermediates\transforms\preDex\release\13.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\imagepipeline-base-0.12.0.aar\866d5208df37daca765e4e1724ebdb09\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="c9a86e6bc8300fc00c191949ac61a2f7165e35c7">
+        <dex dex="C:\dictionaryRegi\Dictionary2.0\app\build\intermediates\transforms\preDex\release\12.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\fresco-0.12.0.aar\1525f3ccbacc7845148af0a2c690afee\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="a540784239c611ea490593e2053a5e2890675c68">
+        <dex dex="C:\dictionaryRegi\Dictionary2.0\app\build\intermediates\transforms\preDex\release\9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.1.0.aar\9f8bf56aeb73280eba48db7e5752668f\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="aee64634871d88a419d59eb743c1258a60f19700">
+        <dex dex="C:\dictionaryRegi\Dictionary2.0\app\build\intermediates\transforms\preDex\release\19.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\fbcore-0.12.0.aar\c4847726038f93aed56c28e3118623de\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="40e5cb8708fc25fe57cb403cc82e9ef98376b648">
+        <dex dex="C:\dictionaryRegi\Dictionary2.0\app\build\intermediates\transforms\preDex\release\22.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Kébel Zsolt\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-tasks\1.4.0\d85884acf6810a3bbbecb587f239005cbc846dc4\bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="C:\dictionaryRegi\Dictionary2.0\app\build\intermediates\transforms\preDex\release\23.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.3.0\support-annotations-25.3.0.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="dd84903d2e1af25a6081ef9038ad863cb14ca3a0">
+        <dex dex="C:\dictionaryRegi\Dictionary2.0\app\build\intermediates\transforms\preDex\release\21.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\drawee-0.12.0.aar\4642b9e112a2ab851f878b3b2b5f3880\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="1e346707e4770db216049a532ab3eb5e317cf82a">
+        <dex dex="C:\dictionaryRegi\Dictionary2.0\app\build\intermediates\transforms\preDex\release\10.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\xedittext-2.0.0.aar\361e99d7f4fd03ce0f32ef729601ed09\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="4f99637f56b0e6d368effcecc5a3888fa76c9367">
+        <dex dex="C:\dictionaryRegi\Dictionary2.0\app\build\intermediates\transforms\preDex\release\4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Kébel Zsolt\.gradle\caches\modules-2\files-2.1\com.jakewharton\butterknife-annotations\8.8.1\bc373fb6bc7bca3035041b924f158fd2b946ee8d\butterknife-annotations-8.8.1.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="bc373fb6bc7bca3035041b924f158fd2b946ee8d">
+        <dex dex="C:\dictionaryRegi\Dictionary2.0\app\build\intermediates\transforms\preDex\release\6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.1.0.aar\23dd2445a1ac6f8ddc944982b60f810e\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
+        <dex dex="C:\dictionaryRegi\Dictionary2.0\app\build\intermediates\transforms\preDex\release\17.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.1.0.aar\b5113657a1268165749d96254815f390\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
+        <dex dex="C:\dictionaryRegi\Dictionary2.0\app\build\intermediates\transforms\preDex\release\3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\filepicker-1.0.0.aar\11798140b9338791001153246178cccd\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="be9340c6b0bf6d4015fe5ae5ebb00bbf5e06c40c">
+        <dex dex="C:\dictionaryRegi\Dictionary2.0\app\build\intermediates\transforms\preDex\release\1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-fragment-25.1.0.aar\1c3f6d91803a66122ddeadf6d4b6a287\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
+        <dex dex="C:\dictionaryRegi\Dictionary2.0\app\build\intermediates\transforms\preDex\release\15.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.1.0.aar\be2445297e4181eabfe8d63819fecfb1\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
+        <dex dex="C:\dictionaryRegi\Dictionary2.0\app\build\intermediates\transforms\preDex\release\8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.1.0.aar\2debbb7abe6b63e6310e4f72b7a8efcf\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="6fb6ac3e8d3b9013819920d9ea11f3803c4c0033">
+        <dex dex="C:\dictionaryRegi\Dictionary2.0\app\build\intermediates\transforms\preDex\release\7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\imagepipeline-0.12.0.aar\b676325a7adf7542f26ee48b25d0df1c\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="145da27a459a63ea0c4e318930365cf0a8b8e891">
+        <dex dex="C:\dictionaryRegi\Dictionary2.0\app\build\intermediates\transforms\preDex\release\11.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.1.0.aar\c8a3c0b3af911981517ffcdd0a58b211\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="b266c8faa5af72e579b9da36ef35053ffed6ac64">
+        <dex dex="C:\dictionaryRegi\Dictionary2.0\app\build\intermediates\transforms\preDex\release\18.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\design-25.1.0.aar\f92897054026a84425fb7119bb774329\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="30103d98fa5ed824b54af839c85e2111f9bde8ec">
+        <dex dex="C:\dictionaryRegi\Dictionary2.0\app\build\intermediates\transforms\preDex\release\2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Kébel Zsolt\.gradle\caches\modules-2\files-2.1\com.nineoldandroids\library\2.4.0\e9b63380f3a242dbdbf103a2355ad7e43bad17cb\library-2.4.0.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="C:\dictionaryRegi\Dictionary2.0\app\build\intermediates\transforms\preDex\release\24.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.1.0.aar\d7cf1c3bb3bde053292fe594afb7d789\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
+        <dex dex="C:\dictionaryRegi\Dictionary2.0\app\build\intermediates\transforms\preDex\release\16.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-v4-25.1.0.aar\233fe076f0986a7bde2d484d84d94722\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\dictionaryRegi\Dictionary2.0\app\build\intermediates\transforms\preDex\release\14.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\butterknife-8.8.1.aar\faeae8e50290b27ae17f25fcb575b1f8\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="21"
+        optimize="true"
+        revision="26.0.2"
+        sha1="6a2bcb61342d09fe9acf55c9daf63961c8866cc0">
+        <dex dex="C:\dictionaryRegi\Dictionary2.0\app\build\intermediates\transforms\preDex\release\5.jar" />
+    </item>
+
+</items>

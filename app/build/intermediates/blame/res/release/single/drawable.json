@@ -1,0 +1,742 @@
+[
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\x.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\x.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\back_arrow_active.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\back_arrow_active.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\icon2.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\icon2.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_seekbar_thumb_material.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b5113657a1268165749d96254815f390\\res\\drawable\\abc_seekbar_thumb_material.xml"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\red.xml",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\red.xml"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ic_voice_search_api_material.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b5113657a1268165749d96254815f390\\res\\drawable\\abc_ic_voice_search_api_material.xml"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\sel_menu.xml",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\sel_menu.xml"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\warning.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\warning.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\container_middle_light.xml",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\container_middle_light.xml"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\left_arrow.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\left_arrow.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\btn_transplarent.xml",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\btn_transplarent.xml"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\list.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\list.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\notebook.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\notebook.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\add.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\add.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\x_light_active.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\x_light_active.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\ic_edit.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\ic_edit.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\background_rounded_button.xml",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\background_rounded_button.xml"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\del_2.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\del_2.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\student_male.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\student_male.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\edit_icon.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\edit_icon.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\tab_import_active.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\tab_import_active.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b5113657a1268165749d96254815f390\\res\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ratingbar_indicator_material.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b5113657a1268165749d96254815f390\\res\\drawable\\abc_ratingbar_indicator_material.xml"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\back_arrow.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\back_arrow.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\logo1.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\logo1.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\background_rounded_pressed.xml",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\background_rounded_pressed.xml"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\back.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\back.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\facebook.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\facebook.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\physics.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\physics.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\dot2.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\dot2.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\bin.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\bin.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\copy.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\copy.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_radio_material.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b5113657a1268165749d96254815f390\\res\\drawable\\abc_btn_radio_material.xml"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\roundedbutton.xml",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\roundedbutton.xml"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ratingbar_material.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b5113657a1268165749d96254815f390\\res\\drawable\\abc_ratingbar_material.xml"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\icon3.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\icon3.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_tab_indicator_material.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b5113657a1268165749d96254815f390\\res\\drawable\\abc_tab_indicator_material.xml"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\dot_pink.xml",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\dot_pink.xml"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\student_female_dark.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\student_female_dark.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\bin_icon.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\bin_icon.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_vector_test.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b5113657a1268165749d96254815f390\\res\\drawable\\abc_vector_test.xml"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\design_snackbar_background.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\design-25.1.0.aar\\f92897054026a84425fb7119bb774329\\res\\drawable\\design_snackbar_background.xml"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\move.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\move.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\green.xml",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\green.xml"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\plus.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\plus.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_spinner_textfield_background_material.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b5113657a1268165749d96254815f390\\res\\drawable\\abc_spinner_textfield_background_material.xml"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\settings_dark.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\settings_dark.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\menu.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\menu.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\literature.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\literature.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\scroll.xml",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\scroll.xml"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ic_clear_material.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b5113657a1268165749d96254815f390\\res\\drawable\\abc_ic_clear_material.xml"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\backarrow.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\backarrow.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\china.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\china.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\backg.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\backg.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_list_selector_background_transition_holo_light.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b5113657a1268165749d96254815f390\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\icon_new4.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\icon_new4.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\hello.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\hello.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\dot_grey.xml",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\dot_grey.xml"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\language.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\language.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\logo2.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\logo2.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\grammar.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\grammar.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\tab_list_dark.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\tab_list_dark.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\iconn2.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\iconn2.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\delete.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\delete.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\navigation_empty_icon.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\design-25.1.0.aar\\f92897054026a84425fb7119bb774329\\res\\drawable\\navigation_empty_icon.xml"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_cab_background_internal_bg.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b5113657a1268165749d96254815f390\\res\\drawable\\abc_cab_background_internal_bg.xml"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\shadow.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\shadow.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\tab_icon_download_active.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\tab_icon_download_active.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\it.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\it.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\student_female.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\student_female.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\back3.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\back3.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_seekbar_track_material.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b5113657a1268165749d96254815f390\\res\\drawable\\abc_seekbar_track_material.xml"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ic_ab_back_material.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b5113657a1268165749d96254815f390\\res\\drawable\\abc_ic_ab_back_material.xml"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\back6.jpg",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\back6.jpg"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_dialog_material_background.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b5113657a1268165749d96254815f390\\res\\drawable\\abc_dialog_material_background.xml"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\icon1.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\icon1.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\list_add.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\list_add.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ic_search_api_material.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b5113657a1268165749d96254815f390\\res\\drawable\\abc_ic_search_api_material.xml"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\container_dark.xml",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\container_dark.xml"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\dottt.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\dottt.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\gmail.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\gmail.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\icon7.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\icon7.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\biology.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\biology.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\icon4.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\icon4.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\iconn.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\iconn.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\notification_bg_low.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b5113657a1268165749d96254815f390\\res\\drawable\\notification_bg_low.xml"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\tab_icon_add.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\tab_icon_add.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\tab_icon_home.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\tab_icon_home.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\notification_icon_background.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b5113657a1268165749d96254815f390\\res\\drawable\\notification_icon_background.xml"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\plusdark.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\plusdark.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\import_icon_title.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\import_icon_title.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\vocabulary_test.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\vocabulary_test.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\bacg.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\bacg.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_seekbar_tick_mark_material.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b5113657a1268165749d96254815f390\\res\\drawable\\abc_seekbar_tick_mark_material.xml"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_switch_thumb_material.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b5113657a1268165749d96254815f390\\res\\drawable\\abc_switch_thumb_material.xml"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\container_bottom_light.xml",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\container_bottom_light.xml"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ic_go_search_api_material.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b5113657a1268165749d96254815f390\\res\\drawable\\abc_ic_go_search_api_material.xml"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_borderless_material.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b5113657a1268165749d96254815f390\\res\\drawable\\abc_btn_borderless_material.xml"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\container_top_liht.xml",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\container_top_liht.xml"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\dividergrey.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\dividergrey.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\hungary.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\hungary.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\background_rounded.xml",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\background_rounded.xml"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\backline.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\backline.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\back5.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\back5.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\back_oval_plus.xml",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\back_oval_plus.xml"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\notification_tile_bg.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b5113657a1268165749d96254815f390\\res\\drawable\\notification_tile_bg.xml"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\sort_icon.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\sort_icon.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\flashcards.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\flashcards.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\backspace_arrow.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\backspace_arrow.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\world.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\world.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_item_background_holo_light.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b5113657a1268165749d96254815f390\\res\\drawable\\abc_item_background_holo_light.xml"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\background_fade.xml",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\background_fade.xml"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\divider.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\divider.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\dots.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\dots.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\dot.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\dot.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\container_middle_dark.xml",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\container_middle_dark.xml"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\btn_red.xml",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\btn_red.xml"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\back_oval_dark.xml",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\back_oval_dark.xml"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\addl.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\addl.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\list_add_active.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\list_add_active.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_list_selector_holo_dark.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b5113657a1268165749d96254815f390\\res\\drawable\\abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_list_selector_holo_light.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b5113657a1268165749d96254815f390\\res\\drawable\\abc_list_selector_holo_light.xml"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\germany.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\germany.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\line_menu.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\line_menu.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\tab_icon_download.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\tab_icon_download.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\sel_back_arrow.xml",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\sel_back_arrow.xml"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_check_material.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b5113657a1268165749d96254815f390\\res\\drawable\\abc_btn_check_material.xml"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\pipa.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\pipa.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_cab_background_top_material.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b5113657a1268165749d96254815f390\\res\\drawable\\abc_cab_background_top_material.xml"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_default_mtrl_shape.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b5113657a1268165749d96254815f390\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\chemistry.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\chemistry.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\geography.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\geography.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\tab_import_dark.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\tab_import_dark.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\backpaper.jpg",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\backpaper.jpg"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\icon6.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\icon6.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\student_male_dark.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\student_male_dark.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\icon_new.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\icon_new.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\add_grey.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\add_grey.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\code.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\code.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_textfield_search_material.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b5113657a1268165749d96254815f390\\res\\drawable\\abc_textfield_search_material.xml"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\notification_bg.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b5113657a1268165749d96254815f390\\res\\drawable\\notification_bg.xml"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\icon_new2.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\icon_new2.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\tab_icon_plus.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\tab_icon_plus.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b5113657a1268165749d96254815f390\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\settings_grey.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\settings_grey.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\icon5.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\icon5.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\backg3.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\backg3.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\map.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\map.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\tab_add_dark.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\tab_add_dark.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\background.jpg",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\background.jpg"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\shadow2.xml",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\shadow2.xml"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\left_arrow_pressed.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\left_arrow_pressed.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\container_top_dark.xml",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\container_top_dark.xml"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\settings.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\settings.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\tab_icon_add_active.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\tab_icon_add_active.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\add_white.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\add_white.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\line_menu_pressed.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\line_menu_pressed.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\information.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\information.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ratingbar_small_material.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b5113657a1268165749d96254815f390\\res\\drawable\\abc_ratingbar_small_material.xml"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ic_menu_overflow_material.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b5113657a1268165749d96254815f390\\res\\drawable\\abc_ic_menu_overflow_material.xml"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\france.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\france.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\container_bottom_dark.xml",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\container_bottom_dark.xml"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\spain.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\spain.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\tab_icon_home_active.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\tab_icon_home_active.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\logo3.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\logo3.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\maths.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\maths.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\container_with_shadow.xml",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\container_with_shadow.xml"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\sel_delete.xml",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\sel_delete.xml"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\tab_import.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\tab_import.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\dotdark.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\dotdark.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\italy.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\italy.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\list_active.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\list_active.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\btn_green.xml",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\btn_green.xml"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\worldmap.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\worldmap.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\icon_new3.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\icon_new3.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\avatar.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\avatar.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_item_background_holo_dark.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b5113657a1268165749d96254815f390\\res\\drawable\\abc_item_background_holo_dark.xml"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\kep.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\kep.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\btn_dark.xml",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\btn_dark.xml"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\x_light.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\x_light.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\iconn3.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\iconn3.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\txt.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\txt.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\abc_text_cursor_material.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b5113657a1268165749d96254815f390\\res\\drawable\\abc_text_cursor_material.xml"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\united_kingdom.png",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\drawable\\united_kingdom.png"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\release\\drawable\\design_fab_background.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\design-25.1.0.aar\\f92897054026a84425fb7119bb774329\\res\\drawable\\design_fab_background.xml"
+    }
+]

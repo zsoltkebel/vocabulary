@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\debug\\menu\\picker_menu.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\filepicker-1.0.0.aar\\11798140b9338791001153246178cccd\\res\\menu\\picker_menu.xml"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_main.xml",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\menu\\menu_main.xml"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_vocabulary.xml",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\menu\\menu_vocabulary.xml"
+    },
+    {
+        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu.xml",
+        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\menu\\menu.xml"
+    }
+]

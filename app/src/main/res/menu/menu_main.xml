@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/learn"
+        android:title="@string/learn"
+        />
+    <item
+        android:id="@+id/Edit_dictionary_title"
+        android:title="@string/edit_title"
+        />
+    <item
+        android:id="@+id/share_dictionary"
+        android:title="@string/share"
+        />
+    <item
+        android:id="@+id/export_dictionary"
+        android:title="@string/export"
+        />
+    <item
+        android:id="@+id/Delete_dictionary"
+        android:title="@string/delete"
+        />
+</menu>

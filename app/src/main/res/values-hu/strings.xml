@@ -1,0 +1,94 @@
+<resources>
+    <string name="app_name">MyVocabulary</string>
+    <string name="button_add">Add</string>
+    <string name="message_deleted"><b>Deleted</b></string>
+    <string name="btn_done"><b>Done</b></string>
+    <string name="btn_menu"><b>Menu</b></string>
+    <string name="txt_word"><b>Word:</b></string>
+    <string name="txt_meaning"><b>Meaning:</b></string>
+    <string name="txt_addnew"><b>New</b></string>
+    <string name="txt_search">Kereses</string>
+    <string name="txt_delete">Delete</string>
+
+    // Subjects
+    <string name="English">Angol</string>
+    <string name="French">Francia</string>
+    <string name="German">Német</string>
+    <string name="Italian">Olasz</string>
+    <string name="Spanish">Spanyol</string>
+    <string name="Chinese">Kínai</string>
+    <string name="Hungarian">Magyar</string>
+
+    <string name="Maths">Matek</string>
+    <string name="IT">Informatika</string>
+    <string name="Physics">Fizika</string>
+    <string name="Literature">Irodalom</string>
+    <string name="Grammar">Nyelvtan</string>
+    <string name="Geography">Földrajz</string>
+    <string name="Chemistry">Kémia</string>
+    <string name="Biology">Biológia</string>
+
+    // Dialog add phrase
+    <string name="dialog_add_phrase_title">Kifejezés hozzáadása</string>
+    <string name="dialog_add_phrase_positive_btn">Add</string>
+    <string name="dialog_append_phrase_title">Ez a kifejezés már szerepel a szótárban. Kibővíti a jelentését?</string>
+
+    // Activity tablayout
+    <string name="title_vocabularies">Szótárak</string>
+    <string name="title_import">Importálás</string>
+    <string name="title_subjects">Tantárgyak</string>
+    <string name="phrase">kifejezés</string>
+    <string name="edit_title">Cím megváltoztatása</string>
+    <string name="share">Megosztás</string>
+    <string name="export">Exportálás</string>
+    <string name="delete">Törlés</string>
+    <string name="learn">Tanulás</string>
+    <string name="yes"><b>Igen</b></string>
+    <string name="are_you_sure_delete">Biztosan törölni akarod?</string>
+    <string name="edit"><b>Kész</b></string>
+    <string name="rename_text">A szótár címe:</string>
+    <string name="btn_delete"><b>Törlés</b></string>
+    <string name="btn_safe_delete"><b>Exportálás és Törlés</b></string>
+    <string name="btn_cancel">Mégse</string>
+    <string name="rename_warning_text">Kérlek figyelj rá, hogy a szótár címe el kell hogy térjen az eddig az adott tantárgyban szereplő címektől!</string>
+    <string name="delete_warning_text">Ha még nem exportáltad a szótárat, akkor végleg elveszik!</string>
+    <string name="set_title">Állítsd be a szótár címét</string>
+    <string name="import_from_txt">Importálás .txt-ből</string>
+
+    // vocabulary
+    <string name="search">Keresés</string>
+    <string name="cancel">Mégse</string>
+    <string name="add"><b>Hozzáad</b></string>
+    <string name="Add">Hozzáadás</string>
+    <string name="Phrase">Kifejezés</string>
+    <string name="Phrases">Kifejezések</string>
+    <string name="meaning">Jelentés</string>
+    <string name="No">Nem</string>
+    <string name="Yes"><b>Igen</b></string>
+
+    // user settings
+    <string name="title_user_setting">Felhasználói Beállítások</string>
+    <string name="name">Név</string>
+    <string name="gender">Nem</string>
+    <string name="male">Férfi</string>
+    <string name="female">Nő</string>
+    <string name="save">Mentés</string>
+    <string name="back">Vissza</string>
+
+    // setting
+    <string name="title_settings">Beállítások</string>
+    <string name="language">Nyelv</string>
+
+    // learn config
+    <string name="title_learn_config">Tanulás Konfiguráció</string>
+    <string name="letsgo">Gyerünk</string>
+    <string name="cheating">Csalás</string>
+    <string name="asksfor">Kérdezze a ...</string>
+    <string name="time_to_answer">Idő a válaszadásra</string>
+    <string name="number_of_phrases">Kifejezések száma</string>
+    <string name="all">Mind</string>
+    <string name="custom">Egyedi</string>
+    <string name="enabled">Engedélyezve</string>
+    <string name="disabled">Kikapcsolva</string>
+    <string name="num_of_asked">A kérdezendő kifejezések száma:</string>
+</resources>
