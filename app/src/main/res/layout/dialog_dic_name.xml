@@ -10,5 +10,7 @@
         android:inputType="text"
         android:digits="aábcdeéfghiíjklmnoóöőuúüűpqrstyzvwx
                         AÁBCDEÉFGHIÍJKLMNOÓÖŐUÚÜŰPQRSTYZVWX
-                        .0123456789" />
+                        .0123456789"
+        android:focusable="true"
+        android:focusableInTouchMode="true"/>
 </LinearLayout>

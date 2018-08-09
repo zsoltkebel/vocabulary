@@ -44,7 +44,7 @@
                 android:layout_height="30dp"
                 android:layout_gravity="center" />
 
-            <com.example.kebelzsolt.dictionary20.ExtendedEditText
+            <com.vocabulary.ExtendedEditText
                 android:id="@+id/editText"
                 style="@android:style/TextAppearance.Widget.EditText"
                 android:layout_width="0dp"

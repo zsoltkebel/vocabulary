@@ -18,7 +18,7 @@
     <color name="black">#000000</color>
     <color name="dark">#008080</color>
     <color name="darker">#006666</color>
-    <color name="back_white">#ffffff</color>
+    <color name="white">#ffffff</color>
     <color name="back_grey">#CCffffff</color>
     <color name="accent_light">#ffd6cc</color>
 
@@ -36,7 +36,7 @@
     <color name="light3">#f2f2f2</color>
     <color name="light4">#dfe8f4</color>
 
-    <color name="btn_back">#1A000000</color>
+    <color name="btn_back">#33000000</color>
     <color name="btn_back_pressed">#33000000</color>
 
     <color name="black3">#595959</color>
@@ -49,4 +49,7 @@
 
     <color name="green">#ffffff</color>
     <color name="red">#ffffff</color>
+
+    <color name="background_light">#f2f2f2</color>
+    <color name="transparent_black">#4D000000</color>
 </resources>

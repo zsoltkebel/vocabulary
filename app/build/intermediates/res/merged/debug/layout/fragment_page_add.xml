@@ -21,7 +21,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="@string/title_subjects"
-            android:textColor="@color/back_white"
+            android:textColor="@color/white"
             android:textSize="@dimen/text_size_page_title"
             android:textStyle="bold" />
 
@@ -33,5 +33,6 @@
         android:layout_height="match_parent"
         android:dividerHeight="0dp"
         android:divider="#00000000"
-        android:listSelector="@color/transplarent"/>
+        android:listSelector="@color/transplarent"
+        android:background="@color/background_light"/>
 </LinearLayout>

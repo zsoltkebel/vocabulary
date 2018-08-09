@@ -10,7 +10,24 @@
 
     <dimen name="container_elevation">0dp</dimen>
 
-    <dimen name="header_height">55dp</dimen>
+    <!-- Activity Vocabulary -->
+    <dimen name="header_height">52dp</dimen>
+    <dimen name="btn_back_width">52dp</dimen>
+    <dimen name="btn_back_height">52dp</dimen>
+    <dimen name="btn_back_padding">16dp</dimen>
+
+    <dimen name="info_line_height">45dp</dimen>
+    <dimen name="info_line_btn_padding">14dp</dimen>
+
+    <dimen name="icon_small_width">28dp</dimen>
+    <dimen name="icon_small_height">28dp</dimen>
+
+    <dimen name="shadow_height">3dp</dimen>
+
+    <dimen name="floating_button_margin">10dp</dimen>
+
+
+
     <dimen name="tab_layout_height">55dp</dimen>
 
     <dimen name="icon_elevation">10dp</dimen>

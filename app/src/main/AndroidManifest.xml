@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.kebelzsolt.dictionary20">
+    package="com.vocabulary">
 
     <application
         android:allowBackup="true"
@@ -18,7 +18,7 @@
         <activity android:name=".ActivityVocabularyList"
             android:configChanges="orientation"
             android:screenOrientation="portrait"/>
-        <activity android:name=".main.vocabulary.ActivityVocabulary"
+        <activity android:name=".screens.vocabulary.ActivityVocabulary"
             android:configChanges="orientation"
             android:screenOrientation="portrait"/>
         <activity android:name=".ActivityVocabularyContainer"
@@ -33,7 +33,7 @@
         <activity android:name=".learn.LearnActivity"
             android:configChanges="orientation"
             android:screenOrientation="portrait"/>
-        <activity android:name=".main.ActivityTabLayout"
+        <activity android:name=".screens.main.ActivityTabLayout"
             android:configChanges="orientation"
             android:screenOrientation="portrait"/>
         <activity android:name=".user.ActivityUserMenu"
@@ -45,10 +45,13 @@
         <activity android:name=".learn.ActivityVocabularyTest"
             android:configChanges="orientation"
             android:screenOrientation="portrait"/>
-        <activity android:name=".main.settings.ActivityAbout"
+        <activity android:name=".settings.ActivityAbout"
             android:configChanges="orientation"
             android:screenOrientation="portrait"/>
-        <activity android:name=".main.settings.ActivitySettings"
+        <activity android:name=".screens.settings.ActivitySettings"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".screens.more.ActivityMore"
             android:configChanges="orientation"
             android:screenOrientation="portrait"/>
 

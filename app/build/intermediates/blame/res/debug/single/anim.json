@@ -1,82 +1,82 @@
 [
     {
-        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
-        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b5113657a1268165749d96254815f390\\res\\anim\\abc_slide_in_bottom.xml"
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b18f3b6b3d4dd815e21774815a8b6215\\res\\anim\\abc_slide_in_bottom.xml"
     },
     {
-        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\debug\\anim\\slide_in_from_left.xml",
-        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\anim\\slide_in_from_left.xml"
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_top.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b18f3b6b3d4dd815e21774815a8b6215\\res\\anim\\abc_slide_out_top.xml"
     },
     {
-        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
-        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b5113657a1268165749d96254815f390\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_fab_out.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\design-25.1.0.aar\\89d19bdefc3982afbd8702b0c304980a\\res\\anim\\design_fab_out.xml"
     },
     {
-        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_snackbar_out.xml",
-        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\design-25.1.0.aar\\f92897054026a84425fb7119bb774329\\res\\anim\\design_snackbar_out.xml"
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\anim\\slide_out_to_right.xml",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\anim\\slide_out_to_right.xml"
     },
     {
-        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_enter.xml",
-        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b5113657a1268165749d96254815f390\\res\\anim\\abc_popup_enter.xml"
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_bottom.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b18f3b6b3d4dd815e21774815a8b6215\\res\\anim\\abc_slide_out_bottom.xml"
     },
     {
-        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_bottom.xml",
-        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b5113657a1268165749d96254815f390\\res\\anim\\abc_slide_out_bottom.xml"
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_snackbar_out.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\design-25.1.0.aar\\89d19bdefc3982afbd8702b0c304980a\\res\\anim\\design_snackbar_out.xml"
     },
     {
-        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_fab_out.xml",
-        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\design-25.1.0.aar\\f92897054026a84425fb7119bb774329\\res\\anim\\design_fab_out.xml"
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\anim\\slide_in_from_left.xml",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\anim\\slide_in_from_left.xml"
     },
     {
-        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_snackbar_in.xml",
-        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\design-25.1.0.aar\\f92897054026a84425fb7119bb774329\\res\\anim\\design_snackbar_in.xml"
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_top.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b18f3b6b3d4dd815e21774815a8b6215\\res\\anim\\abc_slide_in_top.xml"
     },
     {
-        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_in.xml",
-        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b5113657a1268165749d96254815f390\\res\\anim\\abc_fade_in.xml"
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_fab_in.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\design-25.1.0.aar\\89d19bdefc3982afbd8702b0c304980a\\res\\anim\\design_fab_in.xml"
     },
     {
-        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_fab_in.xml",
-        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\design-25.1.0.aar\\f92897054026a84425fb7119bb774329\\res\\anim\\design_fab_in.xml"
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_snackbar_in.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\design-25.1.0.aar\\89d19bdefc3982afbd8702b0c304980a\\res\\anim\\design_snackbar_in.xml"
     },
     {
-        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\debug\\anim\\slide_in_from_right.xml",
-        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\anim\\slide_in_from_right.xml"
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_enter.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b18f3b6b3d4dd815e21774815a8b6215\\res\\anim\\abc_popup_enter.xml"
     },
     {
-        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_exit.xml",
-        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b5113657a1268165749d96254815f390\\res\\anim\\abc_popup_exit.xml"
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b18f3b6b3d4dd815e21774815a8b6215\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
     },
     {
-        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_out.xml",
-        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b5113657a1268165749d96254815f390\\res\\anim\\abc_fade_out.xml"
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\anim\\slide_left_out.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\filepicker-1.0.0.aar\\fdcade4f50a01f6e3418449663a23f3f\\res\\anim\\slide_left_out.xml"
     },
     {
-        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_top.xml",
-        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b5113657a1268165749d96254815f390\\res\\anim\\abc_slide_out_top.xml"
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_in.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b18f3b6b3d4dd815e21774815a8b6215\\res\\anim\\abc_fade_in.xml"
     },
     {
-        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\debug\\anim\\slide_left_in.xml",
-        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\filepicker-1.0.0.aar\\11798140b9338791001153246178cccd\\res\\anim\\slide_left_in.xml"
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_exit.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b18f3b6b3d4dd815e21774815a8b6215\\res\\anim\\abc_popup_exit.xml"
     },
     {
-        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_top.xml",
-        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b5113657a1268165749d96254815f390\\res\\anim\\abc_slide_in_top.xml"
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_out.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b18f3b6b3d4dd815e21774815a8b6215\\res\\anim\\abc_fade_out.xml"
     },
     {
-        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\debug\\anim\\slide_out_to_left.xml",
-        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\anim\\slide_out_to_left.xml"
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\anim\\slide_left_in.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\filepicker-1.0.0.aar\\fdcade4f50a01f6e3418449663a23f3f\\res\\anim\\slide_left_in.xml"
     },
     {
-        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",
-        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b5113657a1268165749d96254815f390\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\anim\\slide_out_to_left.xml",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\anim\\slide_out_to_left.xml"
     },
     {
-        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\debug\\anim\\slide_out_to_right.xml",
-        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\anim\\slide_out_to_right.xml"
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b18f3b6b3d4dd815e21774815a8b6215\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
     },
     {
-        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\debug\\anim\\slide_left_out.xml",
-        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\filepicker-1.0.0.aar\\11798140b9338791001153246178cccd\\res\\anim\\slide_left_out.xml"
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\anim\\slide_in_from_right.xml",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\anim\\slide_in_from_right.xml"
     }
 ]

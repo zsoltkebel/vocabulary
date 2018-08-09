@@ -49,7 +49,7 @@
     <string name="learn">Learn</string>
     <string name="yes"><b>Yes</b></string>
     <string name="are_you_sure_delete">Are you sure want to delete it?</string>
-    <string name="edit"><b>Edit</b></string>
+    <string name="edit">Edit</string>
     <string name="rename_text">Title of the vocabulary:</string>
     <string name="btn_delete"><b>Delete</b></string>
     <string name="btn_safe_delete"><b>Export and Delete</b></string>
@@ -69,6 +69,9 @@
     <string name="meaning">Meaning</string>
     <string name="No">No</string>
     <string name="Yes"><b>Yes</b></string>
+    <string name="msg_added">Phrase added</string>
+    <string name="title">Title</string>
+    <string name="msg_title_change_successful">Title changed</string>
 
     // dialog sort picker
     <string name="date">By Date</string>

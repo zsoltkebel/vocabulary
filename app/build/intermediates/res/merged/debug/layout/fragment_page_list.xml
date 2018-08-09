@@ -20,7 +20,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="@string/title_vocabularies"
-            android:textColor="@color/back_white"
+            android:textColor="@color/white"
             android:textSize="@dimen/text_size_page_title"
             android:textStyle="bold"
             android:elevation="10dp"/>
@@ -36,6 +36,16 @@
         android:layout_below="@id/header"
         android:divider="@null"
         android:dividerHeight="0dp"
-        android:listSelector="@android:color/transparent" />
+        android:listSelector="@android:color/transparent"
+        android:visibility="gone"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scrollbars="none"
+        android:layout_weight="4"
+        android:background="@color/background_light"
+        />
 
 </LinearLayout>
