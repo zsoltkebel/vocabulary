@@ -40,7 +40,7 @@
             android:elevation="@dimen/text_elevation"
             android:gravity="center_vertical"
             android:text="TextView"
-            android:textColor="@color/text_grey"
+            android:textColor="@color/black"
             android:textSize="20dp"
             android:textStyle="bold"
 
@@ -51,12 +51,12 @@
 
         <ImageView
             android:id="@+id/phrases_icon"
-            android:layout_width="15dp"
-            android:layout_height="15dp"
+            android:layout_width="13dp"
+            android:layout_height="13dp"
             android:layout_gravity="center"
             android:layout_marginEnd="15dp"
 
-            android:src="@drawable/folded_document_icon"
+            android:src="@drawable/new_folded_document"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -67,7 +67,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="0"
-            android:textColor="@color/text_grey"
+            android:textColor="@color/black"
             android:textSize="15dp"
 
             android:layout_marginEnd="3dp"

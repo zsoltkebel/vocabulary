@@ -16,7 +16,6 @@ import android.widget.RadioGroup;
 import android.widget.Spinner;
 
 import com.vocabulary.R;
-import com.vocabulary.settings.ActivityAbout;
 import com.vocabulary.screens.main.ActivityTabLayout;
 
 import java.util.Locale;
@@ -48,7 +47,7 @@ public class ActivitySettings extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_settings);
+        setContentView(R.layout.fragment_settings);
 
         editTextName = (EditText) findViewById(R.id.edittext_name);
         genderGroup = (RadioGroup) findViewById(R.id.radio_gender);

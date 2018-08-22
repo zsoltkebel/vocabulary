@@ -4,12 +4,12 @@
         "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\layout\\activity_vocabulary_container.xml"
     },
     {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_header.xml",
-        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\design-25.1.0.aar\\89d19bdefc3982afbd8702b0c304980a\\res\\layout\\design_navigation_item_header.xml"
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_add_vocabulary.xml",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\layout\\fragment_add_vocabulary.xml"
     },
     {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_edit_word.xml",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\layout\\activity_edit_word.xml"
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_header.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\design-25.1.0.aar\\89d19bdefc3982afbd8702b0c304980a\\res\\layout\\design_navigation_item_header.xml"
     },
     {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_photo_picker.xml",
@@ -80,8 +80,8 @@
         "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b18f3b6b3d4dd815e21774815a8b6215\\res\\layout\\abc_search_view.xml"
     },
     {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_page_list.xml",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\layout\\fragment_page_list.xml"
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_phrase.xml",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\layout\\activity_phrase.xml"
     },
     {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
@@ -100,16 +100,16 @@
         "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\layout\\fragment_page_add_phrase.xml"
     },
     {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_phrases.xml",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\layout\\fragment_phrases.xml"
+    },
+    {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple.xml",
         "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b18f3b6b3d4dd815e21774815a8b6215\\res\\layout\\abc_screen_simple.xml"
     },
     {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
         "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b18f3b6b3d4dd815e21774815a8b6215\\res\\layout\\abc_action_menu_layout.xml"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_settings.xml",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\layout\\activity_settings.xml"
     },
     {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_page_import.xml",
@@ -122,6 +122,10 @@
     {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_learn_config.xml",
         "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\layout\\activity_learn_config.xml"
+    },
+    {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_vocabularies.xml",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\layout\\fragment_vocabularies.xml"
     },
     {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
@@ -140,12 +144,12 @@
         "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\design-25.1.0.aar\\89d19bdefc3982afbd8702b0c304980a\\res\\layout\\design_layout_tab_icon.xml"
     },
     {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_page_add.xml",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\layout\\fragment_page_add.xml"
-    },
-    {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_text_input_password_icon.xml",
         "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\design-25.1.0.aar\\89d19bdefc3982afbd8702b0c304980a\\res\\layout\\design_text_input_password_icon.xml"
+    },
+    {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_vocabulary_picker.xml",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\layout\\dialog_vocabulary_picker.xml"
     },
     {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_header.xml",
@@ -156,16 +160,16 @@
         "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\design-25.1.0.aar\\89d19bdefc3982afbd8702b0c304980a\\res\\layout\\design_navigation_menu_item.xml"
     },
     {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_page_phrases.xml",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\layout\\fragment_page_phrases.xml"
-    },
-    {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines_media.xml",
         "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b18f3b6b3d4dd815e21774815a8b6215\\res\\layout\\notification_template_lines_media.xml"
     },
     {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_doc_picker.xml",
         "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\filepicker-1.0.0.aar\\fdcade4f50a01f6e3418449663a23f3f\\res\\layout\\fragment_doc_picker.xml"
+    },
+    {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_edit_phrase.xml",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\layout\\activity_edit_phrase.xml"
     },
     {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_separator.xml",
@@ -276,6 +280,10 @@
         "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\layout\\activity_learn.xml"
     },
     {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\layout\\custom_tab_view.xml",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\layout\\custom_tab_view.xml"
+    },
+    {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_singlechoice_material.xml",
         "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b18f3b6b3d4dd815e21774815a8b6215\\res\\layout\\select_dialog_singlechoice_material.xml"
     },
@@ -292,6 +300,10 @@
         "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\layout\\activity_vocabulary_test.xml"
     },
     {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_settings.xml",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\layout\\fragment_settings.xml"
+    },
+    {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\layout\\error.xml",
         "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\layout\\error.xml"
     },
@@ -300,12 +312,12 @@
         "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\layout\\activity_about.xml"
     },
     {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_word.xml",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\layout\\activity_word.xml"
-    },
-    {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
         "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_merge.xml",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\layout\\activity_merge.xml"
     },
     {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar.xml",

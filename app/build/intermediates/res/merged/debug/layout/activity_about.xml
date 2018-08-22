@@ -8,7 +8,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="The app was developed by:"
-        android:textColor="@color/text_grey"
+        android:textColor="@color/black"
         android:textStyle="italic"/>
 
     <LinearLayout
@@ -28,7 +28,7 @@
             android:text="Zsolt Kébel"
             android:textStyle="bold"
             android:textSize="25sp"
-            android:textColor="@color/text_grey"
+            android:textColor="@color/black"
             android:autoLink="web"
             android:linksClickable="true" />
 
@@ -57,7 +57,7 @@
             android:textSize="15sp"
             android:textColorLink="#3B5998"
             android:textStyle="bold"
-            android:textColor="@color/text_grey"/>
+            android:textColor="@color/black"/>
 
     </LinearLayout>
     <TextView
@@ -81,7 +81,7 @@
             android:layout_height="wrap_content"
             android:text="kebel.zsolt@gmail.com"
             android:textSize="15sp"
-            android:textColor="@color/text_grey"
+            android:textColor="@color/black"
             android:autoLink="email"
             android:linksClickable="true" />
 

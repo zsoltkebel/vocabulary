@@ -18,14 +18,12 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.Switch;
-import android.widget.Toast;
 
 import com.vocabulary.R;
 
 import droidninja.filepicker.fragments.BaseFragment;
 
-import static com.vocabulary.Data.vocabularies;
-import static com.vocabulary.screens.main.FragmentVocabularyList.KEY_INDEX_OF_VOCABULARY;
+import static com.vocabulary.screens.main.FragmentVocabularies.KEY_INDEX_OF_VOCABULARY;
 
 /**
  * Created by Kébel Zsolt on 2018. 03. 22..
@@ -230,14 +228,14 @@ public class ActivityLearnConfiguration extends AppCompatActivity {
         setPrefs();
         Intent intent;
         if (isTest)
-        {
+        {/*
             if ( isCustom && (editTextNumber.getText().toString().equals("") ||
                     Integer.valueOf(editTextNumber.getText().toString()) <= 0 ||
                     Integer.valueOf(editTextNumber.getText().toString()) > vocabularies.get(indexOfVocabulary).getNumOfWords()))
             {
                 Toast.makeText(this, "Type in a number", Toast.LENGTH_SHORT).show();
                 return;
-            }
+            }*/
             setPrefs();
             intent = new Intent(getBaseContext(), ActivityVocabularyTest.class);
         }
@@ -314,10 +312,12 @@ public class ActivityLearnConfiguration extends AppCompatActivity {
         editor.putBoolean(CHEATING, swCheating.isChecked());
         editor.putBoolean(IS_TEST, isTest);
         editor.putBoolean(ALL_PHRASES, isCustom);
+        /*
         if (isCustom && !editTextNumber.getText().toString().equals("") &&
                 Integer.valueOf(editTextNumber.getText().toString()) > 0 &&
                 Integer.valueOf(editTextNumber.getText().toString()) <= vocabularies.get(indexOfVocabulary).getNumOfWords())
             editor.putInt(NUMBER_OF_PHRASES, Integer.valueOf(editTextNumber.getText().toString()));
+            */
         editor.apply();
     }
 

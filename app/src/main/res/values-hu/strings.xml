@@ -52,8 +52,13 @@
     <string name="btn_cancel">Mégse</string>
     <string name="rename_warning_text">Kérlek figyelj rá, hogy a szótár címe el kell hogy térjen az eddig az adott tantárgyban szereplő címektől!</string>
     <string name="delete_warning_text">Ha még nem exportáltad a szótárat, akkor végleg elveszik!</string>
-    <string name="set_title">Állítsd be a szótár címét</string>
+    <string name="new_vocabulary">Állítsd be a szótár címét</string>
     <string name="import_from_txt">Importálás .txt-ből</string>
+
+    <string name="tab_home">Otthon</string>
+    <string name="tab_vocabularies">Szotarak</string>
+    <string name="tab_add">Hozzaad</string>
+    <string name="tab_settings">Beallitasok</string>
 
     // vocabulary
     <string name="search">Keresés</string>
@@ -65,6 +70,9 @@
     <string name="meaning">Jelentés</string>
     <string name="No">Nem</string>
     <string name="Yes"><b>Igen</b></string>
+
+    // mActivity more
+    <string name="merge">Merge</string>
 
     // user settings
     <string name="title_user_setting">Felhasználói Beállítások</string>

@@ -19,7 +19,7 @@
             <solid
                 android:color="@color/transplarent"/>
             <corners android:radius="5dp"/>
-            <stroke android:color="@color/text_grey"
+            <stroke android:color="@color/black"
                 android:width="2dp"/>
         </shape>
     </item>

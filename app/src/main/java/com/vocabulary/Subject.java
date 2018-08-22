@@ -61,6 +61,6 @@ public class Subject {
 
     public int getSubjectResourceString(Context context)
     {
-        return context.getResources().getIdentifier(subject, "string", context.getPackageName());
+        return context.getResources().getIdentifier(subject.replaceAll("[0-9]", ""), "string", context.getPackageName());
     }
 }

@@ -17,13 +17,9 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.vocabulary.R;
-import com.vocabulary.Word;
-import com.vocabulary.screens.vocabulary.ActivityVocabulary;
 
-import java.util.ArrayList;
 import java.util.Random;
 
-import static com.vocabulary.Data.vocabularies;
 import static com.vocabulary.learn.ActivityLearnConfiguration.CHEATING;
 import static com.vocabulary.learn.ActivityLearnConfiguration.PREFS_LEARN;
 import static com.vocabulary.learn.ActivityLearnConfiguration.SHOWS;
@@ -33,7 +29,7 @@ import static com.vocabulary.learn.ActivityLearnConfiguration.TIME_15_SEC;
 import static com.vocabulary.learn.ActivityLearnConfiguration.TIME_5_SEC;
 import static com.vocabulary.learn.ActivityLearnConfiguration.TIME_NO_LIMIT;
 import static com.vocabulary.learn.ActivityLearnConfiguration.TIME_TO_ANSWER;
-import static com.vocabulary.screens.main.FragmentVocabularyList.KEY_INDEX_OF_VOCABULARY;
+import static com.vocabulary.screens.main.FragmentVocabularies.KEY_INDEX_OF_VOCABULARY;
 
 /**
  * Created by Kébel Zsolt on 1/23/2017.
@@ -44,7 +40,6 @@ public class LearnActivity extends AppCompatActivity {
     int i;
     int random;
     Random rand = new Random();
-    private ArrayList<Word> words;
 
     Button btnShow;
     LinearLayout layout;
@@ -76,16 +71,12 @@ public class LearnActivity extends AppCompatActivity {
         Intent intent = getIntent();
         i = intent.getExtras().getInt(KEY_INDEX_OF_VOCABULARY);
 
-        words =  new ArrayList<>(vocabularies.get(i).getWordList());
 
         ImageView icon = (ImageView) findViewById(R.id.icon);
-        icon.setImageDrawable(vocabularies.get(i).getIconDrawable(getBaseContext()));
 
         ///header
         final TextView tvLanguage = (TextView) findViewById(R.id.txt_language);
         final TextView tvNumOfWords = (TextView) findViewById(R.id.txt_num_of_words);
-        tvLanguage.setText(vocabularies.get(i).getTitle());
-        tvNumOfWords.setText(String.valueOf(vocabularies.get(i).getNumOfWords()) + " words");
 
         final Button btnNext = (Button) findViewById(R.id.btn_next);
         btnShow = (Button) findViewById(R.id.btn_show_answer);
@@ -99,7 +90,7 @@ public class LearnActivity extends AppCompatActivity {
 
         btnShow.setVisibility(View.VISIBLE);
         numRefresh();
-
+/*
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -122,7 +113,7 @@ public class LearnActivity extends AppCompatActivity {
                 }
                 numRefresh();
             }
-        });
+        });*/
 
         btnShow.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -157,17 +148,19 @@ public class LearnActivity extends AppCompatActivity {
     }
 
     public void numRefresh() {
+        /*
         if (words.size() > 0) {
             TextView tvWordsLeft = (TextView) findViewById(R.id.wordsLeft);
             tvWordsLeft.setText(String.valueOf(words.size() - 1) + " words left");
         }
+        */
     }
 
     private void  pickNext()
     {
         if (timer != null)
             timer.cancel(true);
-
+/*
         random = rand.nextInt(words.size());
         if (shows == SHOWS_MEANING)
         {
@@ -181,7 +174,7 @@ public class LearnActivity extends AppCompatActivity {
         }
         tvWord.setText(showed);
         tvAnswer.setText(hidden);
-
+*/
         countDown();
     }
 

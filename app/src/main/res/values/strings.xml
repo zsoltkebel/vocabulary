@@ -4,7 +4,7 @@
 
     <string name="app_name">MyVocbulary</string>
     <string name="button_add">Add</string>
-    <string name="message_deleted"><b>Deleted</b></string>
+    <string name="message_deleted">Deleted</string>
     <string name="btn_done"><b>Done</b></string>
 
     <string name="btn_menu"><b>Menu</b></string>
@@ -47,17 +47,25 @@
     <string name="export">Export</string>
     <string name="delete">Delete</string>
     <string name="learn">Learn</string>
-    <string name="yes"><b>Yes</b></string>
+    <string name="yes">Yes</string>
     <string name="are_you_sure_delete">Are you sure want to delete it?</string>
     <string name="edit">Edit</string>
-    <string name="rename_text">Title of the vocabulary:</string>
+    <string name="rename_text">Title:</string>
     <string name="btn_delete"><b>Delete</b></string>
     <string name="btn_safe_delete"><b>Export and Delete</b></string>
     <string name="btn_cancel">Cancel</string>
     <string name="rename_warning_text">Please note, that the title has to differ from the existing ones in that subject.</string>
     <string name="delete_warning_text">If you haven\'t exported it yet, you won\'t be able to take it back.</string>
-    <string name="set_title">Set the title of the vocabulary</string>
+    <string name="new_vocabulary">New vocabulary</string>
     <string name="import_from_txt">Import from .txt</string>
+
+    <string name="added_msg">Vocabulary added</string>
+    <string name="vocabulary_already_existing_msg">A vocabulary with the same title is already existing. If you still want to add it press add again.</string>
+
+    <string name="tab_home">Home</string>
+    <string name="tab_vocabularies">Vocabularies</string>
+    <string name="tab_add">Add</string>
+    <string name="tab_settings">Settings</string>
 
     // vocabulary
     <string name="search">Search</string>
@@ -72,10 +80,19 @@
     <string name="msg_added">Phrase added</string>
     <string name="title">Title</string>
     <string name="msg_title_change_successful">Title changed</string>
+    <string name="edited">Edited</string>
+    <string name="undo">Undo</string>
+    <string name="filter">Filter</string>
+    <string name="just_a_moment">Just a moment...</string>
 
     // dialog sort picker
-    <string name="date">By Date</string>
-    <string name="abc">ABC</string>
+    <string name="date">Date</string>
+    <string name="abc_phrase">Abc in phrase</string>
+    <string name="abc_meaning">Abc in meaning</string>
+    <string name="sort_title">Sort by</string>
+    <string name="ascending">Ascending</string>
+    <string name="descending">Descending</string>
+    <string name="sort">Sort</string>
 
     // settings
     <string name="title_user_setting">User Settings</string>
@@ -89,6 +106,14 @@
     <string name="language">Language</string>
     <string name="about">About</string>
     <string name="bug">Bug report</string>
+    <string name="contact">Contact</string>
+
+    // mActivity more
+    <string name="more">More</string>
+    <string name="rename">Rename</string>
+    <string name="merge">Merge</string>
+    <string name="merged_msg">Vocabularies merged</string>
+    <string name="choose_other_vocabulary_msg">Choose other vocabulary</string>
 
     // learn config
     <string name="title_learn_config">Learn Configuration</string>
@@ -107,4 +132,7 @@
     <string name="type">Type</string>
     <string name="vocabulary_test">Vocabulary test</string>
     <string name="practise">Practise</string>
+
+    // colored
+    <string name="accent_learn"><b><font fgcolor="-#e62e00">Learn</font></b></string>
 </resources>

@@ -12,12 +12,8 @@ import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.vocabulary.Data;
 import com.vocabulary.R;
-import com.vocabulary.Vocabulary;
-import com.vocabulary.Word;
 
-import java.util.ArrayList;
 import java.util.Random;
 
 import static com.vocabulary.learn.ActivityLearnConfiguration.ALL_PHRASES;
@@ -26,13 +22,11 @@ import static com.vocabulary.learn.ActivityLearnConfiguration.NUMBER_OF_PHRASES;
 import static com.vocabulary.learn.ActivityLearnConfiguration.PREFS_LEARN;
 import static com.vocabulary.learn.ActivityLearnConfiguration.SHOWS;
 import static com.vocabulary.learn.ActivityLearnConfiguration.SHOWS_MEANING;
-import static com.vocabulary.learn.ActivityLearnConfiguration.SHOWS_PHRASE;
 import static com.vocabulary.learn.ActivityLearnConfiguration.TIME_10_SEC;
 import static com.vocabulary.learn.ActivityLearnConfiguration.TIME_15_SEC;
 import static com.vocabulary.learn.ActivityLearnConfiguration.TIME_5_SEC;
 import static com.vocabulary.learn.ActivityLearnConfiguration.TIME_NO_LIMIT;
 import static com.vocabulary.learn.ActivityLearnConfiguration.TIME_TO_ANSWER;
-import static com.vocabulary.screens.main.FragmentVocabularyList.KEY_INDEX_OF_VOCABULARY;
 
 /**
  * Created by Kébel Zsolt on 2018. 03. 24..
@@ -47,8 +41,6 @@ public class ActivityVocabularyTest extends AppCompatActivity
     ListView listView;
     Button btnFinish;
 
-    Vocabulary vocabulary;
-    ArrayList<Word> words;
     int numberOfAsked;
 
     ProgressTask timer = null;
@@ -65,7 +57,7 @@ public class ActivityVocabularyTest extends AppCompatActivity
         setContentView(R.layout.activity_vocabulary_test);
 
         Intent intent = getIntent();
-        vocabulary = Data.vocabularies.get(intent.getExtras().getInt(KEY_INDEX_OF_VOCABULARY));
+
 
         icon = (ImageView) findViewById(R.id.icon);
         title = (TextView) findViewById(R.id.txt_language);
@@ -77,13 +69,7 @@ public class ActivityVocabularyTest extends AppCompatActivity
         getPrefs();
 
         Random random = new Random();
-        words = new ArrayList<>(vocabulary.getWordList());
-        while (words.size() > numberOfAsked)
-        {
-            words.remove(random.nextInt(words.size()));
-        }
-        ListViewAdapter adapter = new ListViewAdapter(this, words, shows == SHOWS_PHRASE ? false : true);
-        listView.setAdapter(adapter);
+
 
         setTitle();
         countDown();
@@ -96,9 +82,6 @@ public class ActivityVocabularyTest extends AppCompatActivity
 
     private void setTitle()
     {
-        icon.setImageDrawable(vocabulary.getIconDrawable(getBaseContext()));
-        title.setText(vocabulary.getTitle());
-        numOfPhrases.setText(String.valueOf(words.size()));
     }
 
     private void getPrefs()
@@ -110,8 +93,6 @@ public class ActivityVocabularyTest extends AppCompatActivity
         cheatingEnabled = prefs.getBoolean(CHEATING, true);
         isCustom = prefs.getBoolean(ALL_PHRASES, true);
         numberOfAsked = prefs.getInt(NUMBER_OF_PHRASES, 15);
-        if (!isCustom)
-            numberOfAsked = vocabulary.getNumOfWords();
 
     }
 

@@ -72,8 +72,10 @@
     <string name="letsgo">Gyerünk</string>
     <string name="male">Férfi</string>
     <string name="meaning">Jelentés</string>
+    <string name="merge">Merge</string>
     <string name="message_deleted"><b>Deleted</b></string>
     <string name="name">Név</string>
+    <string name="new_vocabulary">Állítsd be a szótár címét</string>
     <string name="num_of_asked">A kérdezendő kifejezések száma:</string>
     <string name="number_of_phrases">Kifejezések száma</string>
     <string name="phrase">kifejezés</string>
@@ -82,9 +84,12 @@
     <string name="save">Mentés</string>
     <string name="search">Keresés</string>
     <string msgid="146198913615257606" name="search_menu_title">"Keresés"</string>
-    <string name="set_title">Állítsd be a szótár címét</string>
     <string name="share">Megosztás</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="tab_add">Hozzaad</string>
+    <string name="tab_home">Otthon</string>
+    <string name="tab_settings">Beallitasok</string>
+    <string name="tab_vocabularies">Szotarak</string>
     <string name="time_to_answer">Idő a válaszadásra</string>
     <string name="title_import">Importálás</string>
     <string name="title_learn_config">Tanulás Konfiguráció</string>

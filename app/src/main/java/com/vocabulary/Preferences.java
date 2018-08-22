@@ -10,7 +10,7 @@ public class Preferences
     public static final String PREFS_SORT = "prefsSort";
     public static final String KEY_SORT = "sort";
 
-    public static final int SORT_ABC = 1;
+    public static final int SORT_ABC_PHRASE = 1;
     public static final int SORT_DATE = 0;
 
     public static int getSortType(Context context)

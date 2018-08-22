@@ -1,9 +1,9 @@
 package com.vocabulary.screens.vocabulary;
 
+import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Build;
 import android.os.Bundle;
@@ -12,97 +12,87 @@ import android.support.annotation.RequiresApi;
 import android.support.constraint.ConstraintLayout;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.PopupMenu;
-import android.text.Html;
-import android.text.Spanned;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
+import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.RelativeLayout;
+import android.widget.Switch;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.vocabulary.DBHelper;
-import com.vocabulary.NEW.Vocabulary;
-import com.vocabulary.R;
-import com.vocabulary.learn.ActivityLearnConfiguration;
 import com.nineoldandroids.animation.ArgbEvaluator;
 import com.nineoldandroids.animation.ValueAnimator;
+import com.vocabulary.R;
+import com.vocabulary.realm.Phrase;
+import com.vocabulary.realm.RealmActivity;
+import com.vocabulary.realm.Vocabulary;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 import io.realm.Realm;
 
-import static com.vocabulary.Data.numOfSelectedItems;
-import static com.vocabulary.Data.vocabularies;
-import static com.vocabulary.Preferences.SORT_ABC;
+import static com.vocabulary.Preferences.SORT_ABC_PHRASE;
 import static com.vocabulary.Preferences.SORT_DATE;
-import static com.vocabulary.Preferences.getSortType;
-import static com.vocabulary.Preferences.setSortType;
-import static com.vocabulary.screens.main.FragmentVocabularyList.KEY_CODE_OF_VOCABULARY;
-import static com.vocabulary.screens.main.FragmentVocabularyList.KEY_INDEX_OF_VOCABULARY;
-import static com.vocabulary.screens.main.FragmentVocabularyList.colorTextGrey;
+import static com.vocabulary.screens.vocabulary.FragmentPhrases.PREFS_SORTING_ASCENDING;
+import static com.vocabulary.screens.vocabulary.FragmentPhrases.PREFS_SORTING_FIELD;
 
-public class ActivityVocabulary extends AppCompatActivity {
-
+public class ActivityVocabulary extends RealmActivity {
     public static final String PREFS_VOCABULARY = "prefVocabulary";
     public static final String PREFS_INDEX = "prefIndex";
 
-    public static final String KEY_WORD_ID = "indexOfWord";
-    public static final String KEY_VOCABULARY_ID = "vocabularyID";
-
-    public static final String CODE = "code";
-
-
-
-    private static LinearLayout lyt_options;          //The layout that contains @Button_Edit, @Button_DeleteSelected
-
-    @BindView(R.id.imgvClear)
-    protected ImageView clearEditText;
+    public static final int SORT_ABC_MEANING = 2;
 
     @BindView(R.id.imageView_wordList_flag)
-    protected ImageView icon;
+    protected ImageView mIvIcon;
+    @BindView(R.id.v_clear_search)
+    protected ImageView mIvClearSearch;
 
     @BindView(R.id.txt_language)
-    protected TextView txtv_name;
+    protected TextView mTvTitle;
+    @BindView(R.id.txt_num_of_words)
+    protected TextView mTvNumOfPhrases;
 
-    private static TextView txtv_numOfWords;
+    @BindView(R.id.et_search)
+    protected EditText mEtSearch;
 
-    RelativeLayout touch;
-    public static ProgressBar pbSearch;
+    @BindView(R.id.v_filter)
+    protected View mViewFilter;
 
-    private TabLayout tabLayout;
-    private ViewPager viewPager;
+    @BindView(R.id.pb_filtering)
+    protected ProgressBar mPbFiltering;
 
-    public static int vocabularyID;
-    public static int vocabularyIndex;
+    @BindView(R.id.touch)
+    protected RelativeLayout mRltTouch;
 
-    public static String filter = null;
+    @BindView(R.id.tab_layout)
+    protected TabLayout mTabLayout;
 
-    public static boolean selectable = false;
-
-    static Context context;
-
-    public static PagerAdapter adapter;
-
-    private FragmentPhraseList fragmentPhrases;
-    private FragmentAddPhrase fragmentAddPhrase;
-
-    DBHelper database;
-
-    Realm realm;
-    Vocabulary vocabulary;
+    @BindView(R.id.view_pager)
+    protected ViewPager mViewPager;
 
 
+    private String mFilter = null;
+
+    private PagerAdapter mPagerAdapter = null;
+
+    private FragmentPhrases fragmentPhrases = null;
+    private FragmentAddPhrase fragmentAddPhrase = null;
+
+    private Vocabulary mVocabulary = null;
+
+
+    @SuppressLint("ClickableViewAccessibility")
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -110,89 +100,41 @@ public class ActivityVocabulary extends AppCompatActivity {
         setContentView(R.layout.activity_vocabulary);
         ButterKnife.bind(this);
 
-        realm = Realm.getDefaultInstance();
         // to scroll automatically if the text is too long
-        txtv_name.setSelected(true);
-
-        lyt_options           = (LinearLayout) findViewById(R.id.layout_options);
-        txtv_numOfWords       = (TextView) findViewById(R.id.txt_num_of_words);
-
-        tabLayout = (TabLayout) findViewById(R.id.tab_layout);
-        viewPager = (ViewPager) findViewById(R.id.view_pager);
-        touch = (RelativeLayout) findViewById(R.id.touch);
-        pbSearch = (ProgressBar) findViewById(R.id.progressBar3);
-        pbSearch.setIndeterminate(true);
+        mTvTitle.setSelected(true);
 
         String vocabularyId = getIntent().getStringExtra(Vocabulary.ID);
-        vocabulary = realm.where(Vocabulary.class).equalTo(Vocabulary.ID, vocabularyId).findFirst();
-
-        numOfSelectedItems = 0;
+        mVocabulary = mRealm.where(Vocabulary.class).equalTo(Vocabulary.ID, vocabularyId).findFirst();
 
 
-
-        context = this;
-
-        selectable = false;
         titleRefresh();
 
-        setPrefs();
         setUpTabs();
         setStatusBar();
 
 
-        touch.setOnTouchListener(new View.OnTouchListener() {
+        mRltTouch.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
-                if (tabLayout.getSelectedTabPosition() == 0)
-                    clearFocus();
+                mEtSearch.clearFocus();
+                if (mTabLayout.getSelectedTabPosition() == 0) {
+                    //hide keyboard
+                    InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+                    imm.hideSoftInputFromWindow(mEtSearch.getWindowToken(), 0);
+                }
                 return false;
             }
         });
-/*
-        edtxt_search.addTextChangedListener(new TextWatcher()
-        {
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
 
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count)
-            {
-                pbSearch.setVisibility(View.VISIBLE);
-                filter = edtxt_search.getText().toString();
-                if (filter == null || filter.equals("")) {
-                    clearEditText.setVisibility(View.GONE);
-                } else {
-                    clearEditText.setVisibility(View.VISIBLE);
-                }
-                handler.removeCallbacks(input_finish_checker);
-            }
-
-            @Override
-            public void afterTextChanged(Editable s)
-            {
-                last_text_edit = System.currentTimeMillis();
-                handler.postDelayed(input_finish_checker, delay);
-            }
-        });
-
-        edtxt_search.setOnFocusChangeListener(new View.OnFocusChangeListener()
-        {
+        mEtSearch.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
             public void onFocusChange(View v, boolean hasFocus) {
                 if (hasFocus)
-                {
-                    edtxt_search.setHint("");
-                    tabLayout.getTabAt(0).select();
-                    hideKeyboard(false);
-                }
-                else
-                {
-                    edtxt_search.setHint(R.string.search);
-                }
+                    navigateToTab(0);
             }
         });
-*/
-        viewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+
+        mViewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels)
             {
@@ -204,7 +146,7 @@ public class ActivityVocabulary extends AppCompatActivity {
             {
                 if (position == 1)
                 {
-                    ((FragmentAddPhrase) adapter.getItem(position)).focusPhraseEditText();
+                    ((FragmentAddPhrase) mPagerAdapter.getItem(position)).focusPhraseEditText();
                 }
                 else
                 {
@@ -219,6 +161,20 @@ public class ActivityVocabulary extends AppCompatActivity {
 
             }
         });
+
+        final Handler handler = new Handler();
+        final Runnable filtering = new Runnable() {
+            @Override
+            public void run() {
+                mPbFiltering.setVisibility(View.VISIBLE);
+                //if (getFragmentPhrases().getAdapter() != null)
+                    //getFragmentPhrases().getAdapter().getFilter().filter(getFilterString());
+                //else
+                    //Toast.makeText(ActivityVocabulary.this, "error", Toast.LENGTH_SHORT).show();
+            }
+        };
+
+
 /*
         edtxt_search.setOnEditorActionListener(new TextView.OnEditorActionListener() {
             @Override
@@ -233,92 +189,126 @@ public class ActivityVocabulary extends AppCompatActivity {
         });
 */
         setColorChange();
+
+        mEtSearch.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                mFilter = s.toString();
+                if (!mFilter.equals("")) {
+                    mViewFilter.setActivated(true);
+                    mIvClearSearch.setVisibility(View.VISIBLE);
+                } else {
+                    mViewFilter.setActivated(false);
+                    mIvClearSearch.setVisibility(View.INVISIBLE);
+                }
+                //mPbFiltering.setVisibility(View.VISIBLE);
+                ((FragmentPhrases) mPagerAdapter.getItem(0)).getAdapter().setFilter(mRealm, mFilter, getSortingField(), isSortingAscending());
+
+                //getFragmentPhrases().getAdapter().getFilter().filter(getFilterString());
+                /*
+                try {
+                    handler.removeCallbacks(setFilter);
+                } catch (Exception e) {}
+
+                try {
+                    handler.post(setFilter);
+                } catch (Exception e) {
+                    setUpTabs();
+                }*/
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+
+            }
+        });
+
+
     }
 
+    public void setSorting(String sortingField, boolean ascending) {
+        SharedPreferences prefs = getSharedPreferences(PREFS_VOCABULARY, MODE_PRIVATE);
+        prefs.edit().putString(PREFS_SORTING_FIELD, sortingField).apply();
+        prefs.edit().putBoolean(PREFS_SORTING_ASCENDING, ascending).apply();
+    }
+
+    public String getSortingField() {
+        SharedPreferences prefs = getSharedPreferences(PREFS_VOCABULARY, MODE_PRIVATE);
+        return prefs.getString(PREFS_SORTING_FIELD, Phrase.DATE);
+    }
+
+    public boolean isSortingAscending() {
+        SharedPreferences prefs = getSharedPreferences(PREFS_VOCABULARY, MODE_PRIVATE);
+        return prefs.getBoolean(PREFS_SORTING_ASCENDING, false);
+    }
+
+
+    public String getFilterString() {
+        return mFilter;
+    }
+
+    public ProgressBar getProgressBar() {
+        return mPbFiltering;
+    }
 
     long delay = 1000; // 1 seconds after user stops typing
     long last_text_edit = 0;
-    Handler handler = new Handler();
 
-    private Runnable input_finish_checker = new Runnable() {
-        public void run() {
-            if (System.currentTimeMillis() > (last_text_edit + delay - 500))
-            {
-                pbSearch.setVisibility(View.VISIBLE);
-                search(filter);
-            }
-        }
-    };
-    private Runnable input_finish_checker2 = new Runnable() {
-        public void run() {
-            if (System.currentTimeMillis() > (last_text_edit + 0 - 500))
-            {
-                pbSearch.setVisibility(View.VISIBLE);
-                search(filter);
-            }
-        }
-    };
 
-    @Override
-    protected void onStart() {
-        super.onStart();
-        realm = Realm.getDefaultInstance();
+
+    public void setSearchEnabled(boolean enabled) {
+        mEtSearch.setEnabled(enabled);
     }
 
-    @Override
-    protected void onStop() {
-        super.onStop();
-        realm.close();
+    @OnClick(R.id.v_clear_search)
+    protected void onClearSearchClicked() {
+        mEtSearch.setText("");
     }
+
 
     public void navigateToTab(int position) {
-        tabLayout.getTabAt(position).select();
-    }
-
-    private void setPrefs()
-    {
-        SharedPreferences.Editor editor = getSharedPreferences(PREFS_VOCABULARY, MODE_PRIVATE).edit();
-        editor.putInt(PREFS_INDEX, vocabularyID);
-        editor.apply();
+        mTabLayout.getTabAt(position).select();
     }
 
     private void setUpTabs()
     {
-        tabLayout.addTab(tabLayout.newTab().setText(R.string.Phrases));
-        tabLayout.addTab(tabLayout.newTab().setText(R.string.add));
-        tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
+        mTabLayout.addTab(mTabLayout.newTab().setText(R.string.Phrases));
+        mTabLayout.addTab(mTabLayout.newTab().setText(R.string.add));
+        mTabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
 
-        adapter = new PagerAdapter(getSupportFragmentManager());
+        mPagerAdapter = new PagerAdapter(getSupportFragmentManager());
 
-        fragmentPhrases = (FragmentPhraseList) adapter.getItem(0);
-        fragmentAddPhrase = (FragmentAddPhrase) adapter.getItem(1);
+        fragmentPhrases = (FragmentPhrases) mPagerAdapter.getItem(0);
+        fragmentAddPhrase = (FragmentAddPhrase) mPagerAdapter.getItem(1);
 
-        viewPager.setAdapter(adapter);
+        mViewPager.setAdapter(mPagerAdapter);
 
 
-        tabLayout.setupWithViewPager(viewPager);
+        mTabLayout.setupWithViewPager(mViewPager);
 
-        tabLayout.getTabAt(0).setText(R.string.Phrases);
-        tabLayout.getTabAt(1).setText(R.string.Add);
+        mTabLayout.getTabAt(0).setText(R.string.Phrases);
+        mTabLayout.getTabAt(1).setText(R.string.Add);
 
-        tabLayout.getTabAt(0).select();
+        mTabLayout.getTabAt(0).select();
     }
 
     public void rcListRefresh(int position)
     {
-        ((FragmentPhraseList)adapter.getItem(0)).listRefresh(position);
+        ((FragmentPhrases) mPagerAdapter.getItem(0)).listRefresh(position);
     }
 
-    public void clearFocus()
-    {
-        //edtxt_search.clearFocus();
-        //edtxt_search.setHint(R.string.search);
-        hideKeyboard(true);
+
+    public CharSequence getFilterCharSequence() {
+        return mEtSearch.getText();
     }
-    public void clearEditText()
-    {
-        //if (!edtxt_search.getText().toString().equals(""))
-        //    edtxt_search.setText("");
+
+    public void clearFilter() {
+        mEtSearch.setText("");
     }
 
     @Override
@@ -326,42 +316,22 @@ public class ActivityVocabulary extends AppCompatActivity {
     {
         if (fragmentPhrases.isSelectable()) {
             fragmentPhrases.setSelectable(false);
-            numOfSelectedItems = 0;
-            //for (Word word : vocabulary.getWordList())
+            //for (Word word : mVocabulary.getWordList())
             //   if (word.isSelected())
             //        word.setSelected(false);
 
             //optionsRefresh();
         } else {
-            if (tabLayout.getSelectedTabPosition() != 0)
-                tabLayout.getTabAt(0).select();
+            if (mTabLayout.getSelectedTabPosition() != 0)
+                mTabLayout.getTabAt(0).select();
             else
                 finish();
         }
     }
 
-    private boolean search(String filter)
-    {
-        fragmentPhrases.search(filter);
 
-        if (filter == null || filter.equals("")) {
-            clearEditText.setVisibility(View.INVISIBLE);
-            return false;
-        } else {
-            clearEditText.setVisibility(View.VISIBLE);
-            return true;
-        }
-    }
 
-    public void clearSearch(View view)
-    {
-        pbSearch.setVisibility(View.VISIBLE);
-        //edtxt_search.setText("");
-        clearFocus();
 
-        handler.postDelayed(input_finish_checker2, 0);
-        //search(filter);
-    }
 
     private void hideKeyboard(boolean hide)
     {
@@ -381,12 +351,15 @@ public class ActivityVocabulary extends AppCompatActivity {
     }
 
     public void titleRefresh() {
-        icon.setImageDrawable(vocabulary.getIconDrawable(context));
-        txtv_name.setText(vocabulary.getTitle());
-        txtv_numOfWords.setText(String.valueOf(vocabulary.getPhrases().size()));
+        mIvIcon.setImageDrawable(mVocabulary.getIconDrawable(this));
+        mTvTitle.setText(mVocabulary.getTitle());
+        mTvNumOfPhrases.setText(String.valueOf(mVocabulary.getPhrases().size()));
     }
 
-
+    public void setNumOfPhrasesText() {
+        if (mTvNumOfPhrases != null)
+            mTvNumOfPhrases.setText(String.valueOf(mVocabulary.getPhrases().size()));
+    }
 
 
     public void openMenu(View view) {
@@ -401,6 +374,7 @@ public class ActivityVocabulary extends AppCompatActivity {
             public boolean onMenuItemClick(MenuItem item) {
                 switch (item.getItemId()) {
                     case R.id.learn:
+                        /*
                         if (vocabularies.get(vocabularyIndex).getWordList().size() != 0) {
                             Intent intent = new Intent(ActivityVocabulary.this, ActivityLearnConfiguration.class);
                             Bundle bundle = new Bundle();
@@ -410,37 +384,65 @@ public class ActivityVocabulary extends AppCompatActivity {
                             startActivity(intent);
                         } else {
                             Toast.makeText(ActivityVocabulary.this, "There isn't any word.", Toast.LENGTH_SHORT).show();
-                        }
+                        }*/
                         return true;
                     case R.id.ordering:
                         // open ordering select menu
                         final View dialog_layout = getLayoutInflater().inflate(R.layout.dialog_sort_picker, null);
                         final RadioGroup rg_sort = (RadioGroup) dialog_layout.findViewById(R.id.radioGroup_sort);
-                        final AlertDialog.Builder builder = new AlertDialog.Builder(context);
+                        final Switch ascendingSwitch = (Switch) dialog_layout.findViewById(R.id.sw_ascending);
+                        final AlertDialog.Builder builder = new AlertDialog.Builder(ActivityVocabulary.this);
 
                         rg_sort.getChildAt(0).setId(SORT_DATE);
-                        rg_sort.getChildAt(1).setId(SORT_ABC);
+                        rg_sort.getChildAt(1).setId(SORT_ABC_PHRASE);
+                        rg_sort.getChildAt(2).setId(SORT_ABC_MEANING);
 
-                        ((RadioButton)rg_sort.getChildAt(getSortType(context))).setChecked(true);
+                        rg_sort.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+                            @Override
+                            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                                if (checkedId == SORT_DATE)
+                                    ascendingSwitch.setEnabled(true);
+                                else
+                                    ascendingSwitch.setEnabled(false);
+                            }
+                        });
+
+                        switch (getFragmentPhrases().getSortingField()) {
+                            case Phrase.DATE:
+                                ((RadioButton) rg_sort.getChildAt(0)).setChecked(true);
+                                break;
+                            case Phrase.P1:
+                                ((RadioButton) rg_sort.getChildAt(1)).setChecked(true);
+                                break;
+                            case Phrase.P2:
+                                ((RadioButton) rg_sort.getChildAt(2)).setChecked(true);
+                                break;
+                        }
+
+                        ascendingSwitch.setChecked(!getFragmentPhrases().getSortingAscending());
 
                         builder.setView(dialog_layout);
-                        Spanned title = Html.fromHtml("<font color='" + colorTextGrey + "'>" +
-                                "Order by" + "</font>");
-                        builder.setTitle(title);
-                        builder.setIcon(R.drawable.sort_icon);
+                        builder.setTitle(R.string.sort_title);
 
-                        builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                        builder.setPositiveButton(R.string.sort, new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
-                                setSortType(context, rg_sort.getCheckedRadioButtonId());
+                                boolean ascending = ascendingSwitch.isChecked();
 
-                                Bundle dataBundle = new Bundle();
-                                dataBundle.putString(KEY_CODE_OF_VOCABULARY, vocabulary.getId() );
-                                dataBundle.putInt(KEY_VOCABULARY_ID, vocabularyID);
-                                Intent intent = new Intent(getBaseContext(), ActivityVocabulary.class);
-                                intent.putExtras(dataBundle);
-                                startActivity(intent);
-                                finish();
+                                switch (rg_sort.getCheckedRadioButtonId()) {
+                                    case SORT_DATE:
+                                        getFragmentPhrases().setSorting(Phrase.DATE, !ascending);
+                                        getFragmentPhrases().setAdapter();
+                                        break;
+                                    case SORT_ABC_PHRASE:
+                                        getFragmentPhrases().setSorting(Phrase.P1, true);
+                                        getFragmentPhrases().setAdapter();
+                                        break;
+                                    case SORT_ABC_MEANING:
+                                        getFragmentPhrases().setSorting(Phrase.P2, true);
+                                        getFragmentPhrases().setAdapter();
+                                        break;
+                                }
                             }
                         });
                         builder.setNegativeButton(R.string.cancel, null);
@@ -457,7 +459,7 @@ public class ActivityVocabulary extends AppCompatActivity {
 
     public void goToAdd(View view)
     {
-        tabLayout.getTabAt(1).select();
+        mTabLayout.getTabAt(1).select();
     }
 
     public void setStatusBar()
@@ -473,9 +475,9 @@ public class ActivityVocabulary extends AppCompatActivity {
         window.setNavigationBarColor(getResources().getColor(R.color.darker));
     }
 
-    public FragmentPhraseList getFragmentPhrases()
+    public FragmentPhrases getFragmentPhrases()
     {
-        return fragmentPhrases;
+        return (FragmentPhrases) mPagerAdapter.getItem(0);
     }
     public FragmentAddPhrase getFragmentAddPhrase()
     {
@@ -540,7 +542,7 @@ public class ActivityVocabulary extends AppCompatActivity {
 
 
 
-        viewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener()
+        mViewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener()
         {
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
@@ -553,7 +555,7 @@ public class ActivityVocabulary extends AppCompatActivity {
             {
                 if (position == 1)
                 {
-                    ((FragmentAddPhrase) adapter.getItem(position)).focusPhraseEditText();
+                    ((FragmentAddPhrase) mPagerAdapter.getItem(position)).focusPhraseEditText();
                 }
                 else
                 {
@@ -569,10 +571,10 @@ public class ActivityVocabulary extends AppCompatActivity {
     }
 
     public Vocabulary getVocabulary() {
-        return vocabulary;
+        return mVocabulary;
     }
 
     public Realm getRealm() {
-        return realm;
+        return mRealm;
     }
 }

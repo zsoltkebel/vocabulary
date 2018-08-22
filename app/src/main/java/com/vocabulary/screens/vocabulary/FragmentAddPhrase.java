@@ -1,6 +1,5 @@
 package com.vocabulary.screens.vocabulary;
 
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,19 +9,12 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.vocabulary.DBHelper;
-import com.vocabulary.NEW.Phrase;
-import com.vocabulary.NEW.Vocabulary;
 import com.vocabulary.R;
+import com.vocabulary.realm.Phrase;
+import com.vocabulary.realm.Vocabulary;
 
-import butterknife.ButterKnife;
 import droidninja.filepicker.fragments.BaseFragment;
 import io.realm.Realm;
-
-import static android.content.Context.MODE_PRIVATE;
-import static com.vocabulary.screens.vocabulary.RecyclerViewAdapterPhrases.KEY_SORT;
-import static com.vocabulary.screens.vocabulary.RecyclerViewAdapterPhrases.PREFS_SORT;
-import static com.vocabulary.screens.vocabulary.RecyclerViewAdapterPhrases.SORT_DATE;
 
 /**
  * Created by Kébel Zsolt on 2018. 03. 27..
@@ -36,13 +28,9 @@ public class FragmentAddPhrase extends BaseFragment
     EditText meaningInput;
     Button btnAddPhrase;
 
-
-    int indexOfVocabulary;
     Realm realm;
     Vocabulary vocabulary;
     ActivityVocabulary activity;
-
-    DBHelper database;
 
     @Override
     protected int getFragmentLayout() {
@@ -54,7 +42,6 @@ public class FragmentAddPhrase extends BaseFragment
     {
         super.onCreate(savedInstanceState);
         setRetainInstance(true);
-        ButterKnife.bind(getActivity());
 
         realm = ((ActivityVocabulary) getActivity()).getRealm();
     }
@@ -97,6 +84,8 @@ public class FragmentAddPhrase extends BaseFragment
                     vocabulary.getPhrases().add(managedPhrase);
                     realm.commitTransaction();
 
+                    //activity.getFragmentPhrases().getAdapter().updateList(realm);
+
                     //TODO switch to cnackbar in the future
                     Toast.makeText(getContext(), R.string.msg_added, Toast.LENGTH_SHORT).show();
 
@@ -104,6 +93,16 @@ public class FragmentAddPhrase extends BaseFragment
                     meaningInput.setText("");
 
                     wordInput.requestFocus();
+
+                    /*
+                    for (int i = 0; i < 1000; i++) {
+                        Phrase temp2 = new Phrase();
+                        temp2.set(String.valueOf(i), String.valueOf(i), vocabulary);
+                        mRealm.beginTransaction();
+                        final Phrase temp = mRealm.copyToRealm(temp2);
+                        vocabulary.getPhrases().add(temp);
+                        mRealm.commitTransaction();
+                    }*/
                 }
             }
         });
@@ -115,7 +114,7 @@ public class FragmentAddPhrase extends BaseFragment
                 final String meaning = meaningInput.getText().toString();
 
                 final int position;
-                switch (vocabulary.addPhrase(new Word(phrase, meaning)))
+                switch (vocabulary.insertPhrase(new Word(phrase, meaning)))
                 {
                     case EMPTY:
                         Toast.makeText(getContext(), "Fill both fields!", Toast.LENGTH_SHORT).show();
@@ -132,7 +131,7 @@ public class FragmentAddPhrase extends BaseFragment
                                 changedWord.appendMeaning(meaning);
                                 vocabulary.changeWord(null, changedWord);
 
-                                //FragmentPhraseList.update();
+                                //FragmentPhrases.update();
 
                                 vocabulary.updatePhraseList(getSortType());
                                 //activity.getFragmentPhrases().getAdapter().updateList(getSortType());
@@ -154,7 +153,7 @@ public class FragmentAddPhrase extends BaseFragment
                         Spanned infoText = Html.fromHtml(info + " has been added");
                         Toast.makeText(getActivity(), infoText, Toast.LENGTH_SHORT).show();
 
-                        //FragmentPhraseList.update();
+                        //FragmentPhrases.update();
 
                         vocabulary.updatePhraseList(getSortType());
                         //activity.getFragmentPhrases().getAdapter().updateList(getSortType());
@@ -207,9 +206,4 @@ public class FragmentAddPhrase extends BaseFragment
             inputMethodManager.showSoftInput(wordInput,InputMethodManager.SHOW_IMPLICIT);
     }
 
-    public int getSortType()
-    {
-        SharedPreferences prefs = getContext().getSharedPreferences(PREFS_SORT, MODE_PRIVATE);
-        return prefs.getInt(KEY_SORT, SORT_DATE);
-    }
 }

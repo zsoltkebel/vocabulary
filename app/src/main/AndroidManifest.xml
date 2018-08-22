@@ -15,19 +15,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ActivityVocabularyList"
-            android:configChanges="orientation"
-            android:screenOrientation="portrait"/>
         <activity android:name=".screens.vocabulary.ActivityVocabulary"
             android:configChanges="orientation"
             android:screenOrientation="portrait"/>
-        <activity android:name=".ActivityVocabularyContainer"
+        <activity android:name=".screens.phrase.ActivityPhrase"
             android:configChanges="orientation"
             android:screenOrientation="portrait"/>
-        <activity android:name=".ActivityWord"
-            android:configChanges="orientation"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".EditWord"
+        <activity android:name=".screens.edit.EditWord"
             android:configChanges="orientation"
             android:screenOrientation="portrait"/>
         <activity android:name=".learn.LearnActivity"
@@ -45,7 +39,7 @@
         <activity android:name=".learn.ActivityVocabularyTest"
             android:configChanges="orientation"
             android:screenOrientation="portrait"/>
-        <activity android:name=".settings.ActivityAbout"
+        <activity android:name=".screens.settings.ActivityAbout"
             android:configChanges="orientation"
             android:screenOrientation="portrait"/>
         <activity android:name=".screens.settings.ActivitySettings"
@@ -54,15 +48,18 @@
         <activity android:name=".screens.more.ActivityMore"
             android:configChanges="orientation"
             android:screenOrientation="portrait"/>
+        <activity android:name=".screens.merge.ActivityMerge"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
 
         <provider
             android:name="android.support.v4.content.FileProvider"
-            android:authorities="com.example.myapp.fileprovider"
-            android:grantUriPermissions="true"
-            android:exported="false">
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/filepaths" />
+                android:resource="@xml/provider_paths"/>
         </provider>
     </application>
 

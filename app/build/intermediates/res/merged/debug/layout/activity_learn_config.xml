@@ -93,7 +93,7 @@
                     android:layout_height="wrap_content"
                     android:text="Flashcards"
                     android:layout_gravity="center"
-                    android:textColor="@color/text_grey"
+                    android:textColor="@color/black"
                     android:layout_alignParentBottom="true"
                     android:layout_centerInParent="true"
                     android:textStyle="bold"/>
@@ -135,7 +135,7 @@
                     android:layout_centerInParent="true"
                     android:layout_gravity="center"
                     android:text="Vocabulary Test"
-                    android:textColor="@color/text_grey"
+                    android:textColor="@color/black"
                     android:textStyle="bold" />
 
                 <ImageView
@@ -185,7 +185,7 @@
                     android:layout_centerInParent="true"
                     android:layout_gravity="center"
                     android:text="Vocabulary Test"
-                    android:textColor="@color/text_grey"
+                    android:textColor="@color/black"
                     android:textStyle="bold" />
 
                 <ImageView
@@ -226,7 +226,7 @@
                     android:layout_centerInParent="true"
                     android:layout_gravity="center"
                     android:text="Vocabulary Test"
-                    android:textColor="@color/text_grey"
+                    android:textColor="@color/black"
                     android:textStyle="bold" />
 
                 <ImageView

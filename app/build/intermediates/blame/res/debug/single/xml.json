@@ -1,5 +1,9 @@
 [
     {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\xml\\provider_paths.xml",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\xml\\provider_paths.xml"
+    },
+    {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\xml\\filepaths.xml",
         "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\xml\\filepaths.xml"
     }

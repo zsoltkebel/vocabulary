@@ -11,7 +11,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 public class PagerAdapter extends FragmentPagerAdapter {
 
     private Fragment[] fragments = new Fragment[]{
-            new FragmentPhraseList(),
+            new FragmentPhrases(),
             new FragmentAddPhrase()
     };
 

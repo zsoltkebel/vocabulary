@@ -1,17 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center">
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    android:paddingTop="20dp">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/background_light"/>
 
     <RadioGroup
         android:id="@+id/radioGroup_sort"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingStart="20dp"
-        android:paddingEnd="20dp"
-        android:paddingTop="20dp">
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
 
         <RadioButton
             android:id="@+id/rb_date"
@@ -21,10 +28,30 @@
             android:text="@string/date" />
 
         <RadioButton
-            android:id="@+id/rb_abc"
+            android:id="@+id/rb_abc_phrase"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/abc" />
+            android:text="@string/abc_phrase" />
+
+        <RadioButton
+            android:id="@+id/rb_ab_meaning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/abc_meaning" />
     </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/background_light"/>
+
+    <Switch
+        android:id="@+id/sw_ascending"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Newest first   "
+        android:layout_marginTop="10dp"/>
+
 </LinearLayout>

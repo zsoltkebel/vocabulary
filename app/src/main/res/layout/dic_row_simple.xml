@@ -49,7 +49,7 @@
                     android:gravity="center_vertical"
                     android:paddingLeft="5dp"
                     android:text="TextView"
-                    android:textColor="@color/text_grey"
+                    android:textColor="@color/black"
                     android:textStyle="bold"
                     android:elevation="@dimen/text_elevation"
 
@@ -70,7 +70,7 @@
                         android:layout_gravity="center"
                         android:paddingLeft="10dp"
                         android:text="TextView"
-                        android:textColor="@color/text_grey"
+                        android:textColor="@color/black"
                         android:elevation="@dimen/text_elevation"/>
 
                     <TextView
@@ -79,7 +79,7 @@
                         android:layout_gravity="center"
                         android:layout_marginStart="5dp"
                         android:text="@string/phrase"
-                        android:textColor="@color/text_grey"
+                        android:textColor="@color/black"
                         android:elevation="@dimen/text_elevation"/>
                 </LinearLayout>
             </LinearLayout>

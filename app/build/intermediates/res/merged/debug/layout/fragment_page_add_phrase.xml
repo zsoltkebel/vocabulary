@@ -18,7 +18,7 @@
             <TextView
                 android:text="@string/Phrase"
                 android:textSize="15dp"
-                android:textColor="@color/text_grey"
+                android:textColor="@color/black"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
@@ -39,7 +39,7 @@
             <TextView
                 android:text="@string/meaning"
                 android:textSize="15dp"
-                android:textColor="@color/text_grey"
+                android:textColor="@color/black"
                 android:textStyle="bold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
