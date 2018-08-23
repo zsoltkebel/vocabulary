@@ -16,7 +16,6 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.content.FileProvider;
 import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
@@ -26,7 +25,9 @@ import android.widget.Toast;
 
 import com.vocabulary.BuildConfig;
 import com.vocabulary.R;
+import com.vocabulary.learn.LearnActivity;
 import com.vocabulary.realm.Phrase;
+import com.vocabulary.realm.RealmActivity;
 import com.vocabulary.realm.Vocabulary;
 import com.vocabulary.screens.main.ActivityTabLayout;
 import com.vocabulary.screens.merge.ActivityMerge;
@@ -46,7 +47,7 @@ import io.realm.Realm;
 import io.realm.RealmResults;
 
 
-public class ActivityMore extends AppCompatActivity {
+public class ActivityMore extends RealmActivity {
 
     public final static String TAG_LANGUAGE = "language: ";
     public final static String TAG_TITLE = "title: ";
@@ -67,8 +68,7 @@ public class ActivityMore extends AppCompatActivity {
     @BindView(R.id.iv_icon)
             protected ImageView iconImageView;
 
-    Realm realm;
-    Vocabulary vocabulary = null;
+    private Vocabulary mVocabulary;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -76,38 +76,31 @@ public class ActivityMore extends AppCompatActivity {
         setContentView(R.layout.activity_more);
         ButterKnife.bind(this);
 
-        realm = Realm.getDefaultInstance();
-
         String vocabularyId = getIntent().getStringExtra(Vocabulary.ID);
-        vocabulary = realm.where(Vocabulary.class).equalTo(Vocabulary.ID, vocabularyId).findFirst();
+        mVocabulary = mRealm.where(Vocabulary.class).equalTo(Vocabulary.ID, vocabularyId).findFirst();
 
-        iconImageView.setImageDrawable(vocabulary.getIconDrawable(this));
-        languageTextView.setText(vocabulary.getLanguageReference(this));
-        titleTextView.setText(vocabulary.getTitle());
+        iconImageView.setImageDrawable(mVocabulary.getIconDrawable(this));
+        languageTextView.setText(mVocabulary.getLanguageReference(this));
+        titleTextView.setText(mVocabulary.getTitle());
         titleTextView.setSelected(true); // to scroll text automatically
-        numOfPhrasesTextView.setText(String.valueOf(vocabulary.getPhrases().size()));
+        numOfPhrasesTextView.setText(String.valueOf(mVocabulary.getPhrases().size()));
         try {
-            dateTextView.setText(Vocabulary.getDateFormat().format(Vocabulary.getDateAndTimeFormat().parse(vocabulary.getDateAndTime())));
+            dateTextView.setText(Vocabulary.getDateFormat().format(Vocabulary.getDateAndTimeFormat().parse(mVocabulary.getDateAndTime())));
         } catch (ParseException e) {
             e.printStackTrace();
         }
     }
 
-    @Override
-    protected void onStart() {
-        super.onStart();
-        realm = Realm.getDefaultInstance();
-    }
-
-    @Override
-    public void onStop() {
-        super.onStop();
-        realm.close();
-    }
-
     @OnClick(R.id.iv_click_back)
     protected void onBackClicked() {
         finish();
+    }
+
+    @OnClick(R.id.lt_click_learn)
+    protected void onLearnClicked() {
+        Intent intent = new Intent(ActivityMore.this, LearnActivity.class);
+        intent.putExtra(Vocabulary.ID, mVocabulary.getId());
+        startActivity(intent);
     }
 
     @OnClick(R.id.lt_click_rename)
@@ -116,7 +109,7 @@ public class ActivityMore extends AppCompatActivity {
 
         final View dialogView = getLayoutInflater().inflate(R.layout.dialog_rename_vocabulary, null);
         final EditText titleEditText = (EditText) dialogView.findViewById(R.id.editText_dic_name);
-        titleEditText.setText(vocabulary.getTitle());
+        titleEditText.setText(mVocabulary.getTitle());
         titleEditText.requestFocus();
         titleEditText.selectAll();
         //show keyboard
@@ -135,16 +128,16 @@ public class ActivityMore extends AppCompatActivity {
         builder.setPositiveButton(R.string.edit, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                if (realm.where(Vocabulary.class)
-                        .equalTo(Vocabulary.LANGUAGE, vocabulary.getLanguage())
+                if (mRealm.where(Vocabulary.class)
+                        .equalTo(Vocabulary.LANGUAGE, mVocabulary.getLanguage())
                         .equalTo(Vocabulary.TITLE, titleEditText.getText().toString())
                         .findFirst() == null) {
-                    realm.beginTransaction();
+                    mRealm.beginTransaction();
                     String title = titleEditText.getText().toString();
-                    vocabulary.setTitle(title);
-                    realm.commitTransaction();
+                    mVocabulary.setTitle(title);
+                    mRealm.commitTransaction();
 
-                    titleTextView.setText(vocabulary.getTitle());
+                    titleTextView.setText(mVocabulary.getTitle());
                     //hide keyboard
                     InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
                     imm.hideSoftInputFromWindow(titleEditText.getWindowToken(), 0);
@@ -166,8 +159,8 @@ public class ActivityMore extends AppCompatActivity {
         builder.setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                final String vocabularyId = vocabulary.getId();
-                realm.executeTransactionAsync(new Realm.Transaction() {
+                final String vocabularyId = mVocabulary.getId();
+                mRealm.executeTransactionAsync(new Realm.Transaction() {
                     @Override
                     public void execute(Realm realm) {
                         RealmResults<Phrase> phrases = realm.where(Phrase.class).equalTo(Phrase.VOCABULARY_ID, vocabularyId).findAll();
@@ -229,7 +222,7 @@ public class ActivityMore extends AppCompatActivity {
         @Override
         protected void onPreExecute() {
             //set message of the dialog
-            unmanagedVocabulary = realm.copyFromRealm(vocabulary);
+            unmanagedVocabulary = mRealm.copyFromRealm(mVocabulary);
 
             dialog.setMessage("Exporting phrases");
             dialog.setProgressStyle(dialog.STYLE_HORIZONTAL);
@@ -319,7 +312,7 @@ public class ActivityMore extends AppCompatActivity {
     @OnClick(R.id.lt_click_merge)
     protected void onMergeClicked() {
         Intent intent = new Intent(ActivityMore.this, ActivityMerge.class);
-        intent.putExtra(Vocabulary.ID, vocabulary.getId());
+        intent.putExtra(Vocabulary.ID, mVocabulary.getId());
         startActivityForResult(intent, SUCCESFUL);
     }
 

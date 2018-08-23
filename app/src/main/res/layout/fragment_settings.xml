@@ -61,12 +61,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:layout_marginBottom="5dp"
                     android:background="@drawable/ripple_btn_light"
                     android:paddingStart="15dp"
                     android:paddingEnd="10dp"
                     android:paddingTop="5dp"
-                    android:paddingBottom="5dp">
+                    android:paddingBottom="5dp"
+                    android:elevation="@dimen/endless_button_elevation">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -98,14 +98,15 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:background="@drawable/ripple_btn_light"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginBottom="1dp"
+                    android:layout_marginTop="@dimen/endless_button_margin_top_big"
                     android:paddingStart="15dp"
                     android:paddingEnd="15dp"
                     android:paddingTop="5dp"
                     android:paddingBottom="5dp"
                     android:clickable="true"
-                    android:focusable="true">
+                    android:focusable="true"
+                    android:elevation="@dimen/endless_button_elevation"
+                    >
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -139,7 +140,9 @@
                     android:paddingEnd="15dp"
                     android:paddingStart="15dp"
                     android:paddingTop="5dp"
-                    android:visibility="visible">
+                    android:visibility="visible"
+                    android:layout_marginTop="@dimen/endless_button_margin_top_small"
+                    android:elevation="@dimen/endless_button_elevation">
 
                     <TextView
                         android:layout_width="wrap_content"

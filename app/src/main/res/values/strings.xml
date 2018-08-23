@@ -8,7 +8,7 @@
     <string name="btn_done"><b>Done</b></string>
 
     <string name="btn_menu"><b>Menu</b></string>
-    <string name="txt_word"><b>Word:</b></string>
+    <string name="txt_word"><b>Phrase:</b></string>
     <string name="txt_meaning"><b>Meaning:</b></string>
     <string name="txt_addnew"><b>New</b></string>
     <string name="txt_search">Search</string>
@@ -83,7 +83,12 @@
     <string name="edited">Edited</string>
     <string name="undo">Undo</string>
     <string name="filter">Filter</string>
-    <string name="just_a_moment">Just a moment...</string>
+    <string name="just_a_moment">Just a moment…</string>
+    <string name="state">State:</string>
+    <string name="state_new">It\'s new.</string>
+    <string name="state_dont_know">You need to practise…</string>
+    <string name="state_kinda">You kind of memorized it.</string>
+    <string name="state_know">You know this phrase quite well!</string>
 
     // dialog sort picker
     <string name="date">Date</string>

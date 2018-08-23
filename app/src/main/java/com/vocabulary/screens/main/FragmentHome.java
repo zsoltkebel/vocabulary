@@ -54,7 +54,7 @@ public class FragmentHome extends BaseFragment
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        root = inflater.inflate(R.layout.fragment_page_import, container, false);
+        root = inflater.inflate(R.layout.fragment_home, container, false);
 
         importFromTxt = (LinearLayout) root.findViewById(R.id.importFromTxt);
 

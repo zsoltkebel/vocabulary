@@ -72,21 +72,18 @@ public class ActivityTabLayout extends RealmActivity {
         setContentView(R.layout.activity_tablayout);
         ButterKnife.bind(this);
 
-        //Must call once in the application
-        Realm.init(this);
-        mRealm = Realm.getDefaultInstance();
 
         populateTablayout();
         setTabIcons();
-        setWindowColors(getResources().getColor(R.color.page2_dark));
         setStatusBarBright(true);
 
         getPrefs();
         //setStatusBar(getResources().getColor(R.color.dark));
+        mRealm = Realm.getDefaultInstance();
 
         displayFragment(fragments[1]);
 
-        setColorChange();
+        //setColorChange();
 
 
 //TODO for tests set to true if mRealm object parameters changed
@@ -372,10 +369,6 @@ public class ActivityTabLayout extends RealmActivity {
         } else {
 
         }
-    }
-    public void setWindowColors(Integer color) {
-        getWindow().setStatusBarColor(color);
-        getWindow().setNavigationBarColor(color);
     }
 
     private void setColorChange()

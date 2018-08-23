@@ -20,9 +20,10 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:clickable="true"
+        android:focusable="true"
         android:scrollbars="vertical"
         android:scrollbarThumbVertical="@drawable/scroll"
-        android:scrollbarSize="17dp"/>
+        android:scrollbarSize="18dp"/>
 
         <LinearLayout
             android:id="@+id/layout_options"

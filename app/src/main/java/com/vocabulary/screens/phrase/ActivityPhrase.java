@@ -20,9 +20,14 @@ import io.realm.Realm;
 public class ActivityPhrase extends AppCompatActivity {
 
     @BindView(R.id.txtvWord)
-            protected TextView txtv;
+    protected TextView txtv;
     @BindView(R.id.txtvMeaning)
-            protected TextView txtvMeaning;
+    protected TextView txtvMeaning;
+    @BindView(R.id.tv_state_text)
+    protected TextView mTvState;
+
+    @BindView(R.id.v_state_color)
+    protected View mViewStateColor;
 
     private String idOfVocabulary;
     private String idOfPhrase;
@@ -47,6 +52,25 @@ public class ActivityPhrase extends AppCompatActivity {
         txtv.setText(phrase.getP1());
         txtvMeaning.setText(phrase.getP2());
         txtv.setVisibility(View.VISIBLE);
+
+        switch (phrase.calculateState()) {
+            case Phrase.NEW:
+                mTvState.setText(R.string.state_new);
+                mViewStateColor.setBackground(getResources().getDrawable(R.color.page2));
+                break;
+            case Phrase.DONT_KNOW:
+                mTvState.setText(R.string.state_dont_know);
+                mViewStateColor.setBackground(getResources().getDrawable(R.color.dot_red));
+                break;
+            case Phrase.KINDA:
+                mTvState.setText(R.string.state_kinda);
+                mViewStateColor.setBackground(getResources().getDrawable(R.color.dot_yellow));
+                break;
+            case Phrase.KNOW:
+                mTvState.setText(R.string.state_know);
+                mViewStateColor.setBackground(getResources().getDrawable(R.color.dot_green));
+                break;
+        }
 
         registerForContextMenu(findViewById(R.id.imageButton));
         //openContextMenu(findViewById(R.id.imageButton));

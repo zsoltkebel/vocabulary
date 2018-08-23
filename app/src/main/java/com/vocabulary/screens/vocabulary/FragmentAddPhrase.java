@@ -34,7 +34,7 @@ public class FragmentAddPhrase extends BaseFragment
 
     @Override
     protected int getFragmentLayout() {
-        return R.layout.fragment_page_add_phrase;
+        return R.layout.fragment_add_phrase;
     }
 
     @Override

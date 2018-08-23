@@ -25,6 +25,16 @@
     <dimen name="info_line_btn_padding">14dp</dimen>
 
 
+    <dimen name="settings_state_circle_width">20dp</dimen>
+    <dimen name="settings_state_circle_height">20dp</dimen>
+
+    <item name="state_circle_alpha" type="dimen" format="float">0.7</item>
+
+    <dimen name="endless_button_margin_top_small">1dp</dimen>
+    <dimen name="endless_button_margin_top_big">4dp</dimen>
+    <dimen name="endless_button_elevation">1dp</dimen>
+
+
     <!-- Activity More -->
     <dimen name="av_more_text_size">15sp</dimen>
     <dimen name="btn_small_icon_width">17dp</dimen>

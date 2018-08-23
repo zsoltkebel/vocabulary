@@ -200,6 +200,7 @@
         android:background="@drawable/ripple_btn_light"
         android:clickable="true"
         android:focusable="true"
+        android:elevation="@dimen/endless_button_elevation"
 
         android:paddingStart="20dp"
         android:paddingEnd="20dp">
@@ -237,7 +238,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingBottom="5dp">
 
             <android.support.constraint.ConstraintLayout android:id="@+id/lt_click_rename"
                 android:layout_width="match_parent"
@@ -245,10 +247,11 @@
                 android:background="@drawable/ripple_btn_light"
                 android:clickable="true"
                 android:focusable="true"
+                android:elevation="@dimen/endless_button_elevation"
 
                 android:paddingStart="20dp"
                 android:paddingEnd="20dp"
-                android:layout_marginTop="5dp">
+                android:layout_marginTop="@dimen/endless_button_margin_top_big">
 
                 <ImageView
                     android:id="@+id/rename_icon"
@@ -280,10 +283,11 @@
                 android:background="@drawable/ripple_btn_light"
                 android:clickable="true"
                 android:focusable="true"
+                android:elevation="@dimen/endless_button_elevation"
 
                 android:paddingStart="20dp"
                 android:paddingEnd="20dp"
-                android:layout_marginTop="1dp">
+                android:layout_marginTop="@dimen/endless_button_margin_top_small">
 
                 <ImageView
                     android:id="@+id/delete_icon"
@@ -315,10 +319,11 @@
                 android:background="@drawable/ripple_btn_light"
                 android:clickable="true"
                 android:focusable="true"
+                android:elevation="@dimen/endless_button_elevation"
 
                 android:paddingStart="20dp"
                 android:paddingEnd="20dp"
-                android:layout_marginTop="1dp">
+                android:layout_marginTop="@dimen/endless_button_margin_top_small">
 
                 <ImageView
                     android:id="@+id/export_icon"
@@ -350,16 +355,17 @@
                 android:background="@drawable/ripple_btn_light"
                 android:clickable="true"
                 android:focusable="true"
+                android:elevation="@dimen/endless_button_elevation"
 
                 android:paddingStart="20dp"
                 android:paddingEnd="20dp"
-                android:layout_marginTop="1dp">
+                android:layout_marginTop="@dimen/endless_button_margin_top_big">
 
                 <ImageView
                     android:id="@+id/share_icon"
                     android:layout_width="@dimen/btn_small_icon_width"
                     android:layout_height="@dimen/btn_small_icon_height"
-                    android:src="@drawable/new_share"
+                    android:src="@drawable/new_share_primary"
 
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
@@ -370,7 +376,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/share"
                     android:textSize="@dimen/av_more_text_size"
-                    android:textColor="@color/black"
+                    android:textColor="@color/page2"
 
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -385,10 +391,11 @@
                 android:background="@drawable/ripple_btn_light"
                 android:clickable="true"
                 android:focusable="true"
+                android:elevation="@dimen/endless_button_elevation"
 
                 android:paddingStart="20dp"
                 android:paddingEnd="20dp"
-                android:layout_marginTop="5dp">
+                android:layout_marginTop="@dimen/endless_button_margin_top_small">
 
                 <ImageView
                     android:id="@+id/merge_icon"

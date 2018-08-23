@@ -110,8 +110,6 @@ public class ActivityVocabulary extends RealmActivity {
         titleRefresh();
 
         setUpTabs();
-        setStatusBar();
-
 
         mRltTouch.setOnTouchListener(new View.OnTouchListener() {
             @Override
@@ -460,19 +458,6 @@ public class ActivityVocabulary extends RealmActivity {
     public void goToAdd(View view)
     {
         mTabLayout.getTabAt(1).select();
-    }
-
-    public void setStatusBar()
-    {
-        Window window = getWindow();
-
-        window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
-
-        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-
-        //window.getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
-        window.setStatusBarColor(getResources().getColor(R.color.darker));
-        window.setNavigationBarColor(getResources().getColor(R.color.darker));
     }
 
     public FragmentPhrases getFragmentPhrases()

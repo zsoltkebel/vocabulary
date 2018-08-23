@@ -4,7 +4,7 @@
     <color name="page1_dark">#2e3538</color>
     <color name="page2">#227baa</color>
     <color name="page2_light">#bfe1f3</color>
-    <color name="page2_dark">#195c80</color>
+    <color name="page2_dark">#1d6b95</color>
     <color name="page3">#E2BC22</color>
     <color name="page3_dark">#cba81a</color>
 
@@ -58,4 +58,8 @@
     <color name="background_light">#f2f2f2</color>
     <color name="transparent_black">#4D000000</color>
     <color name="transparent_white">#26ffffff</color>
+
+    <color name="dot_yellow">#FFDA44</color>
+    <color name="dot_red">#D80027</color>
+    <color name="dot_green">#91DC5A</color>
 </resources>

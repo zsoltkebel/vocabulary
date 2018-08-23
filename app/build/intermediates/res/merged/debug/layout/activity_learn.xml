@@ -165,6 +165,7 @@
                 android:orientation="vertical">
 
                 <ImageButton
+                    android:id="@+id/btn_dont_know"
                     style="@android:style/Widget.Material.Button.Borderless"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"

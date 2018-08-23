@@ -21,11 +21,10 @@ import com.vocabulary.screens.phrase.ActivityPhrase;
 
 import java.util.HashSet;
 
+import io.realm.Case;
 import io.realm.Realm;
 import io.realm.RealmResults;
 import io.realm.Sort;
-
-import static com.vocabulary.realm.Phrase.removeAccents;
 
 /**
  * Created by Kébel Zsolt on 2018. 03. 27..
@@ -51,12 +50,14 @@ public class AdapterPhrases extends RecyclerView.Adapter<AdapterPhrases.ViewHold
         Phrase phrase;
         TextView tvWord1;
         TextView tvWord2;
+        View vState;
         CheckBox checkBox;
 
         public ViewHolder(View itemView) {
             super(itemView);
             this.tvWord1 = (TextView) itemView.findViewById(R.id.tv_p1);
             this.tvWord2 = (TextView) itemView.findViewById(R.id.tv_p2);
+            this.vState = (View) itemView.findViewById(R.id.v_state);
             this.checkBox = (CheckBox) itemView.findViewById(R.id.checkBox);
         }
     }
@@ -130,11 +131,11 @@ public class AdapterPhrases extends RecyclerView.Adapter<AdapterPhrases.ViewHold
             int startIndex;
             int endIndex;
             int diff;
-            int highlightColor = mContext.getResources().getColor(R.color.page2_light);
+            int highlightColor = mContext.getResources().getColor(R.color.transparent_black);
 
-            if (removeAccents(holder.phrase.getP1().toLowerCase()).contains(mFilter)) {
+            if (holder.phrase.getP1().toLowerCase().contains(mFilter)) {
                 diff = 0;
-                String p1 = removeAccents(coloredP1.toString().toLowerCase());
+                String p1 = coloredP1.toString().toLowerCase();
 
                 while (p1.contains(mFilter)) {
                     startIndex = p1.indexOf(mFilter) + diff;
@@ -150,9 +151,9 @@ public class AdapterPhrases extends RecyclerView.Adapter<AdapterPhrases.ViewHold
             } else
                 holder.tvWord1.setText(holder.phrase.getP1());
 
-            if (removeAccents(holder.phrase.getP2().toLowerCase()).contains(mFilter)) {
+            if (holder.phrase.getP2().toLowerCase().contains(mFilter)) {
                 diff = 0;
-                String p2 = removeAccents(coloredP2.toString().toLowerCase());
+                String p2 = coloredP2.toString().toLowerCase();
 
                 while (p2.contains(mFilter)) {
                     startIndex = p2.indexOf(mFilter) + diff;
@@ -194,6 +195,21 @@ public class AdapterPhrases extends RecyclerView.Adapter<AdapterPhrases.ViewHold
                 mFragment.updateOptions(mSelectable, mIdsOfSelected.size());
             }
         });
+
+        switch (holder.phrase.calculateState()) {
+            case Phrase.NEW:
+                holder.vState.setBackground(mContext.getResources().getDrawable(R.drawable.new_dot_blue));
+                break;
+            case Phrase.DONT_KNOW:
+                holder.vState.setBackground(mContext.getResources().getDrawable(R.drawable.new_dot_red));
+                break;
+            case Phrase.KINDA:
+                holder.vState.setBackground(mContext.getResources().getDrawable(R.drawable.new_dot_yellow));
+                break;
+            case Phrase.KNOW:
+                holder.vState.setBackground(mContext.getResources().getDrawable(R.drawable.new_dot_green));
+                break;
+        }
     }
 
     @Override
@@ -222,15 +238,15 @@ public class AdapterPhrases extends RecyclerView.Adapter<AdapterPhrases.ViewHold
         if (filter == null)
             this.mFilter = "";
         else
-            this.mFilter = removeAccents(filter.toLowerCase());
+            this.mFilter = filter.toLowerCase();
 
         if (ascending)
             this.mPhrases = realm.where(Phrase.class)
                     .equalTo(Phrase.VOCABULARY_ID, mVocabularyId)
                     .beginGroup()
-                        .contains(Phrase.P1, mFilter)
+                        .contains(Phrase.P1, mFilter, Case.INSENSITIVE)
                         .or()
-                        .contains(Phrase.P2, mFilter)
+                        .contains(Phrase.P2, mFilter, Case.INSENSITIVE)
                     .endGroup()
                     .findAll()
                     .sort(sortingField, Sort.ASCENDING);
@@ -238,9 +254,9 @@ public class AdapterPhrases extends RecyclerView.Adapter<AdapterPhrases.ViewHold
             this.mPhrases = realm.where(Phrase.class)
                     .equalTo(Phrase.VOCABULARY_ID, mVocabularyId)
                     .beginGroup()
-                    .contains(Phrase.P1, mFilter)
+                    .contains(Phrase.P1, mFilter, Case.INSENSITIVE)
                     .or()
-                    .contains(Phrase.P2, mFilter)
+                    .contains(Phrase.P2, mFilter, Case.INSENSITIVE)
                     .endGroup()
                     .findAll()
                     .sort(sortingField, Sort.DESCENDING);
