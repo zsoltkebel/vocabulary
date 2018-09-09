@@ -13,8 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:background="@drawable/ripple_btn_light"
-        android:elevation="@dimen/endless_button_elevation"
+        android:background="@drawable/ripple_button_white"
         android:layout_marginBottom="@dimen/endless_button_margin_top_small">
 
     <LinearLayout
@@ -51,7 +50,7 @@
                 android:layout_marginBottom="5dp"
 
                 android:layout_marginTop="5dp"
-                android:background="@drawable/dot_pink"/>
+                android:background="@drawable/item_marker"/>
 
             <TextView
                 android:id="@+id/tv_p2"

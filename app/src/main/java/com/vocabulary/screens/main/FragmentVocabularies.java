@@ -5,6 +5,7 @@ import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.os.Bundle;
+import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
@@ -19,9 +20,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 
+import com.vocabulary.JSONParser;
 import com.vocabulary.R;
 import com.vocabulary.realm.Vocabulary;
+import com.vocabulary.screens.main.adapterVocabularies.AdapterVocabularies;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
 import droidninja.filepicker.fragments.BaseFragment;
 import io.realm.OrderedCollectionChangeSet;
 import io.realm.OrderedRealmCollectionChangeListener;
@@ -38,6 +43,9 @@ public class FragmentVocabularies extends BaseFragment {
     public static final String KEY_CODE_OF_VOCABULARY = "codeOfVocabulary";
     public static final String KEY_ACTIVITY = "activity";
 
+    @BindView(R.id.clt_have_no_vocabularies)
+    protected ConstraintLayout mCltNoVocabularies;
+
     private RecyclerView recyclerView;
 
 
@@ -49,7 +57,7 @@ public class FragmentVocabularies extends BaseFragment {
     public static String colorAccent;
     public static String colorTextGrey;
 
-    ActivityTabLayout activity;
+    ActivityMain activity;
 
     ProgressDialog progressDialog;
 
@@ -60,9 +68,9 @@ public class FragmentVocabularies extends BaseFragment {
     @Override
     public void onAttach(Activity activity) {
         super.onAttach(activity);
-        this.activity = (ActivityTabLayout) activity;
-        realm = ((ActivityTabLayout) activity).getRealm();
-        //((ActivityTabLayout) activity).setWindowColors(getResources().getColor(R.color.page2_dark));
+        this.activity = (ActivityMain) activity;
+        realm = ((ActivityMain) activity).getRealm();
+        //((ActivityMain) activity).setWindowColors(getResources().getColor(R.color.page2_dark));
     }
 
     @Override
@@ -74,9 +82,9 @@ public class FragmentVocabularies extends BaseFragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, final ViewGroup container, Bundle savedInstanceState)
-    {
+    public View onCreateView(LayoutInflater inflater, final ViewGroup container, Bundle savedInstanceState) {
         root = inflater.inflate(R.layout.fragment_vocabularies, container, false);
+        ButterKnife.bind(this, root);
         context = activity.getBaseContext();
 
         progressDialog = new ProgressDialog(getContext());
@@ -89,12 +97,8 @@ public class FragmentVocabularies extends BaseFragment {
 
         recyclerView = (RecyclerView) root.findViewById(R.id.recyclerview);
 
-        //final DicListViewAdapter listViewAdapter = new DicListViewAdapter(getContext(), vocabularies);
-        //listView.setAdapter(listViewAdapter);
 
-
-
-        recyclerViewAdapter = new AdapterVocabularies((ActivityTabLayout) getActivity(), realm);
+        recyclerViewAdapter = new AdapterVocabularies((ActivityMain) getActivity(), realm);
 
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(context);
         recyclerView.setLayoutManager(mLayoutManager);
@@ -103,7 +107,12 @@ public class FragmentVocabularies extends BaseFragment {
 
         registerForContextMenu(recyclerView);
 
-        ((ActivityTabLayout) getActivity()).getVocabularies().addChangeListener(new OrderedRealmCollectionChangeListener<RealmResults<com.vocabulary.realm.Vocabulary>>() {
+        if (((ActivityMain) getActivity()).getVocabularies().size() == JSONParser.getSubjects(context).size())
+            mCltNoVocabularies.setVisibility(View.VISIBLE);
+        else
+            mCltNoVocabularies.setVisibility(View.GONE);
+
+        ((ActivityMain) getActivity()).getVocabularies().addChangeListener(new OrderedRealmCollectionChangeListener<RealmResults<com.vocabulary.realm.Vocabulary>>() {
             @Override
             public void onChange(RealmResults<com.vocabulary.realm.Vocabulary> vocabularies, OrderedCollectionChangeSet changeSet) {
                 try {
@@ -111,6 +120,12 @@ public class FragmentVocabularies extends BaseFragment {
                 } catch (Exception e) {
                     realm = activity.getRealm();
                 }
+
+                if (vocabularies.size() == JSONParser.getSubjects(context).size())
+                    mCltNoVocabularies.setVisibility(View.VISIBLE);
+                else
+                    mCltNoVocabularies.setVisibility(View.GONE);
+
                 // `null`  means the async query returns the first time.
                 if (changeSet == null) {
                     recyclerViewAdapter.notifyDataSetChanged();
@@ -122,23 +137,6 @@ public class FragmentVocabularies extends BaseFragment {
                     OrderedCollectionChangeSet.Range range = deletions[i];
                     recyclerViewAdapter.notifyItemRangeRemoved(range.startIndex, range.length);
                     recyclerViewAdapter.notifyDataSetChanged();
-/*
-                    if (realm.where(Vocabulary.class).equalTo(Vocabulary.ID, activity.getSelectedVocabulary().getId()).findFirst() == null) {
-                        Snackbar snackbar = Snackbar.make(mRoot.findViewById(R.id.background),
-                                getResources().getString(R.string.message_deleted), Snackbar.LENGTH_LONG)
-                                .setAction(R.string.undo, new View.OnClickListener() {
-                                    @Override
-                                    public void onClick(View v) {
-                                        realm.executeTransactionAsync(new Realm.Transaction() {
-                                            @Override
-                                            public void execute(Realm realm) {
-                                                realm.copyToRealmOrUpdate(activity.getSelectedVocabulary());
-                                            }
-                                        });
-                                    }
-                                });
-                        snackbar.show();
-                    }*/
                 }
 
                 OrderedCollectionChangeSet.Range[] insertions = changeSet.getInsertionRanges();
@@ -173,7 +171,7 @@ public class FragmentVocabularies extends BaseFragment {
         colorAccent = "#" + getResources().getString(R.color.colorAccent).substring(3);
         colorTextGrey = "#" + getResources().getString(R.color.black).substring(3);
 
-        selectedVocabulary = ((ActivityTabLayout) getActivity()).getVocabularies().get(info.position);
+        selectedVocabulary = ((ActivityMain) getActivity()).getVocabularies().get(info.position);
 
 
         Spanned text = Html.fromHtml("<font color='" + colorTextGrey + "'>" + selectedVocabulary.getLanguageReference(getContext()) + " - </font>" + "<font color='" +
@@ -204,8 +202,8 @@ public class FragmentVocabularies extends BaseFragment {
         switch (item.getItemId()) {
             case R.id.learn:
                 if (selectedVocabulary.getNumOfWords() > 0) {
-                    Intent intent = new Intent(context, ActivityLearnConfiguration.class);
-                    Bundle bundle = new Bundle();
+                    Intent intent = add_new Intent(context, ActivityLearnConfig.class);
+                    Bundle bundle = add_new Bundle();
                     bundle.putInt(KEY_INDEX_OF_VOCABULARY, indexOfVocabulary);
                     intent.putExtras(bundle);
                     startActivity(intent);
@@ -224,7 +222,7 @@ public class FragmentVocabularies extends BaseFragment {
                 final AlertDialog dialog = builder.create();
                 dialog.show();
 
-                dialog.getButton(DialogInterface.BUTTON_NEGATIVE).setOnClickListener(new View.OnClickListener() {
+                dialog.getButton(DialogInterface.BUTTON_NEGATIVE).setOnClickListener(add_new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         Data.deleteVocabulary(selectedVocabulary.getTitle(), selectedVocabulary.getLanguage());
@@ -233,7 +231,7 @@ public class FragmentVocabularies extends BaseFragment {
                         Toast.makeText(context, "Deleted", Toast.LENGTH_SHORT).show();
                     }
                 });
-                dialog.getButton(DialogInterface.BUTTON_POSITIVE).setOnClickListener(new View.OnClickListener() {
+                dialog.getButton(DialogInterface.BUTTON_POSITIVE).setOnClickListener(add_new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         if (selectedVocabulary.makeTxt(context, getActivity()) != null)
@@ -262,7 +260,7 @@ public class FragmentVocabularies extends BaseFragment {
                 dialog_edit.show();
                 //hideKeyboard(false);
 
-                dialog_edit.getButton(DialogInterface.BUTTON_POSITIVE).setOnClickListener(new View.OnClickListener() {
+                dialog_edit.getButton(DialogInterface.BUTTON_POSITIVE).setOnClickListener(add_new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         if (Data.renameVocabulry(selectedVocabulary.getTitle(), selectedVocabulary.getLanguage(), editText.getText().toString())) {
@@ -276,7 +274,7 @@ public class FragmentVocabularies extends BaseFragment {
                         }
                     }
                 });
-                dialog_edit.getButton(DialogInterface.BUTTON_NEGATIVE).setOnClickListener(new View.OnClickListener() {
+                dialog_edit.getButton(DialogInterface.BUTTON_NEGATIVE).setOnClickListener(add_new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         dialog_edit.dismiss();
@@ -293,17 +291,17 @@ public class FragmentVocabularies extends BaseFragment {
             case R.id.share_dictionary:
                 getActivity().closeContextMenu();
 
-                StrictMode.VmPolicy.Builder builder3 = new StrictMode.VmPolicy.Builder();
+                StrictMode.VmPolicy.Builder builder3 = add_new StrictMode.VmPolicy.Builder();
                 StrictMode.setVmPolicy(builder3.build());
 
                 File file = selectedVocabulary.makeTxt(context, getActivity());
                 String newFilePath = file.getAbsolutePath().replace(file.getName(), "") +
                         Normalizer.normalize(file.getName(), Normalizer.Form.NFD)
                         .replaceAll("\\p{InCombiningDiacriticalMarks}+", "");
-                File newFile = new File(newFilePath);
+                File newFile = add_new File(newFilePath);
                 file.renameTo(newFile);
 
-                Intent intent = new Intent(Intent.ACTION_SEND);
+                Intent intent = add_new Intent(Intent.ACTION_SEND);
                 intent.setType("text/*");
                 String uriPath = "file://" + newFile.getAbsolutePath();
 

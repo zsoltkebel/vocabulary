@@ -402,8 +402,8 @@
 
             <android.support.constraint.ConstraintLayout android:id="@+id/lt_click_rename"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/floating_button_height"
-                android:background="@drawable/ripple_btn_light"
+                android:layout_height="@dimen/endless_button_height"
+                android:background="@drawable/ripple_button_white"
                 android:clickable="true"
                 android:focusable="true"
 
@@ -425,7 +425,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text="@string/rename"
-                    android:textSize="@dimen/av_more_text_size"
+                    android:textSize="@dimen/endless_button_text_size"
                     android:textColor="@color/black"
 
                     app:layout_constraintTop_toTopOf="parent"
@@ -437,8 +437,8 @@
 
             <android.support.constraint.ConstraintLayout android:id="@+id/lt_click_merge"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/floating_button_height"
-                android:background="@drawable/ripple_btn_light"
+                android:layout_height="@dimen/endless_button_height"
+                android:background="@drawable/ripple_button_white"
                 android:clickable="true"
                 android:focusable="true"
 
@@ -460,7 +460,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text="@string/merge"
-                    android:textSize="@dimen/av_more_text_size"
+                    android:textSize="@dimen/endless_button_text_size"
                     android:textColor="@color/colorAccent"
                     android:textStyle="bold"
 

@@ -121,112 +121,31 @@
             android:layout_below="@id/header"
             style="@style/customTabLayout"
             app:tabTextAppearance="@style/customTabLayout"
-            android:background="@color/background_light"
-            android:elevation="5dp"/>
+            android:background="@color/white"
+            android:elevation="2dp"/>
 
 
-    <android.support.constraint.ConstraintLayout
-        android:id="@+id/lyt_info_line"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/info_line_height"
-        android:layout_alignParentBottom="true"
-        android:background="@color/white"
-        android:elevation="15dp"
-        android:paddingStart="10dp"
-        android:paddingEnd="5dp">
-
-        <ImageView
-            android:id="@+id/imageView_wordList_flag"
-            android:layout_width="@dimen/icon_small_width"
-            android:layout_height="@dimen/icon_small_height"
-            android:layout_marginBottom="4dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginTop="4dp"
-            android:scaleType="fitCenter"
-            app:layout_constraintBottom_toBottomOf="parent"
-
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/united_kingdom" />
-
-        <ImageView
-            android:id="@+id/imgv_click_add"
-            android:layout_width="@dimen/info_line_height"
+        <FrameLayout
+            android:id="@+id/flt_vocabulary_info"
+            android:layout_width="match_parent"
             android:layout_height="@dimen/info_line_height"
+            android:elevation="15dp"
             android:layout_alignParentBottom="true"
-            android:layout_alignParentEnd="true"
-            android:background="?android:selectableItemBackgroundBorderless"
-            android:onClick="goToAdd"
-            android:padding="@dimen/info_line_btn_padding"
-            android:src="@drawable/add_grey"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-
-            app:layout_constraintTop_toTopOf="parent"
-            tools:layout_editor_absoluteX="319dp"
-            tools:layout_editor_absoluteY="526dp" />
-
-        <TextView
-            android:id="@+id/txt_language"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="5dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="5dp"
-
-            android:ellipsize="marquee"
-            android:focusable="true"
-            android:marqueeRepeatLimit="marquee_forever"
-            android:scrollHorizontally="true"
-            android:singleLine="true"
-
-            android:text="title"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@id/imgv_click_add"
-            app:layout_constraintStart_toEndOf="@id/imageView_wordList_flag"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/txt_num_of_words"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:layout_marginStart="8dp"
-
-            android:text="0"
-            android:textColor="@color/black"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@id/imageView_wordList_flag"
-            app:layout_constraintTop_toBottomOf="@id/txt_language" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-
-            android:layout_marginStart="3dp"
-            android:textColor="@color/black"
-            android:text="@string/phrase"
-            app:layout_constraintBottom_toBottomOf="@id/txt_num_of_words"
-            app:layout_constraintStart_toEndOf="@id/txt_num_of_words"
-            app:layout_constraintTop_toTopOf="@id/txt_num_of_words" />
-
-
-    </android.support.constraint.ConstraintLayout>
+            android:background="@color/white"/>
 
     <android.support.v4.view.ViewPager
         android:id="@+id/view_pager"
         android:layout_width="match_parent"
         android:layout_height="fill_parent"
         android:layout_below="@id/tab_layout"
-        android:layout_above="@id/lyt_info_line"
+        android:layout_above="@id/flt_vocabulary_info"
         android:background="@color/background_light"/>
 
     <LinearLayout
         android:id="@+id/layout_options"
         android:layout_width="match_parent"
         android:layout_height="45dp"
-        android:layout_above="@id/lyt_info_line"
+        android:layout_above="@id/flt_vocabulary_info"
         android:background="@color/light3"
         android:focusable="true"
         android:focusableInTouchMode="true"
@@ -263,8 +182,7 @@
             android:layout_height="match_parent"
             android:onClick="editWord"
             android:padding="10dp"
-            android:scaleType="centerInside"
-            app:srcCompat="@drawable/ic_edit" />
+            android:scaleType="centerInside" />
 
         <ImageButton
             android:id="@+id/btn_delSelected"
@@ -274,8 +192,7 @@
             android:onClick="deleteSelected"
             android:padding="10dp"
 
-            android:scaleType="centerInside"
-            app:srcCompat="@drawable/del_2" />
+            android:scaleType="centerInside" />
 
     </LinearLayout>
 

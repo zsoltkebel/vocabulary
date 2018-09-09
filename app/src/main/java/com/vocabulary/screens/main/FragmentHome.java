@@ -5,6 +5,9 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.v7.widget.DefaultItemAnimator;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.text.Html;
 import android.text.Spanned;
 import android.view.LayoutInflater;
@@ -14,10 +17,11 @@ import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.vocabulary.JSONParser;
-import com.vocabulary.realm.Phrase;
-import com.vocabulary.realm.Vocabulary;
 import com.vocabulary.R;
 import com.vocabulary.Subject;
+import com.vocabulary.realm.Phrase;
+import com.vocabulary.realm.Vocabulary;
+import com.vocabulary.screens.main.adapterHome.AdapterLearnOverviews;
 import com.vocabulary.screens.more.ActivityMore;
 
 import java.io.BufferedReader;
@@ -27,17 +31,27 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
 import droidninja.filepicker.fragments.BaseFragment;
+import io.realm.OrderedCollectionChangeSet;
+import io.realm.OrderedRealmCollectionChangeListener;
 import io.realm.Realm;
+import io.realm.RealmResults;
 
 /**
  * Created by Kébel Zsolt on 2018. 03. 18..
  */
 
-public class FragmentHome extends BaseFragment
-{
+public class FragmentHome extends BaseFragment {
+
+    @BindView(R.id.rv_learn_overviews)
+    protected RecyclerView mRvLearnOverviews;
+
     LinearLayout importFromTxt;
     View root;
+
+    AdapterLearnOverviews adapterLearnOverviews;
 
     Realm realm;
 
@@ -47,7 +61,7 @@ public class FragmentHome extends BaseFragment
         super.onCreate(savedInstanceState);
         setRetainInstance(true);
 
-        realm = ((ActivityTabLayout) getActivity()).getRealm();
+        realm = ((ActivityMain) getActivity()).getRealm();
     }
 
     @Override
@@ -55,6 +69,23 @@ public class FragmentHome extends BaseFragment
     {
         super.onCreate(savedInstanceState);
         root = inflater.inflate(R.layout.fragment_home, container, false);
+        ButterKnife.bind(this, root);
+
+        adapterLearnOverviews = new AdapterLearnOverviews((ActivityMain) getActivity(), realm);
+
+        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getContext());
+        mRvLearnOverviews.setLayoutManager(mLayoutManager);
+        mRvLearnOverviews.setItemAnimator(new DefaultItemAnimator());
+        mRvLearnOverviews.setAdapter(adapterLearnOverviews);
+
+        ((ActivityMain) getActivity()).getVocabularies().addChangeListener(new OrderedRealmCollectionChangeListener<RealmResults<Vocabulary>>() {
+            @Override
+            public void onChange(RealmResults<Vocabulary> vocabularies, OrderedCollectionChangeSet changeSet) {
+                adapterLearnOverviews.notifyDataSetChanged();
+            }
+        });
+
+
 
         importFromTxt = (LinearLayout) root.findViewById(R.id.importFromTxt);
 
@@ -248,12 +279,12 @@ public class FragmentHome extends BaseFragment
             if (numOfNewPhrases > 0)
             {
                 String info = "<font color='#e62e00'><b>" + numOfNewPhrases + "</b></font>";
-                Spanned infoText = Html.fromHtml(info + " new phrase has been imported");
+                Spanned infoText = Html.fromHtml(info + " add_new phrase has been imported");
                 Toast.makeText(getContext(), infoText, Toast.LENGTH_SHORT).show();
             }
             else
             {
-                Toast.makeText(getContext(), "There's no new phrase", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), "There's no add_new phrase", Toast.LENGTH_SHORT).show();
             }
 
             this.cancel(true);

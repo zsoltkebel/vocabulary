@@ -56,10 +56,19 @@
     <color name="red">#ffffff</color>
 
     <color name="background_light">#f2f2f2</color>
+    <color name="background_dark">#e6e6e6</color>
     <color name="transparent_black">#4D000000</color>
     <color name="transparent_white">#26ffffff</color>
 
-    <color name="dot_yellow">#FFDA44</color>
-    <color name="dot_red">#D80027</color>
-    <color name="dot_green">#91DC5A</color>
+
+    <color name="dot_yellow">#B3FFDA44</color>
+    <color name="dot_red">#B3D80027</color>
+    <color name="dot_green">#B391DC5A</color>
+    <color name="dot_blue">#B3227baa</color>
+
+    <color name="transparent_accent">#40e62e00</color>
+    <color name="update_yellow">#F6AE2D</color>
+    <color name="transparent_update_yellow">#26F6AE2D</color>
+    <color name="new_blue">#227baa</color>
+
 </resources>

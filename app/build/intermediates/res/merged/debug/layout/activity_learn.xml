@@ -197,5 +197,11 @@
 
     </LinearLayout>
 
+    <FrameLayout
+        android:id="@+id/flt_vocabulary_info"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/info_line_height"
+        android:elevation="15dp"
+        android:background="@color/background_light"/>
 
 </LinearLayout>

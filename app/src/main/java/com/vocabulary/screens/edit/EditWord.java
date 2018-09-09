@@ -8,9 +8,11 @@ import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Toast;
 
-import com.vocabulary.realm.Phrase;
-import com.vocabulary.realm.Vocabulary;
 import com.vocabulary.R;
+import com.vocabulary.realm.Phrase;
+import com.vocabulary.realm.RealmActivity;
+import com.vocabulary.realm.Vocabulary;
+import com.vocabulary.screens.main.ActivityMain;
 import com.xw.repo.XEditText;
 
 import butterknife.ButterKnife;
@@ -21,7 +23,7 @@ import io.realm.Realm;
  * Created by Kébel Zsolt on 1/15/2017.
  */
 
-public class EditWord extends Activity {
+public class EditWord extends RealmActivity {
 
     private String vocabularyId;
     private String phraseId;
@@ -29,10 +31,12 @@ public class EditWord extends Activity {
     XEditText editTextWord;
     XEditText editTextMeaning;
 
-    Realm realm;
-
     private Phrase phrase;
 
+    @Override
+    protected Activity getActivity() {
+        return this;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,12 +44,12 @@ public class EditWord extends Activity {
         setContentView(R.layout.activity_edit_phrase);
         ButterKnife.bind(this);
 
-        realm = Realm.getDefaultInstance();
+        mRealm = Realm.getDefaultInstance();
 
         vocabularyId = getIntent().getStringExtra(Vocabulary.ID);
         phraseId = getIntent().getStringExtra(Phrase.DATE);
 
-        phrase = realm.where(Phrase.class).equalTo(Phrase.VOCABULARY_ID, vocabularyId)
+        phrase = mRealm.where(Phrase.class).equalTo(Phrase.VOCABULARY_ID, vocabularyId)
                 .equalTo(Phrase.DATE, phraseId).findFirst();
 
         editTextWord = (XEditText) findViewById(R.id.editText_word);
@@ -65,10 +69,10 @@ public class EditWord extends Activity {
 
         if (!phrase.getP1().equals(editTextWord.getText().toString()) ||
                 !phrase.getP2().equals(editTextMeaning.getText().toString())) {
-            realm.beginTransaction();
+            mRealm.beginTransaction();
             phrase.setP1(editTextWord.getText().toString());
             phrase.setP2(editTextMeaning.getText().toString());
-            realm.commitTransaction();
+            mRealm.commitTransaction();
 
             //hide keyboard
             InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
@@ -78,20 +82,8 @@ public class EditWord extends Activity {
         }
         Intent result = new Intent();
         result.putExtra(Phrase.DATE, phrase.getDate());
-        setResult(1, result);
+        setResult(ActivityMain.NO_ACTION, result);
         finish();
-    }
-
-    @Override
-    protected void onStart() {
-        super.onStart();
-        realm = Realm.getDefaultInstance();
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        realm.close();
     }
 
     @Override

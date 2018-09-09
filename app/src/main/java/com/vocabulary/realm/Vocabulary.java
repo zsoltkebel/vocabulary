@@ -2,6 +2,7 @@ package com.vocabulary.realm;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
+import android.support.v4.content.ContextCompat;
 import android.util.Log;
 
 import com.vocabulary.JSONParser;
@@ -141,6 +142,6 @@ public class Vocabulary extends RealmObject {
 
     public Drawable getIconDrawable(Context context)
     {
-        return context.getDrawable(getIconInt(context));
+        return ContextCompat.getDrawable(context, getIconInt(context));
     }
 }

@@ -101,7 +101,7 @@ public class FragmentPhrases extends BaseFragment {
         getPrefs();
 
 
-        //recyclerView.setLayoutManager(new LinearLayoutManager(context));
+        //recyclerView.setLayoutManager(add_new LinearLayoutManager(context));
 
         setAdapter();
 
@@ -138,7 +138,7 @@ public class FragmentPhrases extends BaseFragment {
 /*
     public static void update()
     {
-        DBHelper dbHelper = new DBHelper(ActivityVocabulary.context);
+        DBHelper dbHelper = add_new DBHelper(ActivityVocabulary.context);
         adapter.updateList(dbHelper.getVocabulary(vocabularyID));
         adapter.recoverAllRemoved(null);
         adapter.search(mFilter);
@@ -231,7 +231,7 @@ public class FragmentPhrases extends BaseFragment {
 
     public void listRefresh(int position)
     {
-        //adapter.notifyItemRangeChanged(0, vocabulary.getNumOfWords());
+        //adapter.notifyItemRangeChanged(0, mVocabulary.getNumOfWords());
         //adapter.notifyItemChanged(position);
         adapter.setSelectable(false);
     }
@@ -241,7 +241,7 @@ public class FragmentPhrases extends BaseFragment {
         SharedPreferences prefs = activity.getSharedPreferences(PREFS_VOCABULARY, MODE_PRIVATE);
 
 
-        //vocabulary = database.getVocabulary(indexOfVocabulary);
+        //mVocabulary = database.getVocabulary(indexOfVocabulary);
     }
 
     public void search(String filter)

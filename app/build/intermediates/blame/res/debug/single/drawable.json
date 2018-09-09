@@ -1,43 +1,43 @@
 [
     {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b18f3b6b3d4dd815e21774815a8b6215\\res\\drawable\\abc_btn_radio_material.xml"
+    },
+    {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_go_search_api_material.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b18f3b6b3d4dd815e21774815a8b6215\\res\\drawable\\abc_ic_go_search_api_material.xml"
+    },
+    {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new_settings2.png",
         "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\new_settings2.png"
     },
     {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new_edit.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\new_edit.png"
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new_square.png",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\new_square.png"
+    },
+    {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\red.xml",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\red.xml"
     },
     {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\settings_dark.png",
         "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\settings_dark.png"
     },
     {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\add.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\add.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new_home2_selected.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\new_home2_selected.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\icon_new2.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\icon_new2.png"
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new_edit.png",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\new_edit.png"
     },
     {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
         "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b18f3b6b3d4dd815e21774815a8b6215\\res\\drawable\\abc_list_selector_holo_light.xml"
     },
     {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\container_middle_dark.xml",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\container_middle_dark.xml"
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\sel_delete.xml",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\sel_delete.xml"
     },
     {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\tab_add_dark.png",
         "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\tab_add_dark.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\plusdark.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\plusdark.png"
     },
     {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\worldmap.png",
@@ -52,24 +52,24 @@
         "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\italy.png"
     },
     {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\hello.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\hello.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\line_menu_pressed.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\line_menu_pressed.png"
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\china.png",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\china.png"
     },
     {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
         "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b18f3b6b3d4dd815e21774815a8b6215\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
     },
     {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\logo1.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\logo1.png"
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\code.png",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\code.png"
     },
     {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\x_light_active.png",
         "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\x_light_active.png"
+    },
+    {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\vocabulary_test.png",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\vocabulary_test.png"
     },
     {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background.xml",
@@ -80,20 +80,28 @@
         "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\new_study_full_accent.png"
     },
     {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\icon3.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\icon3.png"
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\student_male_dark.png",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\student_male_dark.png"
     },
     {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new_mark.png",
         "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\new_mark.png"
     },
     {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bin.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\bin.png"
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\pipa.png",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\pipa.png"
+    },
+    {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new_merge.png",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\new_merge.png"
     },
     {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_voice_search_api_material.xml",
         "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b18f3b6b3d4dd815e21774815a8b6215\\res\\drawable\\abc_ic_voice_search_api_material.xml"
+    },
+    {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_vector_test.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b18f3b6b3d4dd815e21774815a8b6215\\res\\drawable\\abc_vector_test.xml"
     },
     {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
@@ -104,68 +112,88 @@
         "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b18f3b6b3d4dd815e21774815a8b6215\\res\\drawable\\abc_ratingbar_indicator_material.xml"
     },
     {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b18f3b6b3d4dd815e21774815a8b6215\\res\\drawable\\abc_item_background_holo_dark.xml"
+    },
+    {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\roundedbutton.xml",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\roundedbutton.xml"
+    },
+    {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new_brain_selected.png",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\new_brain_selected.png"
+    },
+    {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\tab_icon_add.png",
         "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\tab_icon_add.png"
     },
     {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\import_icon_title.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\import_icon_title.png"
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\student_female.png",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\student_female.png"
     },
     {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\tab_import_active.png",
         "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\tab_import_active.png"
     },
     {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\container_top_liht.xml",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\container_top_liht.xml"
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\import_icon_title.png",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\import_icon_title.png"
     },
     {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\icon5.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\icon5.png"
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new_clock.png",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\new_clock.png"
+    },
+    {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b18f3b6b3d4dd815e21774815a8b6215\\res\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\tab_icon_plus.png",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\tab_icon_plus.png"
     },
     {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\geography.png",
         "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\geography.png"
     },
     {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\back3.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\back3.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\avatar.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\avatar.png"
-    },
-    {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_material.xml",
         "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b18f3b6b3d4dd815e21774815a8b6215\\res\\drawable\\abc_ratingbar_material.xml"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\del_2.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\del_2.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new_home2.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\new_home2.png"
     },
     {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new_trash_accent.png",
         "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\new_trash_accent.png"
     },
     {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\logo3.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\logo3.png"
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\germany.png",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\germany.png"
     },
     {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\line_menu.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\line_menu.png"
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ripple_button_light.xml",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\ripple_button_light.xml"
+    },
+    {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new_close.png",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\new_close.png"
+    },
+    {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\logo3.png",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\logo3.png"
     },
     {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_search_api_material.xml",
         "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b18f3b6b3d4dd815e21774815a8b6215\\res\\drawable\\abc_ic_search_api_material.xml"
     },
     {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\backarrow.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\backarrow.png"
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new_filter_primary.png",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\new_filter_primary.png"
+    },
+    {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_bg.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b18f3b6b3d4dd815e21774815a8b6215\\res\\drawable\\notification_bg.xml"
+    },
+    {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_bg_low.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b18f3b6b3d4dd815e21774815a8b6215\\res\\drawable\\notification_bg_low.xml"
     },
     {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new_dot_green.png",
@@ -176,40 +204,84 @@
         "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\biology.png"
     },
     {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\toggle_btn_state_circle.xml",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\toggle_btn_state_circle.xml"
+    },
+    {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\background_rounded.xml",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\background_rounded.xml"
+    },
+    {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\settings_grey.png",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\settings_grey.png"
+    },
+    {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\world.png",
         "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\world.png"
     },
     {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\map.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\map.png"
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new_info.png",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\new_info.png"
     },
     {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new_briefcase.png",
         "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\new_briefcase.png"
     },
     {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\icon_new4.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\icon_new4.png"
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\united_kingdom.png",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\united_kingdom.png"
+    },
+    {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new_dot_blue.png",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\new_dot_blue.png"
+    },
+    {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_tile_bg.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b18f3b6b3d4dd815e21774815a8b6215\\res\\drawable\\notification_tile_bg.xml"
     },
     {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new_down_arrow_accent.png",
         "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\new_down_arrow_accent.png"
     },
     {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\back5.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\back5.png"
-    },
-    {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new_settings.png",
         "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\new_settings.png"
     },
     {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
-        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b18f3b6b3d4dd815e21774815a8b6215\\res\\drawable\\abc_list_selector_holo_dark.xml"
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\literature.png",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\literature.png"
     },
     {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bacg.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\bacg.png"
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new_search_16.png",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\new_search_16.png"
+    },
+    {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b18f3b6b3d4dd815e21774815a8b6215\\res\\drawable\\abc_switch_thumb_material.xml"
+    },
+    {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new_dot_yellow.png",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\new_dot_yellow.png"
+    },
+    {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ripple_button_white.xml",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\ripple_button_white.xml"
+    },
+    {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b18f3b6b3d4dd815e21774815a8b6215\\res\\drawable\\abc_spinner_textfield_background_material.xml"
+    },
+    {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_transplarent.xml",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\btn_transplarent.xml"
+    },
+    {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\navigation_empty_icon.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\design-25.1.0.aar\\89d19bdefc3982afbd8702b0c304980a\\res\\drawable\\navigation_empty_icon.xml"
+    },
+    {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b18f3b6b3d4dd815e21774815a8b6215\\res\\drawable\\abc_list_selector_holo_dark.xml"
     },
     {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\facebook.png",
@@ -220,16 +292,16 @@
         "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\flashcards.png"
     },
     {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new_add.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\new_add.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\container_middle_light.xml",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\container_middle_light.xml"
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\toggle_btn_ascending.xml",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\toggle_btn_ascending.xml"
     },
     {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new_search_32.png",
         "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\new_search_32.png"
+    },
+    {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new_share.png",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\new_share.png"
     },
     {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_track_material.xml",
@@ -242,6 +314,10 @@
     {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_snackbar_background.xml",
         "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\design-25.1.0.aar\\89d19bdefc3982afbd8702b0c304980a\\res\\drawable\\design_snackbar_background.xml"
+    },
+    {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_red.xml",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\btn_red.xml"
     },
     {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\openbook.png",
@@ -264,24 +340,24 @@
         "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\grammar.png"
     },
     {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ripple_btn_light.xml",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\ripple_btn_light.xml"
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new_right_arrow.png",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\new_right_arrow.png"
+    },
+    {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\maths.png",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\maths.png"
+    },
+    {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\settings.png",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\settings.png"
     },
     {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\sort_icon.png",
         "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\sort_icon.png"
     },
     {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\background_fade.xml",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\background_fade.xml"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\background.jpg",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\background.jpg"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\background_rounded_pressed.xml",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\background_rounded_pressed.xml"
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b18f3b6b3d4dd815e21774815a8b6215\\res\\drawable\\abc_btn_check_material.xml"
     },
     {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\txt.png",
@@ -304,12 +380,28 @@
         "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\it.png"
     },
     {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\tab_import.png",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\tab_import.png"
+    },
+    {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\back_oval_dark.xml",
         "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\back_oval_dark.xml"
     },
     {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_icon_background.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b18f3b6b3d4dd815e21774815a8b6215\\res\\drawable\\notification_icon_background.xml"
+    },
+    {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new_down_arrow.png",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\new_down_arrow.png"
+    },
+    {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new_merge_primary.png",
         "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\new_merge_primary.png"
+    },
+    {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new_merge_accent.png",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\new_merge_accent.png"
     },
     {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\tab_icon_download_active.png",
@@ -318,6 +410,10 @@
     {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
         "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b18f3b6b3d4dd815e21774815a8b6215\\res\\drawable\\abc_textfield_search_material.xml"
+    },
+    {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new_filter_white.png",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\new_filter_white.png"
     },
     {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new_menu.png",
@@ -336,32 +432,20 @@
         "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\add_grey.png"
     },
     {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\list_active.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\list_active.png"
-    },
-    {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\tab_icon_home_active.png",
         "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\tab_icon_home_active.png"
     },
     {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\dot.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\dot.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new_add_selected.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\new_add_selected.png"
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b18f3b6b3d4dd815e21774815a8b6215\\res\\drawable\\abc_btn_borderless_material.xml"
     },
     {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
         "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b18f3b6b3d4dd815e21774815a8b6215\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
     },
     {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\container_top_dark.xml",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\container_top_dark.xml"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\container_with_shadow.xml",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\container_with_shadow.xml"
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\physics.png",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\physics.png"
     },
     {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new_tap.png",
@@ -372,16 +456,32 @@
         "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b18f3b6b3d4dd815e21774815a8b6215\\res\\drawable\\abc_ic_clear_material.xml"
     },
     {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\backline.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\backline.png"
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new_point_at.png",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\new_point_at.png"
     },
     {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\backg.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\backg.png"
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\back_oval_plus.xml",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\back_oval_plus.xml"
+    },
+    {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b18f3b6b3d4dd815e21774815a8b6215\\res\\drawable\\abc_text_cursor_material.xml"
+    },
+    {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_small_material.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b18f3b6b3d4dd815e21774815a8b6215\\res\\drawable\\abc_ratingbar_small_material.xml"
     },
     {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new_study.png",
         "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\new_study.png"
+    },
+    {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new_left_arrow.png",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\new_left_arrow.png"
+    },
+    {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\study.png",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\study.png"
     },
     {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\dot2.png",
@@ -392,20 +492,32 @@
         "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\iconn3.png"
     },
     {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new_book_selected.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\new_book_selected.png"
-    },
-    {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ripple_btn_transparent_rounded.xml",
         "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\ripple_btn_transparent_rounded.xml"
+    },
+    {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new_trash.png",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\new_trash.png"
+    },
+    {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\medal.png",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\medal.png"
+    },
+    {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new_sort.png",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\new_sort.png"
+    },
+    {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\spain.png",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\spain.png"
     },
     {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\student_female_dark.png",
         "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\student_female_dark.png"
     },
     {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new_book.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\new_book.png"
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new_more.png",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\new_more.png"
     },
     {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_thumb_material.xml",
@@ -420,40 +532,92 @@
         "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\new_star_on.png"
     },
     {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ripple_container_update_yellow_rounded.xml",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\ripple_container_update_yellow_rounded.xml"
+    },
+    {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_ab_back_material.xml",
         "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b18f3b6b3d4dd815e21774815a8b6215\\res\\drawable\\abc_ic_ab_back_material.xml"
+    },
+    {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\close.png",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\close.png"
     },
     {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\tab_list_dark.png",
         "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\tab_list_dark.png"
     },
     {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\tab_import_dark.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\tab_import_dark.png"
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\tab_icon_add_active.png",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\tab_icon_add_active.png"
     },
     {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\icon7.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\icon7.png"
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\tab_import_dark.png",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\tab_import_dark.png"
     },
     {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new_edit_accent.png",
         "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\new_edit_accent.png"
     },
     {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\student_male.png",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\student_male.png"
+    },
+    {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new_star_off.png",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\new_star_off.png"
+    },
+    {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new_play_accent.png",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\new_play_accent.png"
+    },
+    {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new_download_white.png",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\new_download_white.png"
+    },
+    {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
+        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b18f3b6b3d4dd815e21774815a8b6215\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
+    },
+    {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\france.png",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\france.png"
+    },
+    {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\x_light.png",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\x_light.png"
+    },
+    {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\gmail.png",
         "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\gmail.png"
     },
     {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\sel_back_arrow.xml",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\sel_back_arrow.xml"
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\chemistry.png",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\chemistry.png"
+    },
+    {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new_mark_off.png",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\new_mark_off.png"
     },
     {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new_search_24.png",
         "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\new_search_24.png"
     },
     {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\plus.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\plus.png"
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new_search_white.png",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\new_search_white.png"
+    },
+    {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\green.xml",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\green.xml"
+    },
+    {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new_download_accent.png",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\new_download_accent.png"
+    },
+    {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\brain.png",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\brain.png"
     },
     {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\move.png",
@@ -472,488 +636,20 @@
         "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\new_brain.png"
     },
     {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\edit_icon.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\edit_icon.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\iconn.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\iconn.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_edit.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\ic_edit.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\icon1.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\icon1.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\tab_icon_home.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\tab_icon_home.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ripple_btn_light_rounded.xml",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\ripple_btn_light_rounded.xml"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\x.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\x.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_outline.xml",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\btn_outline.xml"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\list_add.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\list_add.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
-        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b18f3b6b3d4dd815e21774815a8b6215\\res\\drawable\\abc_btn_radio_material.xml"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_go_search_api_material.xml",
-        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b18f3b6b3d4dd815e21774815a8b6215\\res\\drawable\\abc_ic_go_search_api_material.xml"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new_square.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\new_square.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\container_dark.xml",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\container_dark.xml"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\red.xml",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\red.xml"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\logo2.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\logo2.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\icon4.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\icon4.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\back_arrow.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\back_arrow.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\sel_delete.xml",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\sel_delete.xml"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\addl.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\addl.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\china.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\china.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\code.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\code.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\vocabulary_test.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\vocabulary_test.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\student_male_dark.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\student_male_dark.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\sel_menu.xml",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\sel_menu.xml"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\icon_new.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\icon_new.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\pipa.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\pipa.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_vector_test.xml",
-        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b18f3b6b3d4dd815e21774815a8b6215\\res\\drawable\\abc_vector_test.xml"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
-        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b18f3b6b3d4dd815e21774815a8b6215\\res\\drawable\\abc_item_background_holo_dark.xml"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\roundedbutton.xml",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\roundedbutton.xml"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new_brain_selected.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\new_brain_selected.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\student_female.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\student_female.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new_home_selected.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\new_home_selected.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\backpaper.jpg",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\backpaper.jpg"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\icon2.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\icon2.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new_clock.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\new_clock.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\divider.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\divider.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml",
-        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b18f3b6b3d4dd815e21774815a8b6215\\res\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\tab_icon_plus.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\tab_icon_plus.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_arrow.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\left_arrow.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\germany.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\germany.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new_close.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\new_close.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\left_arrow_pressed.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\left_arrow_pressed.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\back_arrow_active.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\back_arrow_active.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new_filter_primary.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\new_filter_primary.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_bg.xml",
-        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b18f3b6b3d4dd815e21774815a8b6215\\res\\drawable\\notification_bg.xml"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_bg_low.xml",
-        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b18f3b6b3d4dd815e21774815a8b6215\\res\\drawable\\notification_bg_low.xml"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\background_rounded.xml",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\background_rounded.xml"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\settings_grey.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\settings_grey.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new_info.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\new_info.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notebook.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\notebook.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\kep.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\kep.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\united_kingdom.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\united_kingdom.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new_dot_blue.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\new_dot_blue.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new_home.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\new_home.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_tile_bg.xml",
-        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b18f3b6b3d4dd815e21774815a8b6215\\res\\drawable\\notification_tile_bg.xml"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\literature.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\literature.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new_search_16.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\new_search_16.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
-        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b18f3b6b3d4dd815e21774815a8b6215\\res\\drawable\\abc_switch_thumb_material.xml"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new_dot_yellow.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\new_dot_yellow.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
-        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b18f3b6b3d4dd815e21774815a8b6215\\res\\drawable\\abc_spinner_textfield_background_material.xml"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_transplarent.xml",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\btn_transplarent.xml"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\navigation_empty_icon.xml",
-        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\design-25.1.0.aar\\89d19bdefc3982afbd8702b0c304980a\\res\\drawable\\navigation_empty_icon.xml"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bin_icon.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\bin_icon.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\information.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\information.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\toggle_btn_ascending.xml",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\toggle_btn_ascending.xml"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\icon6.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\icon6.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new_share.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\new_share.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_red.xml",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\btn_red.xml"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\iconn2.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\iconn2.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\maths.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\maths.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\settings.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\settings.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
-        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b18f3b6b3d4dd815e21774815a8b6215\\res\\drawable\\abc_btn_check_material.xml"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\tab_import.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\tab_import.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_icon_background.xml",
-        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b18f3b6b3d4dd815e21774815a8b6215\\res\\drawable\\notification_icon_background.xml"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new_down_arrow.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\new_down_arrow.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\dividergrey.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\dividergrey.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new_merge_accent.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\new_merge_accent.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new_filter_white.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\new_filter_white.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\list_add_active.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\list_add_active.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
-        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b18f3b6b3d4dd815e21774815a8b6215\\res\\drawable\\abc_btn_borderless_material.xml"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\menu.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\menu.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\physics.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\physics.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\delete.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\delete.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\list.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\list.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new_point_at.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\new_point_at.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\language.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\language.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\back_oval_plus.xml",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\back_oval_plus.xml"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\backspace_arrow.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\backspace_arrow.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\background_rounded_button.xml",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\background_rounded_button.xml"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
-        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b18f3b6b3d4dd815e21774815a8b6215\\res\\drawable\\abc_text_cursor_material.xml"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_small_material.xml",
-        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b18f3b6b3d4dd815e21774815a8b6215\\res\\drawable\\abc_ratingbar_small_material.xml"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\back.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\back.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\dot_grey.xml",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\dot_grey.xml"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\dottt.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\dottt.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new_trash.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\new_trash.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\dot_pink.xml",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\dot_pink.xml"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new_sort.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\new_sort.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\spain.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\spain.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new_more.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\new_more.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new_folded_document.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\new_folded_document.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\dotdark.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\dotdark.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\container_bottom_light.xml",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\container_bottom_light.xml"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\tab_icon_add_active.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\tab_icon_add_active.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\student_male.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\student_male.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new_star_off.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\new_star_off.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
-        "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b18f3b6b3d4dd815e21774815a8b6215\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\france.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\france.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\x_light.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\x_light.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\chemistry.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\chemistry.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new_mark_off.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\new_mark_off.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new_search_white.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\new_search_white.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\add_white.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\add_white.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\green.xml",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\green.xml"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\dots.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\dots.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\back6.jpg",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\back6.jpg"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\icon_new3.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\icon_new3.png"
-    },
-    {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_green.xml",
         "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\btn_green.xml"
+    },
+    {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ripple_container_light_blue_rounded.xml",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\ripple_container_light_blue_rounded.xml"
     },
     {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\shadow2.xml",
         "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\shadow2.xml"
     },
     {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\backg3.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\backg3.png"
-    },
-    {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\tab_icon_download.png",
         "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\tab_icon_download.png"
-    },
-    {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\folded_document_icon.png",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\folded_document_icon.png"
     },
     {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\hungary.png",
@@ -968,6 +664,10 @@
         "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\scroll.xml"
     },
     {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\item_marker.xml",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\item_marker.xml"
+    },
+    {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
         "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b18f3b6b3d4dd815e21774815a8b6215\\res\\drawable\\abc_cab_background_internal_bg.xml"
     },
@@ -980,16 +680,28 @@
         "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\toggle_btn_mark.xml"
     },
     {
-        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\container_bottom_dark.xml",
-        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\container_bottom_dark.xml"
-    },
-    {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_fab_background.xml",
         "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\design-25.1.0.aar\\89d19bdefc3982afbd8702b0c304980a\\res\\drawable\\design_fab_background.xml"
     },
     {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\copy.png",
         "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\copy.png"
+    },
+    {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\tab_icon_home.png",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\tab_icon_home.png"
+    },
+    {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ripple_btn_light_rounded.xml",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\ripple_btn_light_rounded.xml"
+    },
+    {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\new_drawer.png",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\new_drawer.png"
+    },
+    {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\x.png",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\x.png"
     },
     {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
@@ -1002,5 +714,9 @@
     {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_tick_mark_material.xml",
         "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b18f3b6b3d4dd815e21774815a8b6215\\res\\drawable\\abc_seekbar_tick_mark_material.xml"
+    },
+    {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_outline.xml",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\drawable\\btn_outline.xml"
     }
 ]

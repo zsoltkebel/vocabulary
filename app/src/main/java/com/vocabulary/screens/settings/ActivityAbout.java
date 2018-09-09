@@ -2,8 +2,6 @@ package com.vocabulary.screens.settings;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.text.method.LinkMovementMethod;
-import android.widget.TextView;
 
 import com.vocabulary.R;
 
@@ -19,7 +17,5 @@ public class ActivityAbout extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about);
 
-        TextView facebookLink = (TextView) findViewById(R.id.tv_facebook_link);
-        facebookLink.setMovementMethod(LinkMovementMethod.getInstance());
     }
 }

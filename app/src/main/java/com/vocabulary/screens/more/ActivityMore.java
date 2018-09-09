@@ -1,6 +1,7 @@
 package com.vocabulary.screens.more;
 
 import android.Manifest;
+import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -25,12 +26,14 @@ import android.widget.Toast;
 
 import com.vocabulary.BuildConfig;
 import com.vocabulary.R;
-import com.vocabulary.learn.LearnActivity;
+import com.vocabulary.realm.LearnOverview;
 import com.vocabulary.realm.Phrase;
 import com.vocabulary.realm.RealmActivity;
 import com.vocabulary.realm.Vocabulary;
-import com.vocabulary.screens.main.ActivityTabLayout;
+import com.vocabulary.screens.learnconfig.ActivityLearnConfig;
+import com.vocabulary.screens.main.ActivityMain;
 import com.vocabulary.screens.merge.ActivityMerge;
+import com.vocabulary.screens.vocabulary.ActivityVocabulary;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -70,6 +73,18 @@ public class ActivityMore extends RealmActivity {
 
     private Vocabulary mVocabulary;
 
+    public static Intent createIntent(Context context, String vocabularyId) {
+        Intent intent = new Intent(context, ActivityMore.class);
+        intent.putExtra(Vocabulary.ID, vocabularyId);
+
+        return intent;
+    }
+
+    @Override
+    protected Activity getActivity() {
+        return this;
+    }
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -89,6 +104,7 @@ public class ActivityMore extends RealmActivity {
         } catch (ParseException e) {
             e.printStackTrace();
         }
+
     }
 
     @OnClick(R.id.iv_click_back)
@@ -96,9 +112,16 @@ public class ActivityMore extends RealmActivity {
         finish();
     }
 
+    @OnClick(R.id.lyt_click_open_vocabulary)
+    protected void onOpenVocabularyClicked() {
+        Intent intent = ActivityVocabulary.createIntent(this, mVocabulary.getId());
+        startActivity(intent);
+        finish();
+    }
+
     @OnClick(R.id.lt_click_learn)
     protected void onLearnClicked() {
-        Intent intent = new Intent(ActivityMore.this, LearnActivity.class);
+        Intent intent = new Intent(ActivityMore.this, ActivityLearnConfig.class);
         intent.putExtra(Vocabulary.ID, mVocabulary.getId());
         startActivity(intent);
     }
@@ -143,6 +166,7 @@ public class ActivityMore extends RealmActivity {
                     imm.hideSoftInputFromWindow(titleEditText.getWindowToken(), 0);
 
                     Toast.makeText(ActivityMore.this, R.string.msg_title_change_successful, Toast.LENGTH_SHORT).show();
+                    setResult(ActivityMain.VOCABULARY_RENAMED);
                 } else {
 
                 }
@@ -167,9 +191,11 @@ public class ActivityMore extends RealmActivity {
                         phrases.deleteAllFromRealm();
                         Vocabulary vocabulary = realm.where(Vocabulary.class).equalTo(Vocabulary.ID, vocabularyId).findFirst();
                         vocabulary.deleteFromRealm();
+                        if (realm.where(LearnOverview.class).equalTo(LearnOverview.ID, vocabularyId).findFirst() != null)
+                            realm.where(LearnOverview.class).equalTo(LearnOverview.ID, vocabularyId).findFirst().deleteFromRealm();
                     }
                 });
-                setResult(ActivityTabLayout.ITEM_DELETED);
+                setResult(ActivityMain.VOCABULARY_DELETED);
                 finish();
             }
         });
@@ -246,7 +272,7 @@ public class ActivityMore extends RealmActivity {
 
                 String fileName = unmanagedVocabulary.getLanguage() + "_" + unmanagedVocabulary.getTitle() + ".txt";
                 imported = new File(root, fileName);
-                //FileWriter writer = new FileWriter(gpxfile);
+                //FileWriter writer = add_new FileWriter(gpxfile);
                 //TODO encoding?  most utf-8
                 BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(imported)));
 
@@ -319,7 +345,9 @@ public class ActivityMore extends RealmActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if (resultCode == requestCode)
+        if (resultCode == requestCode) {
+            setResult(ActivityMain.VOCABULARY_MERGED);
             finish();
+        }
     }
 }

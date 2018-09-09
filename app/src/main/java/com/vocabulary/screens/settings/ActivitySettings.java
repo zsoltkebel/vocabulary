@@ -16,7 +16,7 @@ import android.widget.RadioGroup;
 import android.widget.Spinner;
 
 import com.vocabulary.R;
-import com.vocabulary.screens.main.ActivityTabLayout;
+import com.vocabulary.screens.main.ActivityMain;
 
 import java.util.Locale;
 
@@ -143,9 +143,9 @@ public class ActivitySettings extends AppCompatActivity {
         Configuration configuration = resources.getConfiguration();
         configuration.locale = myLocale;
         resources.updateConfiguration(configuration, resources.getDisplayMetrics());
-        Intent refresh = new Intent(this, ActivityTabLayout.class);
+        Intent refresh = new Intent(this, ActivityMain.class);
         refresh.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);
-        //ActivityTabLayout.finishActivity();
+        //ActivityMain.finishActivity();
 
         startActivity(refresh);
         finish();

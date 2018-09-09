@@ -7,7 +7,7 @@ import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-import com.vocabulary.screens.main.ActivityTabLayout;
+import com.vocabulary.screens.main.ActivityMain;
 
 import java.util.Locale;
 
@@ -27,10 +27,11 @@ public class MainActivity extends AppCompatActivity {
 
         SharedPreferences prefs = getSharedPreferences(PREFS_SETTINGS, MODE_PRIVATE);
         int language = prefs.getInt(PREFS_LANGUAGE, 0);
+
         switch (language)
         {
             case 0:
-                setLocale(null);
+                setLocale("en");
                 break;
             case 1:
                 setLocale("hu");
@@ -54,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         Configuration configuration = resources.getConfiguration();
         configuration.locale = myLocale;
         resources.updateConfiguration(configuration, resources.getDisplayMetrics());
-        Intent refresh = new Intent(this, ActivityTabLayout.class);
+        Intent refresh = new Intent(this, ActivityMain.class);
         startActivity(refresh);
     }
 }

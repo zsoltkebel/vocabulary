@@ -1,12 +1,12 @@
 package com.vocabulary.screens.merge;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.graphics.PorterDuff;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -18,9 +18,10 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.vocabulary.realm.Phrase;
-import com.vocabulary.realm.Vocabulary;
 import com.vocabulary.R;
+import com.vocabulary.realm.Phrase;
+import com.vocabulary.realm.RealmActivity;
+import com.vocabulary.realm.Vocabulary;
 import com.vocabulary.screens.more.ActivityMore;
 
 import butterknife.BindView;
@@ -29,7 +30,7 @@ import butterknife.OnClick;
 import io.realm.Realm;
 import io.realm.RealmResults;
 
-public class ActivityMerge extends AppCompatActivity {
+public class ActivityMerge extends RealmActivity {
 
     @BindView(R.id.iv_icon)
             protected ImageView ivIconCurrent;
@@ -62,7 +63,10 @@ public class ActivityMerge extends AppCompatActivity {
     AlertDialog selectDialog;
     String newName = null;
 
-    Realm realm;
+    @Override
+    protected Activity getActivity() {
+        return this;
+    }
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -70,26 +74,14 @@ public class ActivityMerge extends AppCompatActivity {
         setContentView(R.layout.activity_merge);
         ButterKnife.bind(this);
 
-        realm = Realm.getDefaultInstance();
+        mRealm = Realm.getDefaultInstance();
 
-        vocabularyCurrent = realm.where(Vocabulary.class)
+        vocabularyCurrent = mRealm.where(Vocabulary.class)
                 .equalTo(Vocabulary.ID, getIntent().getStringExtra(Vocabulary.ID))
                 .findFirst();
 
         setupCurrent();
         makeDialog();
-    }
-
-    @Override
-    protected void onStart() {
-        super.onStart();
-        realm = Realm.getDefaultInstance();
-    }
-
-    @Override
-    protected void onStop() {
-        super.onStop();
-        realm.close();
     }
 
     @Override
@@ -139,7 +131,7 @@ public class ActivityMerge extends AppCompatActivity {
         builder.setPositiveButton(R.string.edit, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                if (realm.where(Vocabulary.class)
+                if (mRealm.where(Vocabulary.class)
                         .equalTo(Vocabulary.LANGUAGE, vocabularySelected.getLanguage())
                         .equalTo(Vocabulary.TITLE, titleEditText.getText().toString())
                         .findFirst() == null) {
@@ -167,7 +159,7 @@ public class ActivityMerge extends AppCompatActivity {
         final String vSelectedId = vocabularySelected.getId();
         final String vCurrentId = vocabularyCurrent.getId();
 
-        realm.executeTransactionAsync(new Realm.Transaction() {
+        mRealm.executeTransactionAsync(new Realm.Transaction() {
             @Override
             public void execute(Realm realm) {
                 Vocabulary vCurrent = realm.where(Vocabulary.class).equalTo(Vocabulary.ID, vCurrentId).findFirst();
@@ -205,7 +197,7 @@ public class ActivityMerge extends AppCompatActivity {
 
         RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.rv_vocabularies);
 
-        VocabulariesRecyclerViewAdapter recyclerViewAdapter = new VocabulariesRecyclerViewAdapter(this, realm);
+        VocabulariesRecyclerViewAdapter recyclerViewAdapter = new VocabulariesRecyclerViewAdapter(this, mRealm);
 
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(mLayoutManager);
@@ -223,7 +215,7 @@ public class ActivityMerge extends AppCompatActivity {
     }
 
     public RealmResults<Vocabulary> getVocabularies() {
-        return realm.where(Vocabulary.class).sort(Vocabulary.SORT_STRING).findAll();
+        return mRealm.where(Vocabulary.class).sort(Vocabulary.SORT_STRING).findAll();
     }
 
     public Vocabulary getVocabularyCurrent() {

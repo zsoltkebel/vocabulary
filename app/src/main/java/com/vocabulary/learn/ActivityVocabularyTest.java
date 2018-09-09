@@ -16,17 +16,17 @@ import com.vocabulary.R;
 
 import java.util.Random;
 
-import static com.vocabulary.learn.ActivityLearnConfiguration.ALL_PHRASES;
-import static com.vocabulary.learn.ActivityLearnConfiguration.CHEATING;
-import static com.vocabulary.learn.ActivityLearnConfiguration.NUMBER_OF_PHRASES;
-import static com.vocabulary.learn.ActivityLearnConfiguration.PREFS_LEARN;
-import static com.vocabulary.learn.ActivityLearnConfiguration.SHOWS;
-import static com.vocabulary.learn.ActivityLearnConfiguration.SHOWS_MEANING;
-import static com.vocabulary.learn.ActivityLearnConfiguration.TIME_10_SEC;
-import static com.vocabulary.learn.ActivityLearnConfiguration.TIME_15_SEC;
-import static com.vocabulary.learn.ActivityLearnConfiguration.TIME_5_SEC;
-import static com.vocabulary.learn.ActivityLearnConfiguration.TIME_NO_LIMIT;
-import static com.vocabulary.learn.ActivityLearnConfiguration.TIME_TO_ANSWER;
+import static com.vocabulary.screens.learnconfig.ActivityLearnConfig.ALL_PHRASES;
+import static com.vocabulary.screens.learnconfig.ActivityLearnConfig.CHEATING;
+import static com.vocabulary.screens.learnconfig.ActivityLearnConfig.NUMBER_OF_PHRASES;
+import static com.vocabulary.screens.learnconfig.ActivityLearnConfig.PREFS_LEARN;
+import static com.vocabulary.screens.learnconfig.ActivityLearnConfig.SHOWS;
+import static com.vocabulary.screens.learnconfig.ActivityLearnConfig.SHOWS_MEANING;
+import static com.vocabulary.screens.learnconfig.ActivityLearnConfig.TIME_10_SEC;
+import static com.vocabulary.screens.learnconfig.ActivityLearnConfig.TIME_15_SEC;
+import static com.vocabulary.screens.learnconfig.ActivityLearnConfig.TIME_5_SEC;
+import static com.vocabulary.screens.learnconfig.ActivityLearnConfig.TIME_NO_LIMIT;
+import static com.vocabulary.screens.learnconfig.ActivityLearnConfig.TIME_TO_ANSWER;
 
 /**
  * Created by Kébel Zsolt on 2018. 03. 24..

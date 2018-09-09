@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/lyt_info_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/info_line_height"
+        android:layout_alignParentBottom="true"
+        android:paddingStart="10dp"
+        android:paddingEnd="5dp">
+
+        <ImageView
+            android:id="@+id/imageView_wordList_flag"
+            android:layout_width="@dimen/icon_small_width"
+            android:layout_height="@dimen/icon_small_height"
+            android:layout_marginBottom="4dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="4dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/united_kingdom" />
+
+        <TextView
+            android:id="@+id/txt_language"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+
+            android:text="title"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imageView_wordList_flag"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_num_of_words"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="8dp"
+
+            android:text="0"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imageView_wordList_flag"
+            app:layout_constraintTop_toBottomOf="@id/txt_language" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="3dp"
+            android:textColor="@color/black"
+            android:text="@string/phrase"
+            app:layout_constraintBottom_toBottomOf="@id/txt_num_of_words"
+            app:layout_constraintStart_toEndOf="@id/txt_num_of_words"
+            app:layout_constraintTop_toTopOf="@id/txt_num_of_words" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

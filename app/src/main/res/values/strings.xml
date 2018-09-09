@@ -41,7 +41,7 @@
     <string name="title_vocabularies">Vocabularies</string>
     <string name="title_import">Import</string>
     <string name="title_subjects">Subjects</string>
-    <string name="phrase">phrase</string>
+
     <string name="edit_title">Edit title</string>
     <string name="share">Share</string>
     <string name="export">Export</string>
@@ -62,6 +62,7 @@
     <string name="added_msg">Vocabulary added</string>
     <string name="vocabulary_already_existing_msg">A vocabulary with the same title is already existing. If you still want to add it press add again.</string>
 
+    <!-- Activity Main -->
     <string name="tab_home">Home</string>
     <string name="tab_vocabularies">Vocabularies</string>
     <string name="tab_add">Add</string>
@@ -90,6 +91,26 @@
     <string name="state_kinda">You kind of memorized it.</string>
     <string name="state_know">You know this phrase quite well!</string>
 
+    <string name="add_new">Add new</string>
+    <string name="update_existing">Update existing</string>
+
+    <!-- Vocabulary -->
+    <string name="phrase">phrase</string>
+
+    <!-- Activity Merge -->
+    <string name="more">More</string>
+    <string name="list_item_more">More …</string>
+    <string name="rename">Rename</string>
+    <string name="merge">Merge</string>
+    <string name="merged_msg">Vocabularies merged</string>
+    <string name="choose_other_vocabulary_msg">Choose other vocabulary</string>
+
+    <string name="diagram_legend_state_new">New phrases</string>
+    <string name="diagram_legend_state_1">Phrases you don\'t really know</string>
+    <string name="diagram_legend_state_2">Phrases you kind of memorized</string>
+    <string name="diagram_legend_state_3">Phrases you memorized well</string>
+
+
     // dialog sort picker
     <string name="date">Date</string>
     <string name="abc_phrase">Abc in phrase</string>
@@ -98,6 +119,7 @@
     <string name="ascending">Ascending</string>
     <string name="descending">Descending</string>
     <string name="sort">Sort</string>
+    <string name="newest_first">Newest first   </string>
 
     // settings
     <string name="title_user_setting">User Settings</string>
@@ -114,11 +136,6 @@
     <string name="contact">Contact</string>
 
     // mActivity more
-    <string name="more">More</string>
-    <string name="rename">Rename</string>
-    <string name="merge">Merge</string>
-    <string name="merged_msg">Vocabularies merged</string>
-    <string name="choose_other_vocabulary_msg">Choose other vocabulary</string>
 
     // learn config
     <string name="title_learn_config">Learn Configuration</string>

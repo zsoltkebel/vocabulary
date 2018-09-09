@@ -11,10 +11,10 @@ INJECTED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:55:9-
 	android:name
 		ADDED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:56:13-67
 manifest
-ADDED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:2:1-68:12
-INJECTED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:2:1-68:12
-INJECTED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:2:1-68:12
-INJECTED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:2:1-68:12
+ADDED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:2:1-69:12
+INJECTED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:2:1-69:12
+INJECTED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:2:1-69:12
+INJECTED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:2:1-69:12
 MERGED from [io.realm:realm-android-library:5.3.1] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\realm-android-library-5.3.1.aar\fc61cc5bb50b16006c8469e94f9fc37b\AndroidManifest.xml:2:1-10:12
 MERGED from [com.droidninja:filepicker:1.0.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\filepicker-1.0.0.aar\fdcade4f50a01f6e3418449663a23f3f\AndroidManifest.xml:2:1-25:12
 MERGED from [com.android.support:design:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\design-25.1.0.aar\89d19bdefc3982afbd8702b0c304980a\AndroidManifest.xml:17:1-27:12
@@ -38,20 +38,20 @@ MERGED from [com.android.support:recyclerview-v7:25.1.0] C:\Users\Kébel Zsolt\.g
 MERGED from [com.android.support:support-core-ui:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.1.0.aar\ff57c00b73546dd938251ee78c8d28f5\AndroidManifest.xml:17:1-27:12
 MERGED from [com.android.support:support-compat:25.3.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.0.aar\8e1cb6664083a7e8d645659b3086d0fb\AndroidManifest.xml:17:1-31:12
 MERGED from [com.facebook.fresco:fbcore:0.12.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\fbcore-0.12.0.aar\88768ba93df4f6580fb0f5afa68618b8\AndroidManifest.xml:2:1-9:12
-INJECTED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:2:1-68:12
-INJECTED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:2:1-68:12
-INJECTED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:2:1-68:12
+INJECTED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:2:1-69:12
+INJECTED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:2:1-69:12
+INJECTED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:2:1-69:12
 	package
 		ADDED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:3:5-29
 		INJECTED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml
 		INJECTED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml
-		ADDED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:2:1-68:12
+		ADDED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:2:1-69:12
 		INJECTED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml
-		ADDED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:2:1-68:12
+		ADDED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:2:1-69:12
 		INJECTED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:2:11-69
@@ -143,14 +143,14 @@ ADDED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:27:9-29:
 		ADDED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:28:13-48
 	android:name
 		ADDED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:27:19-54
-activity#com.vocabulary.screens.main.ActivityTabLayout
+activity#com.vocabulary.screens.main.ActivityMain
 ADDED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:30:9-32:51
 	android:screenOrientation
 		ADDED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:32:13-49
 	android:configChanges
 		ADDED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:31:13-48
 	android:name
-		ADDED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:30:19-65
+		ADDED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:30:19-60
 activity#com.vocabulary.user.ActivityUserMenu
 ADDED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:33:9-35:51
 	android:screenOrientation
@@ -159,14 +159,14 @@ ADDED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:33:9-35:
 		ADDED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:34:13-48
 	android:name
 		ADDED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:33:19-56
-activity#com.vocabulary.learn.ActivityLearnConfiguration
+activity#com.vocabulary.screens.learnconfig.ActivityLearnConfig
 ADDED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:36:9-38:51
 	android:screenOrientation
 		ADDED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:38:13-49
 	android:configChanges
 		ADDED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:37:13-48
 	android:name
-		ADDED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:36:19-67
+		ADDED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:36:19-74
 activity#com.vocabulary.learn.ActivityVocabularyTest
 ADDED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:39:9-41:51
 	android:screenOrientation
@@ -213,6 +213,10 @@ MERGED from [com.droidninja:filepicker:1.0.0] C:\Users\Kébel Zsolt\.gradle\cache
 MERGED from [com.droidninja:filepicker:1.0.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\filepicker-1.0.0.aar\fdcade4f50a01f6e3418449663a23f3f\AndroidManifest.xml:11:5-81
 	android:name
 		ADDED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:66:22-78
+uses-permission#android.permission.VIBRATE
+ADDED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:67:5-65
+	android:name
+		ADDED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:67:22-63
 uses-sdk
 INJECTED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml
@@ -283,7 +287,7 @@ ADDED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:60:13-62
 		ADDED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:61:17-67
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
 ADDED from [com.droidninja:filepicker:1.0.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\filepicker-1.0.0.aar\fdcade4f50a01f6e3418449663a23f3f\AndroidManifest.xml:12:5-80
-IMPLIED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:2:1-68:12 reason: droidninja.filepicker requested WRITE_EXTERNAL_STORAGE
+IMPLIED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:2:1-69:12 reason: droidninja.filepicker requested WRITE_EXTERNAL_STORAGE
 	android:name
 		ADDED from [com.droidninja:filepicker:1.0.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\filepicker-1.0.0.aar\fdcade4f50a01f6e3418449663a23f3f\AndroidManifest.xml:12:22-77
 activity#droidninja.filepicker.FilePickerActivity

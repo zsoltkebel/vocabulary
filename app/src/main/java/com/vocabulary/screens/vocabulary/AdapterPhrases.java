@@ -101,6 +101,7 @@ public class AdapterPhrases extends RecyclerView.Adapter<AdapterPhrases.ViewHold
                     Intent intent = new Intent(mContext, ActivityPhrase.class);
                     intent.putExtra(Vocabulary.ID, holder.phrase.getVocabularyId());
                     intent.putExtra(Phrase.DATE, holder.phrase.getDate());
+                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                     mContext.startActivity(intent);
                 }
             }

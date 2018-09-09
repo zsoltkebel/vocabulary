@@ -5,15 +5,21 @@
     android:layout_gravity="center|bottom"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white">
+    android:background="@color/background_light">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        android:layout_alignParentTop="true"
+        android:background="@color/page2"/>
 
     <android.support.design.widget.TabLayout
         android:id="@+id/tab_layout"
         android:layout_width="match_parent"
         android:layout_height="54dp"
-        android:background="@color/light3"
         app:tabIndicatorHeight="0dp"
         app:tabIndicatorColor="@color/transplarent"
+        android:background="@color/background_light"
         android:layout_alignParentBottom="true"
         android:elevation="15dp"
         app:tabGravity="fill"
@@ -31,12 +37,17 @@
         android:background="@android:color/transparent"
         android:elevation="0dp"
         android:visibility="gone"/>
-    <FrameLayout
-        android:id="@+id/fl_fragment_frame"
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordinator_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@id/tab_layout">
-    </FrameLayout>
+        <FrameLayout
+            android:id="@+id/fl_fragment_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </android.support.design.widget.CoordinatorLayout>
 
 
 </RelativeLayout>

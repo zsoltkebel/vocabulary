@@ -20,6 +20,7 @@ public class Phrase extends RealmObject {
     public static final String VOCABULARY_ID = "vocabularyId";
     public static final String KNOW_COUNT = "mKnowCount";
     public static final String DONT_KNOW_COUNT = "mDontKnowCount";
+    public static final String STATE = "mState";
 
     public static final int NEW = 0;
     public static final int DONT_KNOW = 1;

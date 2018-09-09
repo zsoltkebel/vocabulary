@@ -16,12 +16,12 @@ public final class R {
         public static final int x_showPwdDrawable = 0x7f010196;
     }
     public static final class drawable {
-        public static final int x_et_svg_ic_clear_24dp = 0x7f02013f;
-        public static final int x_et_svg_ic_hide_password_24dp = 0x7f020140;
-        public static final int x_et_svg_ic_show_password_24dp = 0x7f020141;
+        public static final int x_et_svg_ic_clear_24dp = 0x7f020103;
+        public static final int x_et_svg_ic_hide_password_24dp = 0x7f020104;
+        public static final int x_et_svg_ic_show_password_24dp = 0x7f020105;
     }
     public static final class string {
-        public static final int app_name = 0x7f09002b;
+        public static final int app_name = 0x7f09002d;
     }
     public static final class styleable {
         public static final int[] XEditText = { 0x7f010193, 0x7f010194, 0x7f010195, 0x7f010196, 0x7f010197, 0x7f010198 };

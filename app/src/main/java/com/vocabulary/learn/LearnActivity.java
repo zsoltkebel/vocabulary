@@ -1,5 +1,6 @@
 package com.vocabulary.learn;
 
+import android.app.Activity;
 import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
@@ -14,6 +15,9 @@ import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import com.vocabulary.realm.LearnOverview;
+import com.vocabulary.realm.Test;
+import com.vocabulary.screens.FragmentVocabularyInfo;
 import com.vocabulary.R;
 import com.vocabulary.realm.Phrase;
 import com.vocabulary.realm.RealmActivity;
@@ -27,15 +31,15 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-import static com.vocabulary.learn.ActivityLearnConfiguration.CHEATING;
-import static com.vocabulary.learn.ActivityLearnConfiguration.PREFS_LEARN;
-import static com.vocabulary.learn.ActivityLearnConfiguration.SHOWS;
-import static com.vocabulary.learn.ActivityLearnConfiguration.SHOWS_MEANING;
-import static com.vocabulary.learn.ActivityLearnConfiguration.TIME_10_SEC;
-import static com.vocabulary.learn.ActivityLearnConfiguration.TIME_15_SEC;
-import static com.vocabulary.learn.ActivityLearnConfiguration.TIME_5_SEC;
-import static com.vocabulary.learn.ActivityLearnConfiguration.TIME_NO_LIMIT;
-import static com.vocabulary.learn.ActivityLearnConfiguration.TIME_TO_ANSWER;
+import static com.vocabulary.screens.learnconfig.ActivityLearnConfig.CHEATING;
+import static com.vocabulary.screens.learnconfig.ActivityLearnConfig.PREFS_LEARN;
+import static com.vocabulary.screens.learnconfig.ActivityLearnConfig.SHOWS;
+import static com.vocabulary.screens.learnconfig.ActivityLearnConfig.SHOWS_MEANING;
+import static com.vocabulary.screens.learnconfig.ActivityLearnConfig.TIME_10_SEC;
+import static com.vocabulary.screens.learnconfig.ActivityLearnConfig.TIME_15_SEC;
+import static com.vocabulary.screens.learnconfig.ActivityLearnConfig.TIME_5_SEC;
+import static com.vocabulary.screens.learnconfig.ActivityLearnConfig.TIME_NO_LIMIT;
+import static com.vocabulary.screens.learnconfig.ActivityLearnConfig.TIME_TO_ANSWER;
 
 /**
  * Created by Kébel Zsolt on 1/23/2017.
@@ -54,6 +58,9 @@ public class LearnActivity extends RealmActivity {
     protected TextView mTvShowed;
     @BindView(R.id.tv_answer)
     protected TextView mTvHidden;
+
+    @BindView(R.id.flt_vocabulary_info)
+    protected FrameLayout mFltVocabularyInfo;
 
     int i;
     int random;
@@ -76,10 +83,25 @@ public class LearnActivity extends RealmActivity {
 
     private Vocabulary mVocabulary;
 
+    private LearnOverview mLearnOverview;
+
+    private Test mTest;
+
+
+
     private Phrase mCurrentPhrase;
 
     private List<Integer> mIndexes = new ArrayList<>();
     private int index;
+
+    private List<Integer> mStateFilters;
+
+    private FragmentVocabularyInfo fragmentVocabularyInfo;
+
+    @Override
+    protected Activity getActivity() {
+        return this;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -87,8 +109,16 @@ public class LearnActivity extends RealmActivity {
         setContentView(R.layout.activity_learn);
         ButterKnife.bind(this);
 
+        mStateFilters = getIntent().getIntegerArrayListExtra(Phrase.STATE);
+
         String vocabularyId = getIntent().getStringExtra(Vocabulary.ID);
         mVocabulary = mRealm.where(Vocabulary.class).equalTo(Vocabulary.ID, vocabularyId).findFirst();
+        mLearnOverview = mRealm.where(LearnOverview.class).equalTo(LearnOverview.ID, vocabularyId).findFirst();
+
+        mTest = new Test();
+        mRealm.beginTransaction();
+        mLearnOverview.setDateOfLastTest(mTest.getId());
+        mRealm.commitTransaction();
 
         for (int i = 0; i < mVocabulary.getPhrases().size(); i++)
             mIndexes.add(i);
@@ -107,15 +137,15 @@ public class LearnActivity extends RealmActivity {
         btnShow.setVisibility(View.VISIBLE);
         numRefresh();
 /*
-        btnNext.setOnClickListener(new View.OnClickListener() {
+        btnNext.setOnClickListener(add_new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 words.remove(LearnActivity.this.random);
 
                 if (words.size() == 0) {
-                    Intent intent = new Intent(LearnActivity.this, ActivityVocabulary.class);
-                    Bundle bundle = new Bundle();
+                    Intent intent = add_new Intent(LearnActivity.this, ActivityVocabulary.class);
+                    Bundle bundle = add_new Bundle();
                     bundle.putString("vocabularyCode", vocabularies.get(i).getCode());
                     bundle.putInt("p", i);
                     intent.putExtras(bundle);
@@ -149,6 +179,9 @@ public class LearnActivity extends RealmActivity {
             }
         });
 
+        // set vocabulary info line
+        fragmentVocabularyInfo = FragmentVocabularyInfo.newInstance(mVocabulary.getIconInt(this), mVocabulary.getTitle(), mVocabulary.getPhrases().size());
+        fragmentVocabularyInfo.displayFragment(this, mFltVocabularyInfo);
     }
 
     @OnClick(R.id.btn_next)
@@ -180,8 +213,10 @@ public class LearnActivity extends RealmActivity {
 
     private void generateNextPhrase()
     {
-        if (mIndexes.size() == 0)
+        if (mIndexes.size() == 0) {
+            finish();
             return;
+        }
 
         if (timer != null)
             timer.cancel(true);
@@ -189,7 +224,11 @@ public class LearnActivity extends RealmActivity {
         index = rand.nextInt(mIndexes.size());
 
         mCurrentPhrase = mVocabulary.getPhrases().get(mIndexes.get(index));
-
+        if (!mStateFilters.contains(mCurrentPhrase.calculateState())) {
+            mIndexes.remove(index);
+            generateNextPhrase();
+            return;
+        }
         mTvShowed.setText(mCurrentPhrase.getP1());
         mTvHidden.setText(mCurrentPhrase.getP2());
 

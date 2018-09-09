@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.content.res.Resources;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
@@ -16,10 +17,13 @@ import android.widget.LinearLayout;
 import android.widget.Spinner;
 
 import com.vocabulary.R;
+import com.vocabulary.realm.LearnOverview;
 import com.vocabulary.screens.settings.ActivityAbout;
 
 import java.util.Locale;
 
+import butterknife.ButterKnife;
+import butterknife.OnClick;
 import droidninja.filepicker.fragments.BaseFragment;
 
 import static android.content.Context.MODE_PRIVATE;
@@ -34,7 +38,7 @@ public class FragmentSettings extends BaseFragment {
 
     private ImageView ivClickBack;
 
-    ActivityTabLayout activity;
+    ActivityMain activity;
 
     private Spinner spinnerLanguage;
     private Button btnSave;
@@ -52,7 +56,8 @@ public class FragmentSettings extends BaseFragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         root = inflater.inflate(R.layout.fragment_settings, container, false);
-        this.activity = (ActivityTabLayout) getActivity();
+        ButterKnife.bind(this, root);
+        this.activity = (ActivityMain) getActivity();
 
         ivClickBack = (ImageView) root.findViewById(R.id.iv_click_back);
 
@@ -85,7 +90,7 @@ public class FragmentSettings extends BaseFragment {
                 switch (language)
                 {
                     case 0:
-                        setLocale(null);
+                        setLocale("en");
                         break;
                     case 1:
                         setLocale("hu");
@@ -103,6 +108,34 @@ public class FragmentSettings extends BaseFragment {
         });
 
         return root;
+    }
+
+    @OnClick(R.id.iv_facebook)
+    protected void onFacebookClicked() {
+        String url = "https://www.facebook.com/MyVocabulary-418590168500849";
+
+        Intent intent;
+
+        try {
+            intent = new Intent(Intent.ACTION_VIEW, Uri.parse("fb://page/" + "418590168500849"));
+        } catch (Exception e) {
+            intent =  new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/" + "418590168500849"));
+        }
+
+        startActivity(intent);
+    }
+
+    @OnClick(R.id.iv_gmail)
+    protected void onGmailClicked() {
+        Intent intent = new Intent(Intent.ACTION_SEND);
+        String[] strTo = { "kebel.zsolt@gmail.com" };
+
+        //intent.putExtra(Intent.EXTRA_TEXT, "Body");
+        intent.setType("message/rfc822");
+        intent.setPackage("com.google.android.gm");
+        intent.putExtra(Intent.EXTRA_EMAIL, strTo);
+        intent.putExtra(Intent.EXTRA_SUBJECT, "MyVocabulary feedback");
+        startActivity(intent);
     }
 
     private void getPrefs() {
@@ -137,11 +170,19 @@ public class FragmentSettings extends BaseFragment {
         Configuration configuration = resources.getConfiguration();
         configuration.locale = myLocale;
         resources.updateConfiguration(configuration, resources.getDisplayMetrics());
-        Intent refresh = new Intent(getContext(), ActivityTabLayout.class);
+        Intent refresh = new Intent(getContext(), ActivityMain.class);
         refresh.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);
-        //ActivityTabLayout.finishActivity();
+        //ActivityMain.finishActivity();
 
         startActivity(refresh);
         getActivity().finish();
+    }
+
+    @OnClick(R.id.lt_click_clear_learn_history)
+    protected void onClearLearnHistoryClicked() {
+
+        ((ActivityMain) getActivity()).getRealm().beginTransaction();
+        ((ActivityMain) getActivity()).getRealm().where(LearnOverview.class).findAll().deleteAllFromRealm();
+        ((ActivityMain) getActivity()).getRealm().commitTransaction();
     }
 }

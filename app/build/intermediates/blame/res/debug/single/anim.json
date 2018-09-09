@@ -16,6 +16,10 @@
         "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\anim\\slide_out_to_right.xml"
     },
     {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\anim\\rotate.xml",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\anim\\rotate.xml"
+    },
+    {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_bottom.xml",
         "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b18f3b6b3d4dd815e21774815a8b6215\\res\\anim\\abc_slide_out_bottom.xml"
     },
@@ -30,6 +34,10 @@
     {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_top.xml",
         "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\b18f3b6b3d4dd815e21774815a8b6215\\res\\anim\\abc_slide_in_top.xml"
+    },
+    {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\anim\\fade_in.xml",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\anim\\fade_in.xml"
     },
     {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\anim\\design_fab_in.xml",

@@ -77,7 +77,7 @@ public class ActivityEditFlashCards extends AppCompatActivity {
 
 
 
-        swCheating.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+        swCheating.setOnCheckedChangeListener(add_new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked)
@@ -86,7 +86,7 @@ public class ActivityEditFlashCards extends AppCompatActivity {
                     swCheating.setText(R.string.disabled);
             }
         });
-        swNumberOfPhrases.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+        swNumberOfPhrases.setOnCheckedChangeListener(add_new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {

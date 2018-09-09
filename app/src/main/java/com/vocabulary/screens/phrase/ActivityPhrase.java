@@ -1,39 +1,41 @@
 package com.vocabulary.screens.phrase;
 
+import android.app.Activity;
+import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.PopupMenu;
-import android.view.MenuItem;
+import android.support.v4.view.ViewPager;
 import android.view.View;
-import android.widget.TextView;
-import android.widget.Toast;
 
-import com.vocabulary.realm.Phrase;
-import com.vocabulary.realm.Vocabulary;
 import com.vocabulary.R;
+import com.vocabulary.realm.Phrase;
+import com.vocabulary.realm.RealmActivity;
+import com.vocabulary.realm.Vocabulary;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import io.realm.Realm;
+import io.realm.RealmResults;
+import io.realm.Sort;
 
-public class ActivityPhrase extends AppCompatActivity {
+import static com.vocabulary.screens.vocabulary.ActivityVocabulary.PREFS_VOCABULARY;
+import static com.vocabulary.screens.vocabulary.FragmentPhrases.PREFS_SORTING_ASCENDING;
+import static com.vocabulary.screens.vocabulary.FragmentPhrases.PREFS_SORTING_FIELD;
 
-    @BindView(R.id.txtvWord)
-    protected TextView txtv;
-    @BindView(R.id.txtvMeaning)
-    protected TextView txtvMeaning;
-    @BindView(R.id.tv_state_text)
-    protected TextView mTvState;
+public class ActivityPhrase extends RealmActivity {
 
-    @BindView(R.id.v_state_color)
-    protected View mViewStateColor;
+    @BindView(R.id.vp_phrase)
+    protected ViewPager mVpPhrase;
 
     private String idOfVocabulary;
     private String idOfPhrase;
 
-    private Realm realm;
+    private RealmResults<Phrase> mPhrases;
     private Phrase phrase;
+
+    @Override
+    protected Activity getActivity() {
+        return this;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,51 +43,48 @@ public class ActivityPhrase extends AppCompatActivity {
         setContentView(R.layout.activity_phrase);
         ButterKnife.bind(this);
 
-        realm = Realm.getDefaultInstance();
-
         idOfVocabulary = getIntent().getStringExtra(Vocabulary.ID);
         idOfPhrase = getIntent().getStringExtra(Phrase.DATE);
-        phrase = realm.where(Phrase.class)
+
+        if (getSortingAscending())
+            mPhrases = mRealm.where(Phrase.class)
+                    .equalTo(Phrase.VOCABULARY_ID, idOfVocabulary)
+                    .findAll()
+                    .sort(getSortingField(), Sort.ASCENDING);
+        else
+            mPhrases = mRealm.where(Phrase.class)
+                    .equalTo(Phrase.VOCABULARY_ID, idOfVocabulary)
+                    .findAll()
+                    .sort(getSortingField(), Sort.DESCENDING);
+
+        phrase = mRealm.where(Phrase.class)
                 .equalTo(Phrase.VOCABULARY_ID, idOfVocabulary)
                 .equalTo(Phrase.DATE, idOfPhrase).findFirst();
 
-        txtv.setText(phrase.getP1());
-        txtvMeaning.setText(phrase.getP2());
-        txtv.setVisibility(View.VISIBLE);
+        final PagerAdapter pagerAdapter = new PagerAdapter(getSupportFragmentManager(), mPhrases);
 
-        switch (phrase.calculateState()) {
-            case Phrase.NEW:
-                mTvState.setText(R.string.state_new);
-                mViewStateColor.setBackground(getResources().getDrawable(R.color.page2));
-                break;
-            case Phrase.DONT_KNOW:
-                mTvState.setText(R.string.state_dont_know);
-                mViewStateColor.setBackground(getResources().getDrawable(R.color.dot_red));
-                break;
-            case Phrase.KINDA:
-                mTvState.setText(R.string.state_kinda);
-                mViewStateColor.setBackground(getResources().getDrawable(R.color.dot_yellow));
-                break;
-            case Phrase.KNOW:
-                mTvState.setText(R.string.state_know);
-                mViewStateColor.setBackground(getResources().getDrawable(R.color.dot_green));
-                break;
-        }
+        mVpPhrase.setAdapter(pagerAdapter);
+        mVpPhrase.setCurrentItem(mPhrases.indexOf(phrase));
 
-        registerForContextMenu(findViewById(R.id.imageButton));
+        mVpPhrase.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
+            }
+
+            @Override
+            public void onPageSelected(int position) {
+                phrase = ((FragmentPhrase) pagerAdapter.getItem(position)).getPhrase();
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int state) {
+
+            }
+        });
+
+        //registerForContextMenu(findViewById(R.id.imageButton));
         //openContextMenu(findViewById(R.id.imageButton));
-    }
-
-    @Override
-    protected void onStart() {
-        super.onStart();
-        realm = Realm.getDefaultInstance();
-    }
-
-    @Override
-    protected void onStop() {
-        super.onStop();
-        realm.close();
     }
 
     @OnClick(R.id.iv_click_back)
@@ -95,24 +94,38 @@ public class ActivityPhrase extends AppCompatActivity {
 
     public void showPopup(View view){
 
-        PopupMenu popup = new PopupMenu(ActivityPhrase.this, findViewById(R.id.imageButton));
+        //PopupMenu popup = add_new PopupMenu(ActivityPhrase.this, findViewById(R.id.imageButton));
         //Inflating the Popup using xml file
-        popup.getMenuInflater().inflate(R.menu.menu, popup.getMenu());
+        //popup.getMenuInflater().inflate(R.menu.menu, popup.getMenu());
 
         //registering popup with OnMenuItemClickListener
-        popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
-            public boolean onMenuItemClick(MenuItem item) {
-                Toast.makeText(ActivityPhrase.this,"You Clicked : " + item.getTitle(),Toast.LENGTH_SHORT).show();
-                return true;
-            }
-        });
+        //.setOnMenuItemClickListener(add_new PopupMenu.OnMenuItemClickListener() {
+        //    public boolean onMenuItemClick(MenuItem item) {
+        //        Toast.makeText(ActivityPhrase.this,"You Clicked : " + item.getTitle(),Toast.LENGTH_SHORT).show();
+        //        return true;
+        //    }
+        //});
 
-        popup.show();//showing popup menu
+        //popup.show();//showing popup menu
     }
 
     @Override
     public void onBackPressed() {
         finish();
+    }
+
+    public void setCurrentPhrase(Phrase phrase) {
+        this.phrase = phrase;
+    }
+
+    public String getSortingField() {
+        SharedPreferences prefs = getSharedPreferences(PREFS_VOCABULARY, MODE_PRIVATE);
+        return prefs.getString(PREFS_SORTING_FIELD, Phrase.DATE);
+    }
+
+    public boolean getSortingAscending() {
+        SharedPreferences prefs = getSharedPreferences(PREFS_VOCABULARY, MODE_PRIVATE);
+        return prefs.getBoolean(PREFS_SORTING_ASCENDING, false);
     }
 }
 

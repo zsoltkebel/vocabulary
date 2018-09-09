@@ -7,5 +7,8 @@
     <item
         android:id="@+id/ordering"
         android:title="@string/sort"/>
-    
+    <item
+        android:id="@+id/more"
+        android:title="@string/list_item_more"/>
+
 </menu>

@@ -27,13 +27,13 @@
         <activity android:name=".learn.LearnActivity"
             android:configChanges="orientation"
             android:screenOrientation="portrait"/>
-        <activity android:name=".screens.main.ActivityTabLayout"
+        <activity android:name=".screens.main.ActivityMain"
             android:configChanges="orientation"
             android:screenOrientation="portrait"/>
         <activity android:name=".user.ActivityUserMenu"
             android:configChanges="orientation"
             android:screenOrientation="portrait"/>
-        <activity android:name=".learn.ActivityLearnConfiguration"
+        <activity android:name=".screens.learnconfig.ActivityLearnConfig"
             android:configChanges="orientation"
             android:screenOrientation="portrait"/>
         <activity android:name=".learn.ActivityVocabularyTest"
@@ -64,5 +64,6 @@
     </application>
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
 
 </manifest>

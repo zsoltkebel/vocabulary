@@ -1,5 +1,9 @@
 [
     {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi-v4\\pie_chart.png",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\mipmap-xxxhdpi\\pie_chart.png"
+    },
+    {
         "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi-v4\\ic_launcher.png",
         "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     }

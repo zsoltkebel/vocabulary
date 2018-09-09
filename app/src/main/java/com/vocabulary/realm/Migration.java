@@ -64,7 +64,40 @@ public class Migration implements RealmMigration {
                         }
                     });
 
+
             oldVersion++;
         }
+        /** Version: 3
+         *  Class Test
+         *      @PrimaryKey
+         *      String mDate
+         *
+         *      int mRightAnswers
+         *      int mWrongAnswers
+         *
+         *      int mTestType;
+         *
+         *  Class LearnOverview
+         *      @PrimaryKey
+         *      String mVocabularyId
+         *
+         *      String mDateOfLastTest
+         *
+         *      RealmList<Test> mTests
+         *
+         */
+        if (oldVersion < 3) {
+            schema.createWithPrimaryKeyField("Test", Test.ID, String.class)
+                    .addField(Test.RIGHT_ANSWERS, int.class)
+                    .addField(Test.WRONG_ANSWERS, int.class)
+                    .addField(Test.TEST_TYPE, int.class);
+
+            schema.createWithPrimaryKeyField("LearnOverview", LearnOverview.ID, String.class)
+                    .addField(LearnOverview.DATE_OF_LAST_TEST, String.class)
+                    .addRealmListField(LearnOverview.TESTS, schema.get("Test"));
+
+            oldVersion++;
+        }
+
     }
 }

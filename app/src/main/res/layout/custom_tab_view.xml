@@ -15,7 +15,7 @@
         android:id="@+id/iv_icon"
         android:layout_width="@dimen/custom_tab_icon_width"
         android:layout_height="@dimen/custom_tab_icon_height"
-        android:src="@drawable/new_home"/>
+        android:src="@drawable/home"/>
 
     <TextView
         android:id="@+id/tv_text"
