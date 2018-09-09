@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.kebelzsolt.dictionary20">
+    package="com.vocabulary">
 
     <application
         android:allowBackup="true"
@@ -15,54 +15,55 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ActivityVocabularyList"
+        <activity android:name=".screens.vocabulary.ActivityVocabulary"
             android:configChanges="orientation"
             android:screenOrientation="portrait"/>
-        <activity android:name=".main.vocabulary.ActivityVocabulary"
+        <activity android:name=".screens.phrase.ActivityPhrase"
             android:configChanges="orientation"
             android:screenOrientation="portrait"/>
-        <activity android:name=".ActivityVocabularyContainer"
-            android:configChanges="orientation"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".ActivityWord"
-            android:configChanges="orientation"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".EditWord"
+        <activity android:name=".screens.edit.EditWord"
             android:configChanges="orientation"
             android:screenOrientation="portrait"/>
         <activity android:name=".learn.LearnActivity"
             android:configChanges="orientation"
             android:screenOrientation="portrait"/>
-        <activity android:name=".main.ActivityTabLayout"
+        <activity android:name=".screens.main.ActivityMain"
             android:configChanges="orientation"
             android:screenOrientation="portrait"/>
         <activity android:name=".user.ActivityUserMenu"
             android:configChanges="orientation"
             android:screenOrientation="portrait"/>
-        <activity android:name=".learn.ActivityLearnConfiguration"
+        <activity android:name=".screens.learnconfig.ActivityLearnConfig"
             android:configChanges="orientation"
             android:screenOrientation="portrait"/>
         <activity android:name=".learn.ActivityVocabularyTest"
             android:configChanges="orientation"
             android:screenOrientation="portrait"/>
-        <activity android:name=".main.settings.ActivityAbout"
+        <activity android:name=".screens.settings.ActivityAbout"
             android:configChanges="orientation"
             android:screenOrientation="portrait"/>
-        <activity android:name=".main.settings.ActivitySettings"
+        <activity android:name=".screens.settings.ActivitySettings"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".screens.more.ActivityMore"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".screens.merge.ActivityMerge"
             android:configChanges="orientation"
             android:screenOrientation="portrait"/>
 
         <provider
             android:name="android.support.v4.content.FileProvider"
-            android:authorities="com.example.myapp.fileprovider"
-            android:grantUriPermissions="true"
-            android:exported="false">
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/filepaths" />
+                android:resource="@xml/provider_paths"/>
         </provider>
     </application>
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
 
 </manifest>

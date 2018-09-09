@@ -1,6 +1,10 @@
 [
     {
-        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\debug\\xml\\filepaths.xml",
-        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\xml\\filepaths.xml"
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\xml\\provider_paths.xml",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\xml\\provider_paths.xml"
+    },
+    {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\xml\\filepaths.xml",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\xml\\filepaths.xml"
     }
 ]

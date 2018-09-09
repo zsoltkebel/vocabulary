@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.dictionary20"
-    android:versionCode="3"
-    android:versionName="1.2" >
+    android:versionCode="8"
+    android:versionName="1.5.2" >
 
     <uses-sdk
         android:minSdkVersion="21"
         android:targetSdkVersion="25" />
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
@@ -24,7 +25,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.example.kebelzsolt.dictionary20.MainActivity" >
+        <activity android:name="com.vocabulary.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -32,62 +33,62 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.kebelzsolt.dictionary20.ActivityVocabularyList"
+            android:name="com.vocabulary.screens.vocabulary.ActivityVocabulary"
             android:configChanges="orientation"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.kebelzsolt.dictionary20.main.vocabulary.ActivityVocabulary"
+            android:name="com.vocabulary.screens.phrase.ActivityPhrase"
             android:configChanges="orientation"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.kebelzsolt.dictionary20.ActivityVocabularyContainer"
+            android:name="com.vocabulary.screens.edit.EditWord"
             android:configChanges="orientation"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.kebelzsolt.dictionary20.ActivityWord"
+            android:name="com.vocabulary.learn.LearnActivity"
             android:configChanges="orientation"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.kebelzsolt.dictionary20.EditWord"
+            android:name="com.vocabulary.screens.main.ActivityMain"
             android:configChanges="orientation"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.kebelzsolt.dictionary20.learn.LearnActivity"
+            android:name="com.vocabulary.user.ActivityUserMenu"
             android:configChanges="orientation"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.kebelzsolt.dictionary20.main.ActivityTabLayout"
+            android:name="com.vocabulary.screens.learnconfig.ActivityLearnConfig"
             android:configChanges="orientation"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.kebelzsolt.dictionary20.user.ActivityUserMenu"
+            android:name="com.vocabulary.learn.ActivityVocabularyTest"
             android:configChanges="orientation"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.kebelzsolt.dictionary20.learn.ActivityLearnConfiguration"
+            android:name="com.vocabulary.screens.settings.ActivityAbout"
             android:configChanges="orientation"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.kebelzsolt.dictionary20.learn.ActivityVocabularyTest"
+            android:name="com.vocabulary.screens.settings.ActivitySettings"
             android:configChanges="orientation"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.kebelzsolt.dictionary20.main.settings.ActivityAbout"
+            android:name="com.vocabulary.screens.more.ActivityMore"
             android:configChanges="orientation"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.kebelzsolt.dictionary20.main.settings.ActivitySettings"
+            android:name="com.vocabulary.screens.merge.ActivityMerge"
             android:configChanges="orientation"
             android:screenOrientation="portrait" />
 
         <provider
             android:name="android.support.v4.content.FileProvider"
-            android:authorities="com.example.myapp.fileprovider"
+            android:authorities="com.dictionary20.provider"
             android:exported="false"
             android:grantUriPermissions="true" >
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/filepaths" />
+                android:resource="@xml/provider_paths" />
         </provider>
 
         <activity

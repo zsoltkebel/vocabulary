@@ -2,9 +2,13 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/learn"
-        android:title="@string/learn"/>
+        android:checkable="false"
+        android:title="@string/learn" />
     <item
         android:id="@+id/ordering"
-        android:title="Order by"/>
-    
+        android:title="@string/sort"/>
+    <item
+        android:id="@+id/more"
+        android:title="@string/list_item_more"/>
+
 </menu>

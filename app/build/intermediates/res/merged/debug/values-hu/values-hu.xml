@@ -30,6 +30,8 @@
     <string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"Válasszon ki egy alkalmazást"</string>
     <string msgid="121134116657445385" name="abc_capital_off">"KI"</string>
     <string msgid="3405795526292276155" name="abc_capital_on">"BE"</string>
+    <string name="abc_meaning">Abc a magyarázatban</string>
+    <string name="abc_phrase">Abc a kifejezésben</string>
     <string msgid="7723749260725869598" name="abc_search_hint">"Keresés…"</string>
     <string msgid="3691816814315814921" name="abc_searchview_description_clear">"Lekérdezés törlése"</string>
     <string msgid="2550479030709304392" name="abc_searchview_description_query">"Keresési lekérdezés"</string>
@@ -43,6 +45,7 @@
     <string name="all">Mind</string>
     <string name="app_name">MyVocabulary</string>
     <string name="are_you_sure_delete">Biztosan törölni akarod?</string>
+    <string name="ascending">Ascending</string>
     <string name="asksfor">Kérdezze a ...</string>
     <string name="back">Vissza</string>
     <string name="btn_cancel">Mégse</string>
@@ -53,9 +56,12 @@
     <string name="button_add">Add</string>
     <string name="cancel">Mégse</string>
     <string name="cheating">Csalás</string>
+    <string name="choose_other_vocabulary_msg">Válassz másik szótárat</string>
     <string name="custom">Egyedi</string>
+    <string name="date">Dátum</string>
     <string name="delete">Törlés</string>
     <string name="delete_warning_text">Ha még nem exportáltad a szótárat, akkor végleg elveszik!</string>
+    <string name="descending">Descending</string>
     <string name="dialog_add_phrase_positive_btn">Add</string>
     <string name="dialog_add_phrase_title">Kifejezés hozzáadása</string>
     <string name="dialog_append_phrase_title">Ez a kifejezés már szerepel a szótárban. Kibővíti a jelentését?</string>
@@ -70,21 +76,33 @@
     <string name="language">Nyelv</string>
     <string name="learn">Tanulás</string>
     <string name="letsgo">Gyerünk</string>
+    <string name="list_item_more">Több …</string>
     <string name="male">Férfi</string>
     <string name="meaning">Jelentés</string>
+    <string name="merge">Összevonás</string>
+    <string name="merged_msg">Szótárak összevonva</string>
     <string name="message_deleted"><b>Deleted</b></string>
+    <string name="more">Több</string>
     <string name="name">Név</string>
+    <string name="new_vocabulary">Állítsd be a szótár címét</string>
+    <string name="newest_first">Legújabb elöl   </string>
     <string name="num_of_asked">A kérdezendő kifejezések száma:</string>
     <string name="number_of_phrases">Kifejezések száma</string>
     <string name="phrase">kifejezés</string>
+    <string name="rename">Átnevezés</string>
     <string name="rename_text">A szótár címe:</string>
     <string name="rename_warning_text">Kérlek figyelj rá, hogy a szótár címe el kell hogy térjen az eddig az adott tantárgyban szereplő címektől!</string>
     <string name="save">Mentés</string>
     <string name="search">Keresés</string>
     <string msgid="146198913615257606" name="search_menu_title">"Keresés"</string>
-    <string name="set_title">Állítsd be a szótár címét</string>
     <string name="share">Megosztás</string>
+    <string name="sort">Rendezés</string>
+    <string name="sort_title">Rendezés e szerint</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="tab_add">Hozzáadás</string>
+    <string name="tab_home">Otthon</string>
+    <string name="tab_settings">Beállítások</string>
+    <string name="tab_vocabularies">Szótárak</string>
     <string name="time_to_answer">Idő a válaszadásra</string>
     <string name="title_import">Importálás</string>
     <string name="title_learn_config">Tanulás Konfiguráció</string>

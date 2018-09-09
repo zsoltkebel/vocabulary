@@ -5,142 +5,49 @@
     android:layout_gravity="center|bottom"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/back_white">
+    android:background="@color/background_light">
 
-    <LinearLayout
-        android:id="@+id/header"
+    <View
         android:layout_width="match_parent"
         android:layout_height="@dimen/header_height"
-        android:orientation="vertical"
         android:layout_alignParentTop="true"
-        android:elevation="0dp"
-        android:background="@color/dark"
-        android:gravity="center">
+        android:background="@color/page2"/>
 
-    </LinearLayout>
     <android.support.design.widget.TabLayout
-        android:id="@+id/sliding_tabs"
+        android:id="@+id/tab_layout"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="@color/light3"
-        app:tabIndicatorHeight="2dp"
-        android:layout_alignParentBottom="true"/>
+        android:layout_height="54dp"
+        app:tabIndicatorHeight="0dp"
+        app:tabIndicatorColor="@color/transplarent"
+        android:background="@color/background_light"
+        android:layout_alignParentBottom="true"
+        android:elevation="15dp"
+        app:tabGravity="fill"
+        app:tabMode="fixed"
+        app:tabPaddingStart="0dp"
+        app:tabPaddingEnd="0dp"
+        app:tabPaddingTop="0dp"
+        app:tabPaddingBottom="0dp"/>
 
     <android.support.v4.view.ViewPager
         android:id="@+id/viewpager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@id/sliding_tabs"
+        android:layout_above="@id/tab_layout"
         android:background="@android:color/transparent"
-        android:elevation="0dp" />
+        android:elevation="0dp"
+        android:visibility="gone"/>
 
-    <LinearLayout
-        android:id="@+id/left_spacer"
-        android:orientation="horizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="@dimen/header_height"
-        android:gravity="center"
-        android:paddingStart="10dp"
-        android:background="@color/dark"
-        android:layout_alignParentStart="true"
-        android:elevation="0dp">
-        <ImageView android:id="@+id/avatar"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:scaleType="centerInside"
-            app:srcCompat="@drawable/student_male"
-            android:padding="8dp"
-            android:layout_margin="7dp"
-            android:background="@drawable/btn_transplarent" />
-    </LinearLayout>
-
-    <ImageView
-        android:id="@+id/left_shadow"
-        android:layout_width="30dp"
-        android:layout_height="55dp"
-        android:layout_toEndOf="@id/left_spacer"
-        android:background="@drawable/background_fade" />
-
-    <LinearLayout
-        android:id="@+id/right_spacer"
-        android:layout_width="wrap_content"
-        android:layout_height="@dimen/header_height"
-        android:layout_alignParentEnd="true"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:paddingEnd="10dp"
-        android:background="@color/dark"
-        android:elevation="0dp">
-
-        <ImageView
-            android:id="@+id/settings"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_margin="7dp"
-            android:background="@drawable/btn_transplarent"
-            android:onClick="openSettings"
-            android:padding="10dp"
-            android:scaleType="centerInside"
-            app:srcCompat="@drawable/settings" />
-    </LinearLayout>
-
-    <ImageView
-        android:id="@+id/right_shadow"
-        android:layout_width="30dp"
-        android:layout_height="55dp"
-        android:layout_toLeftOf="@id/right_spacer"
-        android:background="@drawable/background_fade"
-        android:rotation="180" />
-
-
-    <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="5dp"
-            android:layout_above="@id/sliding_tabs"
-            android:alpha="0.3"
-            android:rotation="180"
-            android:scaleType="fitXY"
-            android:visibility="visible"
-            app:srcCompat="@drawable/shadow2" />
-
-
-    <LinearLayout
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordinator_layout"
         android:layout_width="match_parent"
-        android:layout_height="35dp"
-        android:orientation="vertical"
-        android:layout_below="@id/right_spacer">
-
-        <TextView
+        android:layout_height="match_parent"
+        android:layout_above="@id/tab_layout">
+        <FrameLayout
+            android:id="@+id/fl_fragment_frame"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:fontFamily="casual"
-            android:gravity="center"
-            android:text="MyVocabulary"
-            android:textColor="@color/colorAccent"
-
-            tools:fontFamily="casual"
-            android:textStyle="bold"
-            android:background="@color/light3"/>
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="5dp"
-            android:layout_below="@id/right_spacer"
-            android:alpha="0.3"
-            android:scaleType="fitXY"
-            android:visibility="visible"
-            app:srcCompat="@drawable/shadow2" />
-    </LinearLayout>
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="5dp"
-        android:layout_below="@id/right_spacer"
-        android:alpha="0.3"
-        android:scaleType="fitXY"
-        android:visibility="visible"
-        app:srcCompat="@drawable/shadow2" />
+            android:layout_height="match_parent"/>
+    </android.support.design.widget.CoordinatorLayout>
 
 
 </RelativeLayout>

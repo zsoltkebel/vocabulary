@@ -1,17 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
-
     <item
-        android:right="10dp"
+        android:right="5dp"
+        android:left="5dp"
         android:top="5dp"
         android:bottom="5dp">
-        <shape android:shape="rectangle">
-            <solid
-                android:color="@color/text_grey"/>
-            <corners android:bottomRightRadius="3dp"
-                android:bottomLeftRadius="3dp"
-                android:topRightRadius="3dp"
-                android:topLeftRadius="3dp"/>
-        </shape>
+        <selector xmlns:android="http://schemas.android.com/apk/res/android">
+            <item>
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/page2"/>
+                    <corners android:radius="2dp"/>
+                    <stroke
+                        android:width="2dp"
+                        android:color="@color/page2_light"/>
+                </shape>
+            </item>
+            <item android:state_focused="true">
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/page2_dark"/>
+                    <corners android:radius="2dp"/>
+                    <stroke
+                        android:width="2dp"
+                        android:color="@color/page2"/>
+                </shape>
+            </item>
+        </selector>
     </item>
 </layer-list>

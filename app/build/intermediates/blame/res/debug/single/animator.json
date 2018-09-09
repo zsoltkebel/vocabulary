@@ -1,6 +1,10 @@
 [
     {
-        "merged": "C:\\dictionaryRegi\\Dictionary2.0\\app\\build\\intermediates\\res\\merged\\debug\\animator\\selector.xml",
-        "source": "C:\\dictionaryRegi\\Dictionary2.0\\app\\src\\main\\res\\animator\\selector.xml"
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\animator\\fade_in.xml",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\animator\\fade_in.xml"
+    },
+    {
+        "merged": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\animator\\fade_out.xml",
+        "source": "C:\\repos\\android_vocabulary\\app\\src\\main\\res\\animator\\fade_out.xml"
     }
 ]

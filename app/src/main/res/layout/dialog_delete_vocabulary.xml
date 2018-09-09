@@ -9,7 +9,7 @@
         android:layout_height="wrap_content"
         android:text="@string/are_you_sure_delete"
         android:textSize="18sp"
-        android:textColor="@color/text_grey"/>
+        android:textColor="@color/black"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

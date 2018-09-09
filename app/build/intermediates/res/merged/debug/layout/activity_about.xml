@@ -8,7 +8,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="The app was developed by:"
-        android:textColor="@color/text_grey"
+        android:textColor="@color/black"
         android:textStyle="italic"/>
 
     <LinearLayout
@@ -28,62 +28,17 @@
             android:text="Zsolt Kébel"
             android:textStyle="bold"
             android:textSize="25sp"
-            android:textColor="@color/text_grey"
+            android:textColor="@color/black"
             android:autoLink="web"
             android:linksClickable="true" />
 
     </LinearLayout>
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Contact me on Facebook"/>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center">
-
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:src="@drawable/facebook"
-            android:layout_marginEnd="10dp"/>
-        <TextView
-            android:id="@+id/tv_facebook_link"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/link_facebook"
-            android:textSize="15sp"
-            android:textColorLink="#3B5998"
-            android:textStyle="bold"
-            android:textColor="@color/text_grey"/>
-
-    </LinearLayout>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Or write email"/>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center">
-
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:src="@drawable/gmail"
-            android:layout_marginEnd="10dp"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="kebel.zsolt@gmail.com"
-            android:textSize="15sp"
-            android:textColor="@color/text_grey"
-            android:autoLink="email"
-            android:linksClickable="true" />
-
-    </LinearLayout>
+        android:textColor="@color/black"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:text="In the app you can see icons made by: Cole Bemis from www.flaticon.com  Freepik from www.flaticon.com"/>
 </LinearLayout>

@@ -10,6 +10,33 @@
     <string name="txt_search">Kereses</string>
     <string name="txt_delete">Delete</string>
 
+    <!-- Vocabulary -->
+    <string name="phrase">kifejezés</string>
+
+    <!-- Activity Main -->
+    <string name="tab_home">Otthon</string>
+    <string name="tab_vocabularies">Szótárak</string>
+    <string name="tab_add">Hozzáadás</string>
+    <string name="tab_settings">Beállítások</string>
+
+    <!-- Activity Merge -->
+    <string name="more">Több</string>
+    <string name="list_item_more">Több …</string>
+    <string name="rename">Átnevezés</string>
+    <string name="merge">Összevonás</string>
+    <string name="merged_msg">Szótárak összevonva</string>
+    <string name="choose_other_vocabulary_msg">Válassz másik szótárat</string>
+
+    // dialog sort picker
+    <string name="date">Dátum</string>
+    <string name="abc_phrase">Abc a kifejezésben</string>
+    <string name="abc_meaning">Abc a magyarázatban</string>
+    <string name="sort_title">Rendezés e szerint</string>
+    <string name="ascending">Ascending</string>
+    <string name="descending">Descending</string>
+    <string name="sort">Rendezés</string>
+    <string name="newest_first">Legújabb elöl   </string>
+
     // Subjects
     <string name="English">Angol</string>
     <string name="French">Francia</string>
@@ -37,7 +64,6 @@
     <string name="title_vocabularies">Szótárak</string>
     <string name="title_import">Importálás</string>
     <string name="title_subjects">Tantárgyak</string>
-    <string name="phrase">kifejezés</string>
     <string name="edit_title">Cím megváltoztatása</string>
     <string name="share">Megosztás</string>
     <string name="export">Exportálás</string>
@@ -52,8 +78,10 @@
     <string name="btn_cancel">Mégse</string>
     <string name="rename_warning_text">Kérlek figyelj rá, hogy a szótár címe el kell hogy térjen az eddig az adott tantárgyban szereplő címektől!</string>
     <string name="delete_warning_text">Ha még nem exportáltad a szótárat, akkor végleg elveszik!</string>
-    <string name="set_title">Állítsd be a szótár címét</string>
+    <string name="new_vocabulary">Állítsd be a szótár címét</string>
     <string name="import_from_txt">Importálás .txt-ből</string>
+
+
 
     // vocabulary
     <string name="search">Keresés</string>
@@ -65,6 +93,7 @@
     <string name="meaning">Jelentés</string>
     <string name="No">Nem</string>
     <string name="Yes"><b>Igen</b></string>
+
 
     // user settings
     <string name="title_user_setting">Felhasználói Beállítások</string>

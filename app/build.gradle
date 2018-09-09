@@ -12,23 +12,27 @@ android {
     compileSdkVersion 25
     buildToolsVersion '26.0.2'
     defaultConfig {
-        applicationId "com.dictionary20"
+        applicationId 'com.dictionary20'
         minSdkVersion 21
         targetSdkVersion 25
-        versionCode 3
-        versionName "1.2"
+        versionCode 8
+        versionName "1.5.2"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        signingConfig signingConfigs.config
     }
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
         }
     }
     lintOptions {
         // Or, if you prefer, you can continue to check for errors in release builds,
         // but continue the build even when errors are found:
         abortOnError false
+    }
+    productFlavors {
     }
 }
 
@@ -44,4 +48,10 @@ dependencies {
     compile 'com.droidninja:filepicker:1.0.0'
     implementation 'com.jakewharton:butterknife:8.8.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    //mRealm database
+    apply plugin: 'realm-android'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    implementation 'org.jetbrains:annotations-java5:15.0'
+
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.0.3'
 }

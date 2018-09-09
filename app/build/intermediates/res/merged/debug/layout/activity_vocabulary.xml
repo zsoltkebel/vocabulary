@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/header_height"
+            android:background="@color/page2"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal"
+            android:elevation="@dimen/header_elevation">
+
+            <ImageView
+                android:id="@+id/iv_click_back"
+                android:layout_width="@dimen/btn_back_width"
+                android:layout_height="@dimen/btn_back_height"
+                android:padding="@dimen/btn_back_padding"
+                android:onClick="backToDictionaries"
+                android:scaleType="centerInside"
+                android:src="@drawable/new_back"
+                android:background="?android:selectableItemBackgroundBorderless"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <ImageView
+                android:id="@+id/iv_click_options"
+                android:layout_width="@dimen/btn_back_width"
+                android:layout_height="@dimen/btn_back_height"
+                android:padding="@dimen/btn_back_padding"
+                android:src="@drawable/new_menu"
+                android:background="?android:selectableItemBackgroundBorderless"
+                android:onClick="openMenu"
+                android:scaleType="centerInside"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="7dp"
+                android:clickable="true"
+                android:focusable="true"
+
+                app:layout_constraintStart_toEndOf="@id/iv_click_back"
+                app:layout_constraintEnd_toStartOf="@id/iv_click_options"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+
+
+                <EditText
+                    android:id="@+id/et_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/ripple_btn_primary_rounded"
+                    android:textColor="@color/white"
+                    android:hint="@string/filter"
+                    android:textColorHint="@color/page2"
+                    android:singleLine="true"
+                    android:paddingStart="35dp"
+                    android:paddingEnd="68dp"/>
+
+                <View
+                    android:id="@+id/v_filter"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:background="@drawable/toggle_btn_filter"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"/>
+
+                <ImageView
+                    android:id="@+id/v_clear_search"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:padding="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/new_close"
+                    android:background="?android:selectableItemBackgroundBorderless"
+                    android:visibility="invisible"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"/>
+
+                <ProgressBar
+                    android:id="@+id/pb_filtering"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginStart="8dp"
+                    android:indeterminate="true"
+                    android:layout_gravity="center_vertical"
+                    android:visibility="invisible"
+                    android:layout_toStartOf="@id/v_clear_search"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+
+
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/header"
+            style="@style/customTabLayout"
+            app:tabTextAppearance="@style/customTabLayout"
+            android:background="@color/white"
+            android:elevation="2dp"/>
+
+
+        <FrameLayout
+            android:id="@+id/flt_vocabulary_info"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/info_line_height"
+            android:elevation="15dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/tab_layout"
+        android:layout_above="@id/flt_vocabulary_info"
+        android:background="@color/background_light"/>
+
+    <LinearLayout
+        android:id="@+id/layout_options"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_above="@id/flt_vocabulary_info"
+        android:background="@color/light3"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Selected:"
+                android:textColor="@color/dark"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_numOfSelected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/colorAccent" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btn_edit"
+            style="@android:style/Widget.Material.Button.Borderless"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:onClick="editWord"
+            android:padding="10dp"
+            android:scaleType="centerInside" />
+
+        <ImageButton
+            android:id="@+id/btn_delSelected"
+            style="@android:style/Widget.Material.Button.Borderless"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:onClick="deleteSelected"
+            android:padding="10dp"
+
+            android:scaleType="centerInside" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/touch"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/header"></RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar3"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="48dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

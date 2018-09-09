@@ -35,8 +35,7 @@
                 android:layout_height="match_parent"
                 android:onClick="backToDictionaries"
                 android:padding="15dp"
-                android:scaleType="centerCrop"
-                android:src="@drawable/sel_back_arrow" />
+                android:scaleType="centerCrop"/>
 
 
             <Space
@@ -44,7 +43,7 @@
                 android:layout_height="30dp"
                 android:layout_gravity="center" />
 
-            <com.example.kebelzsolt.dictionary20.ExtendedEditText
+            <com.vocabulary.ExtendedEditText
                 android:id="@+id/editText"
                 style="@android:style/TextAppearance.Widget.EditText"
                 android:layout_width="0dp"
@@ -79,8 +78,7 @@
                 android:layout_height="match_parent"
                 android:onClick="openMenu"
                 android:padding="17dp"
-                android:scaleType="centerInside"
-                app:srcCompat="@drawable/menu" />
+                android:scaleType="centerInside" />
 
         </LinearLayout>
 
@@ -139,26 +137,7 @@
                     android:textColor="@color/colorAccent" />
             </LinearLayout>
 
-            <ImageButton
-                android:id="@+id/btn_edit"
-                style="@android:style/Widget.Material.Button.Borderless"
-                android:layout_width="50dp"
-                android:layout_height="match_parent"
-                android:onClick="editWord"
-                android:padding="10dp"
-                android:scaleType="centerInside"
-                app:srcCompat="@drawable/ic_edit" />
 
-            <ImageButton
-                android:id="@+id/btn_delSelected"
-                style="@android:style/Widget.Material.Button.Borderless"
-                android:layout_width="50dp"
-                android:layout_height="match_parent"
-                android:onClick="deleteSelected"
-                android:padding="10dp"
-
-                android:scaleType="centerInside"
-                app:srcCompat="@drawable/del_2" />
 
         </LinearLayout>
 
@@ -198,8 +177,7 @@
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginTop="1dp"
-                android:scaleType="centerInside"
-                app:srcCompat="@drawable/dotdark" />
+                android:scaleType="centerInside" />
 
             <TextView
                 android:id="@+id/txt_num_of_words"
