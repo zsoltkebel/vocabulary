@@ -81,6 +81,9 @@ public class ActivityLearnConfig extends RealmActivity {
     @BindView(R.id.flt_vocabulary_info)
     protected FrameLayout mFltVocabularyInfo;
 
+    @BindView(R.id.s_method)
+    protected Spinner mSpinnerMethod;
+
     RadioGroup rgShows;
     RadioGroup rgTimeToAnswer;
     Switch swCheating;
@@ -106,6 +109,9 @@ public class ActivityLearnConfig extends RealmActivity {
     FragmentVocabularyInfo fragmentVocabularyInfo;
 
     Vocabulary mVocabulary;
+
+    final String[] languages = new String[]{"Flashcard", "Choose the correct"};
+
 
     private HashSet<Integer> mStateFilters = new HashSet<>();
 
@@ -140,6 +146,30 @@ public class ActivityLearnConfig extends RealmActivity {
         mFragmentLearnConfig = new FragmentFlashCardConfig();
         displayFragment(mFragmentLearnConfig);
 
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, languages);
+//set the spinners adapter to the previously created one.
+        mSpinnerMethod.setAdapter(adapter);
+
+
+        mSpinnerMethod.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                switch (position) {
+                    case 0:
+                        mFragmentLearnConfig = new FragmentFlashCardConfig();
+                        break;
+                    case 1:
+                        mFragmentLearnConfig = new FragmentConfigChooseCorrect();
+                        break;
+                }
+                displayFragment(mFragmentLearnConfig);
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
         //setStatusBar();
 /*
         rgShows = (RadioGroup) findViewById(R.id.rg_shows);
@@ -232,7 +262,7 @@ public class ActivityLearnConfig extends RealmActivity {
 
         saveSelectedStates();
         mFragmentLearnConfig.startTest(this);
-        finish();
+        //finish();
     }
 
     @OnClick(R.id.v_state_new)

@@ -1,90 +1,90 @@
 -- Merging decision tree log ---
 provider#android.support.v4.content.FileProvider
-INJECTED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:55:9-63:20
+INJECTED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:59:9-67:20
 	android:grantUriPermissions
-		ADDED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:59:13-47
+		ADDED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:63:13-47
 	android:authorities
 		INJECTED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml
-		ADDED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:57:13-60
+		ADDED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:61:13-60
 	android:exported
-		ADDED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:58:13-37
+		ADDED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:62:13-37
 	android:name
-		ADDED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:56:13-67
+		ADDED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:60:13-67
 manifest
-ADDED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:2:1-69:12
-INJECTED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:2:1-69:12
-INJECTED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:2:1-69:12
-INJECTED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:2:1-69:12
-MERGED from [io.realm:realm-android-library:5.3.1] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\realm-android-library-5.3.1.aar\fc61cc5bb50b16006c8469e94f9fc37b\AndroidManifest.xml:2:1-10:12
-MERGED from [com.droidninja:filepicker:1.0.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\filepicker-1.0.0.aar\fdcade4f50a01f6e3418449663a23f3f\AndroidManifest.xml:2:1-25:12
-MERGED from [com.android.support:design:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\design-25.1.0.aar\89d19bdefc3982afbd8702b0c304980a\AndroidManifest.xml:17:1-27:12
-MERGED from [com.android.support:appcompat-v7:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.1.0.aar\b18f3b6b3d4dd815e21774815a8b6215\AndroidManifest.xml:17:1-27:12
-MERGED from [com.xw.repo:xedittext:2.0.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\xedittext-2.0.0.aar\3538f27a6ec6fcdea31ee204d0c1aa9f\AndroidManifest.xml:2:1-17:12
-MERGED from [com.jakewharton:butterknife:8.8.1] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\butterknife-8.8.1.aar\9d68a985fa516cc5851b84c455bd5fc0\AndroidManifest.xml:2:1-7:12
-MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\f257b346a645bec5823b3cc2e200efa7\AndroidManifest.xml:2:1-11:12
-MERGED from [com.getkeepsafe.relinker:relinker:1.2.2] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\relinker-1.2.2.aar\b6c1ff34219b4a68b979075df7c4428a\AndroidManifest.xml:2:1-9:12
-MERGED from [com.android.support:animated-vector-drawable:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.1.0.aar\3ca50ba62462d9f2d68517e456633162\AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:support-vector-drawable:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.1.0.aar\426cd37af9e89c57e468a8e43e2ad591\AndroidManifest.xml:17:1-25:12
-MERGED from [com.facebook.fresco:fresco:0.12.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\fresco-0.12.0.aar\f4c5f9803e4613a8a937d6d4357fc391\AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:drawee:0.12.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\drawee-0.12.0.aar\f3dd44c40696054ffc1cec647d2307e3\AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline:0.12.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\imagepipeline-0.12.0.aar\783d4319fbc4222d7e353ebc99a800f6\AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline-base:0.12.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\imagepipeline-base-0.12.0.aar\99ed1e17a908725f01b8b0264ae83ef0\AndroidManifest.xml:2:1-9:12
-MERGED from [com.android.support:transition:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\transition-25.1.0.aar\5d79cd14168e39007cf536667c5ebbdb\AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:support-v4:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-v4-25.1.0.aar\f04e33c18c685c7ff456193d8911be9c\AndroidManifest.xml:17:1-27:12
-MERGED from [com.android.support:support-fragment:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-fragment-25.1.0.aar\e8a5e402e101ead37489ef1595c69a0e\AndroidManifest.xml:17:1-27:12
-MERGED from [com.android.support:support-media-compat:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.1.0.aar\e4746406eb1004e0c86a7d6696c66ac1\AndroidManifest.xml:17:1-27:12
-MERGED from [com.android.support:support-core-utils:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.1.0.aar\18d79a8c6f8cff2ee287e6600a3b6df5\AndroidManifest.xml:17:1-27:12
-MERGED from [com.android.support:recyclerview-v7:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.1.0.aar\1ae15cbfde7ff7a239e63e53b861aa4c\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.1.0.aar\ff57c00b73546dd938251ee78c8d28f5\AndroidManifest.xml:17:1-27:12
-MERGED from [com.android.support:support-compat:25.3.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.0.aar\8e1cb6664083a7e8d645659b3086d0fb\AndroidManifest.xml:17:1-31:12
-MERGED from [com.facebook.fresco:fbcore:0.12.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\fbcore-0.12.0.aar\88768ba93df4f6580fb0f5afa68618b8\AndroidManifest.xml:2:1-9:12
-INJECTED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:2:1-69:12
-INJECTED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:2:1-69:12
-INJECTED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:2:1-69:12
+ADDED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:2:1-73:12
+INJECTED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:2:1-73:12
+INJECTED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:2:1-73:12
+INJECTED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:2:1-73:12
+MERGED from [io.realm:realm-android-library:5.3.1] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\realm-android-library-5.3.1.aar\0257707a757f8139df9cde4434c59955\AndroidManifest.xml:2:1-10:12
+MERGED from [com.droidninja:filepicker:1.0.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\filepicker-1.0.0.aar\5d1122a5bf9aac4aec41d417812972f0\AndroidManifest.xml:2:1-25:12
+MERGED from [com.android.support:design:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\design-25.1.0.aar\67038a60195abb40d96ea183a63e0edd\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:appcompat-v7:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.1.0.aar\01cacde6e8e780317bbdfd53e64fe6ac\AndroidManifest.xml:17:1-27:12
+MERGED from [com.xw.repo:xedittext:2.0.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\xedittext-2.0.0.aar\865df6cce014e91390381d1e7585d679\AndroidManifest.xml:2:1-17:12
+MERGED from [com.jakewharton:butterknife:8.8.1] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\butterknife-8.8.1.aar\315edbad7240c96e085be0e6cb0cb1ce\AndroidManifest.xml:2:1-7:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\6d82f92840581b2d7a33704425e7da43\AndroidManifest.xml:2:1-11:12
+MERGED from [com.getkeepsafe.relinker:relinker:1.2.2] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\relinker-1.2.2.aar\be50da8e32b713e1f1a6fe1d5a4e5e21\AndroidManifest.xml:2:1-9:12
+MERGED from [com.android.support:animated-vector-drawable:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.1.0.aar\11c527607efe4b349912aa1b896868a9\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:support-vector-drawable:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.1.0.aar\d9a8cb1c97582b3fdf2a660f6aaee50e\AndroidManifest.xml:17:1-25:12
+MERGED from [com.facebook.fresco:fresco:0.12.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\fresco-0.12.0.aar\0497e94ca7d6e0472f19f1e8813e2b11\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:drawee:0.12.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\drawee-0.12.0.aar\d3b8754bce1005ff67342cc664543965\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:0.12.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\imagepipeline-0.12.0.aar\10ad09b6455e33b49a993bb37d311186\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:0.12.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\imagepipeline-base-0.12.0.aar\4b3de6afdf6d806a3b048ec277043db7\AndroidManifest.xml:2:1-9:12
+MERGED from [com.android.support:transition:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\transition-25.1.0.aar\a95c9680d0cadcd426af42d73ba2863f\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:support-v4:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-v4-25.1.0.aar\795426cc5265e0ab866fc5f7138fee6f\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-fragment:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-fragment-25.1.0.aar\5a649ec97a4a62500e498a6b5a194a7c\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-media-compat:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.1.0.aar\5e34112e962fb2c31adaafc0acfb2968\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-core-utils:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.1.0.aar\df7b471482d97fc9097641cfb841ffc3\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:recyclerview-v7:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.1.0.aar\e690c3431accb36ba9a42eb8ff7c640b\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.1.0.aar\d701275a769d75b7d2050a33cd6fda85\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-compat:25.3.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.0.aar\4bf7f30d95912aef9fa4ab33321639d6\AndroidManifest.xml:17:1-31:12
+MERGED from [com.facebook.fresco:fbcore:0.12.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\fbcore-0.12.0.aar\9576e2bf5b5a21e76b9571c1775aa2d7\AndroidManifest.xml:2:1-9:12
+INJECTED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:2:1-73:12
+INJECTED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:2:1-73:12
+INJECTED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:2:1-73:12
 	package
 		ADDED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:3:5-29
 		INJECTED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml
 		INJECTED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml
-		ADDED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:2:1-69:12
+		ADDED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:2:1-73:12
 		INJECTED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml
-		ADDED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:2:1-69:12
+		ADDED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:2:1-73:12
 		INJECTED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:5:5-64:19
-MERGED from [com.droidninja:filepicker:1.0.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\filepicker-1.0.0.aar\fdcade4f50a01f6e3418449663a23f3f\AndroidManifest.xml:14:5-23:19
-MERGED from [com.droidninja:filepicker:1.0.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\filepicker-1.0.0.aar\fdcade4f50a01f6e3418449663a23f3f\AndroidManifest.xml:14:5-23:19
-MERGED from [com.android.support:design:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\design-25.1.0.aar\89d19bdefc3982afbd8702b0c304980a\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:design:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\design-25.1.0.aar\89d19bdefc3982afbd8702b0c304980a\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:appcompat-v7:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.1.0.aar\b18f3b6b3d4dd815e21774815a8b6215\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:appcompat-v7:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.1.0.aar\b18f3b6b3d4dd815e21774815a8b6215\AndroidManifest.xml:25:5-20
-MERGED from [com.xw.repo:xedittext:2.0.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\xedittext-2.0.0.aar\3538f27a6ec6fcdea31ee204d0c1aa9f\AndroidManifest.xml:11:5-15:19
-MERGED from [com.xw.repo:xedittext:2.0.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\xedittext-2.0.0.aar\3538f27a6ec6fcdea31ee204d0c1aa9f\AndroidManifest.xml:11:5-15:19
-MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\f257b346a645bec5823b3cc2e200efa7\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\f257b346a645bec5823b3cc2e200efa7\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support:animated-vector-drawable:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.1.0.aar\3ca50ba62462d9f2d68517e456633162\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:animated-vector-drawable:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.1.0.aar\3ca50ba62462d9f2d68517e456633162\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-vector-drawable:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.1.0.aar\426cd37af9e89c57e468a8e43e2ad591\AndroidManifest.xml:23:5-20
-MERGED from [com.android.support:support-vector-drawable:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.1.0.aar\426cd37af9e89c57e468a8e43e2ad591\AndroidManifest.xml:23:5-20
-MERGED from [com.android.support:transition:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\transition-25.1.0.aar\5d79cd14168e39007cf536667c5ebbdb\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:transition:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\transition-25.1.0.aar\5d79cd14168e39007cf536667c5ebbdb\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-v4-25.1.0.aar\f04e33c18c685c7ff456193d8911be9c\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-v4:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-v4-25.1.0.aar\f04e33c18c685c7ff456193d8911be9c\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-fragment:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-fragment-25.1.0.aar\e8a5e402e101ead37489ef1595c69a0e\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-fragment:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-fragment-25.1.0.aar\e8a5e402e101ead37489ef1595c69a0e\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-media-compat:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.1.0.aar\e4746406eb1004e0c86a7d6696c66ac1\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-media-compat:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.1.0.aar\e4746406eb1004e0c86a7d6696c66ac1\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-utils:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.1.0.aar\18d79a8c6f8cff2ee287e6600a3b6df5\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-utils:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.1.0.aar\18d79a8c6f8cff2ee287e6600a3b6df5\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-ui:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.1.0.aar\ff57c00b73546dd938251ee78c8d28f5\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-ui:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.1.0.aar\ff57c00b73546dd938251ee78c8d28f5\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:25.3.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.0.aar\8e1cb6664083a7e8d645659b3086d0fb\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-compat:25.3.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.0.aar\8e1cb6664083a7e8d645659b3086d0fb\AndroidManifest.xml:29:5-20
+ADDED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:5:5-68:19
+MERGED from [com.droidninja:filepicker:1.0.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\filepicker-1.0.0.aar\5d1122a5bf9aac4aec41d417812972f0\AndroidManifest.xml:14:5-23:19
+MERGED from [com.droidninja:filepicker:1.0.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\filepicker-1.0.0.aar\5d1122a5bf9aac4aec41d417812972f0\AndroidManifest.xml:14:5-23:19
+MERGED from [com.android.support:design:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\design-25.1.0.aar\67038a60195abb40d96ea183a63e0edd\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:design:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\design-25.1.0.aar\67038a60195abb40d96ea183a63e0edd\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:appcompat-v7:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.1.0.aar\01cacde6e8e780317bbdfd53e64fe6ac\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:appcompat-v7:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.1.0.aar\01cacde6e8e780317bbdfd53e64fe6ac\AndroidManifest.xml:25:5-20
+MERGED from [com.xw.repo:xedittext:2.0.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\xedittext-2.0.0.aar\865df6cce014e91390381d1e7585d679\AndroidManifest.xml:11:5-15:19
+MERGED from [com.xw.repo:xedittext:2.0.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\xedittext-2.0.0.aar\865df6cce014e91390381d1e7585d679\AndroidManifest.xml:11:5-15:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\6d82f92840581b2d7a33704425e7da43\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\6d82f92840581b2d7a33704425e7da43\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.1.0.aar\11c527607efe4b349912aa1b896868a9\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.1.0.aar\11c527607efe4b349912aa1b896868a9\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.1.0.aar\d9a8cb1c97582b3fdf2a660f6aaee50e\AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:support-vector-drawable:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.1.0.aar\d9a8cb1c97582b3fdf2a660f6aaee50e\AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:transition:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\transition-25.1.0.aar\a95c9680d0cadcd426af42d73ba2863f\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:transition:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\transition-25.1.0.aar\a95c9680d0cadcd426af42d73ba2863f\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-v4-25.1.0.aar\795426cc5265e0ab866fc5f7138fee6f\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-v4-25.1.0.aar\795426cc5265e0ab866fc5f7138fee6f\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-fragment-25.1.0.aar\5a649ec97a4a62500e498a6b5a194a7c\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-fragment-25.1.0.aar\5a649ec97a4a62500e498a6b5a194a7c\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.1.0.aar\5e34112e962fb2c31adaafc0acfb2968\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.1.0.aar\5e34112e962fb2c31adaafc0acfb2968\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.1.0.aar\df7b471482d97fc9097641cfb841ffc3\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.1.0.aar\df7b471482d97fc9097641cfb841ffc3\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.1.0.aar\d701275a769d75b7d2050a33cd6fda85\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.1.0.aar\d701275a769d75b7d2050a33cd6fda85\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:25.3.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.0.aar\4bf7f30d95912aef9fa4ab33321639d6\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.0.aar\4bf7f30d95912aef9fa4ab33321639d6\AndroidManifest.xml:29:5-20
 	android:supportsRtl
 		ADDED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:9:9-35
 	android:label
@@ -96,7 +96,7 @@ MERGED from [com.android.support:support-compat:25.3.0] C:\Users\Kébel Zsolt\.gr
 	android:theme
 		ADDED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:10:9-40
 	android:name
-		ADDED from [com.droidninja:filepicker:1.0.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\filepicker-1.0.0.aar\fdcade4f50a01f6e3418449663a23f3f\AndroidManifest.xml:15:9-64
+		ADDED from [com.droidninja:filepicker:1.0.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\filepicker-1.0.0.aar\5d1122a5bf9aac4aec41d417812972f0\AndroidManifest.xml:15:9-64
 activity#com.vocabulary.MainActivity
 ADDED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:11:9-17:20
 	android:name
@@ -207,70 +207,78 @@ ADDED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:51:9-53:
 		ADDED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:52:13-48
 	android:name
 		ADDED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:51:19-62
+activity#com.vocabulary.screens.learnconfig.ActivityChooseCorrect
+ADDED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:54:9-56:51
+	android:screenOrientation
+		ADDED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:56:13-49
+	android:configChanges
+		ADDED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:55:13-48
+	android:name
+		ADDED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:54:19-76
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:66:5-81
-MERGED from [com.droidninja:filepicker:1.0.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\filepicker-1.0.0.aar\fdcade4f50a01f6e3418449663a23f3f\AndroidManifest.xml:11:5-81
-MERGED from [com.droidninja:filepicker:1.0.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\filepicker-1.0.0.aar\fdcade4f50a01f6e3418449663a23f3f\AndroidManifest.xml:11:5-81
+ADDED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:70:5-81
+MERGED from [com.droidninja:filepicker:1.0.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\filepicker-1.0.0.aar\5d1122a5bf9aac4aec41d417812972f0\AndroidManifest.xml:11:5-81
+MERGED from [com.droidninja:filepicker:1.0.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\filepicker-1.0.0.aar\5d1122a5bf9aac4aec41d417812972f0\AndroidManifest.xml:11:5-81
 	android:name
-		ADDED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:66:22-78
+		ADDED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:70:22-78
 uses-permission#android.permission.VIBRATE
-ADDED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:67:5-65
+ADDED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:71:5-65
 	android:name
-		ADDED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:67:22-63
+		ADDED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:71:22-63
 uses-sdk
 INJECTED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml
 INJECTED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml
-MERGED from [io.realm:realm-android-library:5.3.1] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\realm-android-library-5.3.1.aar\fc61cc5bb50b16006c8469e94f9fc37b\AndroidManifest.xml:6:5-8:41
-MERGED from [io.realm:realm-android-library:5.3.1] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\realm-android-library-5.3.1.aar\fc61cc5bb50b16006c8469e94f9fc37b\AndroidManifest.xml:6:5-8:41
-MERGED from [com.droidninja:filepicker:1.0.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\filepicker-1.0.0.aar\fdcade4f50a01f6e3418449663a23f3f\AndroidManifest.xml:7:5-9:41
-MERGED from [com.droidninja:filepicker:1.0.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\filepicker-1.0.0.aar\fdcade4f50a01f6e3418449663a23f3f\AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:design:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\design-25.1.0.aar\89d19bdefc3982afbd8702b0c304980a\AndroidManifest.xml:21:5-23:62
-MERGED from [com.android.support:design:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\design-25.1.0.aar\89d19bdefc3982afbd8702b0c304980a\AndroidManifest.xml:21:5-23:62
-MERGED from [com.android.support:appcompat-v7:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.1.0.aar\b18f3b6b3d4dd815e21774815a8b6215\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:appcompat-v7:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.1.0.aar\b18f3b6b3d4dd815e21774815a8b6215\AndroidManifest.xml:21:5-23:78
-MERGED from [com.xw.repo:xedittext:2.0.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\xedittext-2.0.0.aar\3538f27a6ec6fcdea31ee204d0c1aa9f\AndroidManifest.xml:7:5-9:41
-MERGED from [com.xw.repo:xedittext:2.0.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\xedittext-2.0.0.aar\3538f27a6ec6fcdea31ee204d0c1aa9f\AndroidManifest.xml:7:5-9:41
-MERGED from [com.jakewharton:butterknife:8.8.1] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\butterknife-8.8.1.aar\9d68a985fa516cc5851b84c455bd5fc0\AndroidManifest.xml:5:5-43
-MERGED from [com.jakewharton:butterknife:8.8.1] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\butterknife-8.8.1.aar\9d68a985fa516cc5851b84c455bd5fc0\AndroidManifest.xml:5:5-43
-MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\f257b346a645bec5823b3cc2e200efa7\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\f257b346a645bec5823b3cc2e200efa7\AndroidManifest.xml:5:5-7:41
-MERGED from [com.getkeepsafe.relinker:relinker:1.2.2] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\relinker-1.2.2.aar\b6c1ff34219b4a68b979075df7c4428a\AndroidManifest.xml:7:5-43
-MERGED from [com.getkeepsafe.relinker:relinker:1.2.2] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\relinker-1.2.2.aar\b6c1ff34219b4a68b979075df7c4428a\AndroidManifest.xml:7:5-43
-MERGED from [com.android.support:animated-vector-drawable:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.1.0.aar\3ca50ba62462d9f2d68517e456633162\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.1.0.aar\3ca50ba62462d9f2d68517e456633162\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.1.0.aar\426cd37af9e89c57e468a8e43e2ad591\AndroidManifest.xml:21:5-43
-MERGED from [com.android.support:support-vector-drawable:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.1.0.aar\426cd37af9e89c57e468a8e43e2ad591\AndroidManifest.xml:21:5-43
-MERGED from [com.facebook.fresco:fresco:0.12.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\fresco-0.12.0.aar\f4c5f9803e4613a8a937d6d4357fc391\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fresco:0.12.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\fresco-0.12.0.aar\f4c5f9803e4613a8a937d6d4357fc391\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:drawee:0.12.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\drawee-0.12.0.aar\f3dd44c40696054ffc1cec647d2307e3\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:drawee:0.12.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\drawee-0.12.0.aar\f3dd44c40696054ffc1cec647d2307e3\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline:0.12.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\imagepipeline-0.12.0.aar\783d4319fbc4222d7e353ebc99a800f6\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline:0.12.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\imagepipeline-0.12.0.aar\783d4319fbc4222d7e353ebc99a800f6\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-base:0.12.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\imagepipeline-base-0.12.0.aar\99ed1e17a908725f01b8b0264ae83ef0\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-base:0.12.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\imagepipeline-base-0.12.0.aar\99ed1e17a908725f01b8b0264ae83ef0\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:transition:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\transition-25.1.0.aar\5d79cd14168e39007cf536667c5ebbdb\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\transition-25.1.0.aar\5d79cd14168e39007cf536667c5ebbdb\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-v4-25.1.0.aar\f04e33c18c685c7ff456193d8911be9c\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-v4:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-v4-25.1.0.aar\f04e33c18c685c7ff456193d8911be9c\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-fragment:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-fragment-25.1.0.aar\e8a5e402e101ead37489ef1595c69a0e\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-fragment:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-fragment-25.1.0.aar\e8a5e402e101ead37489ef1595c69a0e\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-media-compat:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.1.0.aar\e4746406eb1004e0c86a7d6696c66ac1\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-media-compat:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.1.0.aar\e4746406eb1004e0c86a7d6696c66ac1\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-core-utils:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.1.0.aar\18d79a8c6f8cff2ee287e6600a3b6df5\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-core-utils:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.1.0.aar\18d79a8c6f8cff2ee287e6600a3b6df5\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:recyclerview-v7:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.1.0.aar\1ae15cbfde7ff7a239e63e53b861aa4c\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:recyclerview-v7:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.1.0.aar\1ae15cbfde7ff7a239e63e53b861aa4c\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-core-ui:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.1.0.aar\ff57c00b73546dd938251ee78c8d28f5\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-ui:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.1.0.aar\ff57c00b73546dd938251ee78c8d28f5\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-compat:25.3.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.0.aar\8e1cb6664083a7e8d645659b3086d0fb\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-compat:25.3.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.0.aar\8e1cb6664083a7e8d645659b3086d0fb\AndroidManifest.xml:21:5-23:58
-MERGED from [com.facebook.fresco:fbcore:0.12.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\fbcore-0.12.0.aar\88768ba93df4f6580fb0f5afa68618b8\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fbcore:0.12.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\fbcore-0.12.0.aar\88768ba93df4f6580fb0f5afa68618b8\AndroidManifest.xml:5:5-7:41
+MERGED from [io.realm:realm-android-library:5.3.1] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\realm-android-library-5.3.1.aar\0257707a757f8139df9cde4434c59955\AndroidManifest.xml:6:5-8:41
+MERGED from [io.realm:realm-android-library:5.3.1] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\realm-android-library-5.3.1.aar\0257707a757f8139df9cde4434c59955\AndroidManifest.xml:6:5-8:41
+MERGED from [com.droidninja:filepicker:1.0.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\filepicker-1.0.0.aar\5d1122a5bf9aac4aec41d417812972f0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.droidninja:filepicker:1.0.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\filepicker-1.0.0.aar\5d1122a5bf9aac4aec41d417812972f0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:design:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\design-25.1.0.aar\67038a60195abb40d96ea183a63e0edd\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:design:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\design-25.1.0.aar\67038a60195abb40d96ea183a63e0edd\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.1.0.aar\01cacde6e8e780317bbdfd53e64fe6ac\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.1.0.aar\01cacde6e8e780317bbdfd53e64fe6ac\AndroidManifest.xml:21:5-23:78
+MERGED from [com.xw.repo:xedittext:2.0.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\xedittext-2.0.0.aar\865df6cce014e91390381d1e7585d679\AndroidManifest.xml:7:5-9:41
+MERGED from [com.xw.repo:xedittext:2.0.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\xedittext-2.0.0.aar\865df6cce014e91390381d1e7585d679\AndroidManifest.xml:7:5-9:41
+MERGED from [com.jakewharton:butterknife:8.8.1] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\butterknife-8.8.1.aar\315edbad7240c96e085be0e6cb0cb1ce\AndroidManifest.xml:5:5-43
+MERGED from [com.jakewharton:butterknife:8.8.1] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\butterknife-8.8.1.aar\315edbad7240c96e085be0e6cb0cb1ce\AndroidManifest.xml:5:5-43
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\6d82f92840581b2d7a33704425e7da43\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\6d82f92840581b2d7a33704425e7da43\AndroidManifest.xml:5:5-7:41
+MERGED from [com.getkeepsafe.relinker:relinker:1.2.2] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\relinker-1.2.2.aar\be50da8e32b713e1f1a6fe1d5a4e5e21\AndroidManifest.xml:7:5-43
+MERGED from [com.getkeepsafe.relinker:relinker:1.2.2] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\relinker-1.2.2.aar\be50da8e32b713e1f1a6fe1d5a4e5e21\AndroidManifest.xml:7:5-43
+MERGED from [com.android.support:animated-vector-drawable:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.1.0.aar\11c527607efe4b349912aa1b896868a9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.1.0.aar\11c527607efe4b349912aa1b896868a9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.1.0.aar\d9a8cb1c97582b3fdf2a660f6aaee50e\AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:support-vector-drawable:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.1.0.aar\d9a8cb1c97582b3fdf2a660f6aaee50e\AndroidManifest.xml:21:5-43
+MERGED from [com.facebook.fresco:fresco:0.12.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\fresco-0.12.0.aar\0497e94ca7d6e0472f19f1e8813e2b11\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:0.12.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\fresco-0.12.0.aar\0497e94ca7d6e0472f19f1e8813e2b11\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:0.12.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\drawee-0.12.0.aar\d3b8754bce1005ff67342cc664543965\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:0.12.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\drawee-0.12.0.aar\d3b8754bce1005ff67342cc664543965\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:0.12.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\imagepipeline-0.12.0.aar\10ad09b6455e33b49a993bb37d311186\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:0.12.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\imagepipeline-0.12.0.aar\10ad09b6455e33b49a993bb37d311186\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:0.12.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\imagepipeline-base-0.12.0.aar\4b3de6afdf6d806a3b048ec277043db7\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:0.12.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\imagepipeline-base-0.12.0.aar\4b3de6afdf6d806a3b048ec277043db7\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:transition:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\transition-25.1.0.aar\a95c9680d0cadcd426af42d73ba2863f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\transition-25.1.0.aar\a95c9680d0cadcd426af42d73ba2863f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-v4-25.1.0.aar\795426cc5265e0ab866fc5f7138fee6f\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-v4-25.1.0.aar\795426cc5265e0ab866fc5f7138fee6f\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-fragment-25.1.0.aar\5a649ec97a4a62500e498a6b5a194a7c\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-fragment-25.1.0.aar\5a649ec97a4a62500e498a6b5a194a7c\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.1.0.aar\5e34112e962fb2c31adaafc0acfb2968\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.1.0.aar\5e34112e962fb2c31adaafc0acfb2968\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.1.0.aar\df7b471482d97fc9097641cfb841ffc3\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.1.0.aar\df7b471482d97fc9097641cfb841ffc3\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:recyclerview-v7:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.1.0.aar\e690c3431accb36ba9a42eb8ff7c640b\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.1.0.aar\e690c3431accb36ba9a42eb8ff7c640b\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-core-ui:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.1.0.aar\d701275a769d75b7d2050a33cd6fda85\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.1.0.aar\d701275a769d75b7d2050a33cd6fda85\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.3.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.0.aar\4bf7f30d95912aef9fa4ab33321639d6\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.3.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.0.aar\4bf7f30d95912aef9fa4ab33321639d6\AndroidManifest.xml:21:5-23:58
+MERGED from [com.facebook.fresco:fbcore:0.12.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\fbcore-0.12.0.aar\9576e2bf5b5a21e76b9571c1775aa2d7\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:0.12.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\fbcore-0.12.0.aar\9576e2bf5b5a21e76b9571c1775aa2d7\AndroidManifest.xml:5:5-7:41
 INJECTED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml
 INJECTED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml
 	tools:overrideLibrary
-		ADDED from [com.android.support:design:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\design-25.1.0.aar\89d19bdefc3982afbd8702b0c304980a\AndroidManifest.xml:23:9-59
+		ADDED from [com.android.support:design:25.1.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\design-25.1.0.aar\67038a60195abb40d96ea183a63e0edd\AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
 		INJECTED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml
 		ADDED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml
@@ -280,25 +288,25 @@ INJECTED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml
 		ADDED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml
 		INJECTED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:60:13-62:57
+ADDED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:64:13-66:57
 	android:resource
-		ADDED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:62:17-55
+		ADDED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:66:17-55
 	android:name
-		ADDED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:61:17-67
+		ADDED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:65:17-67
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from [com.droidninja:filepicker:1.0.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\filepicker-1.0.0.aar\fdcade4f50a01f6e3418449663a23f3f\AndroidManifest.xml:12:5-80
-IMPLIED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:2:1-69:12 reason: droidninja.filepicker requested WRITE_EXTERNAL_STORAGE
+ADDED from [com.droidninja:filepicker:1.0.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\filepicker-1.0.0.aar\5d1122a5bf9aac4aec41d417812972f0\AndroidManifest.xml:12:5-80
+IMPLIED from C:\repos\android_vocabulary\app\src\main\AndroidManifest.xml:2:1-73:12 reason: droidninja.filepicker requested WRITE_EXTERNAL_STORAGE
 	android:name
-		ADDED from [com.droidninja:filepicker:1.0.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\filepicker-1.0.0.aar\fdcade4f50a01f6e3418449663a23f3f\AndroidManifest.xml:12:22-77
+		ADDED from [com.droidninja:filepicker:1.0.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\filepicker-1.0.0.aar\5d1122a5bf9aac4aec41d417812972f0\AndroidManifest.xml:12:22-77
 activity#droidninja.filepicker.FilePickerActivity
-ADDED from [com.droidninja:filepicker:1.0.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\filepicker-1.0.0.aar\fdcade4f50a01f6e3418449663a23f3f\AndroidManifest.xml:19:9-22:20
+ADDED from [com.droidninja:filepicker:1.0.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\filepicker-1.0.0.aar\5d1122a5bf9aac4aec41d417812972f0\AndroidManifest.xml:19:9-22:20
 	android:theme
-		ADDED from [com.droidninja:filepicker:1.0.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\filepicker-1.0.0.aar\fdcade4f50a01f6e3418449663a23f3f\AndroidManifest.xml:21:13-71
+		ADDED from [com.droidninja:filepicker:1.0.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\filepicker-1.0.0.aar\5d1122a5bf9aac4aec41d417812972f0\AndroidManifest.xml:21:13-71
 	android:name
-		ADDED from [com.droidninja:filepicker:1.0.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\filepicker-1.0.0.aar\fdcade4f50a01f6e3418449663a23f3f\AndroidManifest.xml:20:13-68
+		ADDED from [com.droidninja:filepicker:1.0.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\filepicker-1.0.0.aar\5d1122a5bf9aac4aec41d417812972f0\AndroidManifest.xml:20:13-68
 meta-data#android.support.VERSION
-ADDED from [com.android.support:support-compat:25.3.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.0.aar\8e1cb6664083a7e8d645659b3086d0fb\AndroidManifest.xml:25:5-27:34
+ADDED from [com.android.support:support-compat:25.3.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.0.aar\4bf7f30d95912aef9fa4ab33321639d6\AndroidManifest.xml:25:5-27:34
 	android:value
-		ADDED from [com.android.support:support-compat:25.3.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.0.aar\8e1cb6664083a7e8d645659b3086d0fb\AndroidManifest.xml:27:9-31
+		ADDED from [com.android.support:support-compat:25.3.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.0.aar\4bf7f30d95912aef9fa4ab33321639d6\AndroidManifest.xml:27:9-31
 	android:name
-		ADDED from [com.android.support:support-compat:25.3.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.0.aar\8e1cb6664083a7e8d645659b3086d0fb\AndroidManifest.xml:26:9-47
+		ADDED from [com.android.support:support-compat:25.3.0] C:\Users\Kébel Zsolt\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.0.aar\4bf7f30d95912aef9fa4ab33321639d6\AndroidManifest.xml:26:9-47

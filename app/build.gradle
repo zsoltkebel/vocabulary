@@ -9,14 +9,14 @@ android {
             storePassword 'valami'
         }
     }
-    compileSdkVersion 25
+    compileSdkVersion 26
     buildToolsVersion '26.0.2'
     defaultConfig {
         applicationId 'com.dictionary20'
         minSdkVersion 21
-        targetSdkVersion 25
-        versionCode 8
-        versionName "1.5.2"
+        targetSdkVersion 26
+        versionCode 9
+        versionName "1.5.3"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         signingConfig signingConfigs.config
     }

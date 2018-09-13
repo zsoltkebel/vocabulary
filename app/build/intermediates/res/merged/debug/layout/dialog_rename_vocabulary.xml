@@ -18,7 +18,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="text"
-        android:background="@drawable/ripple_container_light_blue_rounded"
+        android:background="@drawable/ripple_container_white_accent_rounded"
         android:padding="5dp"
         android:hint="@string/title"
         android:textStyle="bold"

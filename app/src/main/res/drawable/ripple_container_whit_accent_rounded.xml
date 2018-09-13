@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/transparent_black">
+    <item>
+        <shape>
+            <padding android:padding="1dp" />
+            <solid android:color="@color/white" />
+        </shape>
+    </item>
+    <item>
+        <selector>
+            <item android:state_activated="true">
+                <color android:color="@color/page2_light" />
+            </item>
+            <item android:state_selected="true">
+                <color android:color="@color/dot_red" />
+            </item>
+        </selector>
+    </item>
+</ripple>

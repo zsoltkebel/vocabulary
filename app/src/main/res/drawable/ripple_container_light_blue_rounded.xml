@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ripple xmlns:android="http://schemas.android.com/apk/res/android"
-    android:color="@color/transparent_accent">
+    android:color="@color/transparent_black">
     <item>
         <shape>
             <padding android:padding="1dp" />
             <corners android:radius="2dp" />
-            <solid android:color="@color/background_light" />
+            <solid android:color="@color/transparent_accent" />
         </shape>
     </item>
 </ripple>

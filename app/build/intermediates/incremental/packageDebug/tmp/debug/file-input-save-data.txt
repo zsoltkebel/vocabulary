@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Sat Aug 25 11:18:50 CEST 2018
+#Thu Sep 13 07:31:47 CEST 2018
 4.path=lib/x86/librealm-jni.so
 8.set=NATIVE_RESOURCE
 6.path=lib/x86_64/libimagepipeline.so
