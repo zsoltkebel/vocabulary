@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background_light">
+
+    <FrameLayout
+        android:id="@+id/flt_vocabulary_info"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/info_line_height"
+        android:elevation="15dp"
+        android:background="@color/background_light"
+
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView android:id="@+id/tv_phrase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/phrase"
+        android:textSize="20sp"
+
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/btn_check"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Check"
+        android:textColor="@color/colorAccent"
+        android:textAllCaps="false"
+
+        android:textSize="20sp"
+        android:background="@drawable/ripple_container_whit_accent_rounded"
+        android:elevation="2dp"
+
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toTopOf="@id/flt_vocabulary_info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+    <LinearLayout android:id="@+id/lt_buttons"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        app:layout_constraintBottom_toTopOf="@id/btn_check"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_phrase"
+        app:layout_constraintVertical_bias="0.8">
+
+        <Button
+            android:id="@+id/btn_answer_1"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textAllCaps="false"
+
+            android:textSize="16sp"
+            android:background="@drawable/ripple_container_whit_accent_rounded"
+            android:elevation="0dp" />
+
+        <Button
+            android:id="@+id/btn_answer_2"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:textAllCaps="false"
+
+            android:textSize="16sp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/ripple_container_whit_accent_rounded"
+            android:elevation="0dp" />
+
+        <Button
+            android:id="@+id/btn_answer_3"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:textAllCaps="false"
+
+            android:textSize="16sp"
+            android:background="@drawable/ripple_container_whit_accent_rounded"
+            android:elevation="0dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose the right translation:"
+        android:textSize="18sp"
+
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/lt_buttons"/>
+
+</android.support.constraint.ConstraintLayout>

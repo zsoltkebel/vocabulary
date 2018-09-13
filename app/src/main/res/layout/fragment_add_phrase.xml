@@ -83,7 +83,7 @@
                             android:textColor="@color/black"
                             android:hint="@string/phrase"
 
-                            android:background="@drawable/ripple_container_light_blue_rounded"
+                            android:background="@drawable/ripple_container_white_accent_rounded"
                             android:padding="5dp"
 
                             android:textSize="@dimen/list_item_phrase_text_size"
@@ -118,7 +118,7 @@
                                 android:textSize="@dimen/list_item_phrase_text_size"
 
                                 android:hint="meaning"
-                                android:background="@drawable/ripple_container_light_blue_rounded"
+                                android:background="@drawable/ripple_container_white_accent_rounded"
                                 android:padding="5dp"/>
 
 

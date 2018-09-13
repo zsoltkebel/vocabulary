@@ -59,42 +59,63 @@
         app:layout_constraintBottom_toBottomOf="parent"/>
 
     <android.support.constraint.ConstraintLayout
-        android:id="@+id/lt_click_play"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/endless_button_height"
-        android:elevation="@dimen/endless_button_elevation"
-        android:background="@drawable/ripple_button_white"
-        android:clickable="true"
-        android:focusable="true"
+        android:layout_height="wrap_content"
+        android:elevation="1dp"
+        android:background="@color/white"
 
-        android:paddingStart="20dp"
-        android:paddingEnd="20dp"
-        android:layout_marginBottom="@dimen/endless_button_margin_top_small"
-        app:layout_constraintBottom_toTopOf="@id/flt_vocabulary_info"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintBottom_toTopOf="@id/flt_vocabulary_info">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="@dimen/endless_button_text_size"
-            android:text="Start test"
-            android:textStyle="bold"
-            android:textColor="@color/colorAccent"
+        <android.support.constraint.ConstraintLayout android:id="@+id/lt_click_play"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/endless_button_height"
+            android:elevation="3dp"
+            android:background="@drawable/ripple_container_light_blue_rounded"
+            android:clickable="true"
+            android:focusable="true"
 
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"/>
+            app:layout_constraintEnd_toEndOf="parent">
 
-        <ImageView
-            android:layout_width="@dimen/btn_small_icon_width"
-            android:layout_height="@dimen/btn_small_icon_height"
-            android:background="@drawable/new_play_accent"
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/endless_button_text_size"
+                android:text="Start test"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
 
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"/>
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <ImageView
+                android:layout_width="@dimen/btn_small_icon_width"
+                android:layout_height="@dimen/btn_small_icon_height"
+                android:background="@drawable/new_play_accent"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+        </android.support.constraint.ConstraintLayout>
+
+        <Spinner android:id="@+id/s_method"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintBottom_toTopOf="@id/lt_click_play">
+
+        </Spinner>
+
     </android.support.constraint.ConstraintLayout>
+
 
     <android.support.constraint.ConstraintLayout android:id="@+id/state_picker"
         android:layout_width="match_parent"

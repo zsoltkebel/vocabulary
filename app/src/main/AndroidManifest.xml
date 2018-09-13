@@ -51,6 +51,10 @@
         <activity android:name=".screens.merge.ActivityMerge"
             android:configChanges="orientation"
             android:screenOrientation="portrait"/>
+        <activity android:name=".screens.learnconfig.ActivityChooseCorrect"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+
 
         <provider
             android:name="android.support.v4.content.FileProvider"

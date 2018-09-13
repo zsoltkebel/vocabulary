@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.annotation.Nullable;
 import android.support.constraint.ConstraintLayout;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -80,6 +81,7 @@ public class FragmentAddPhrase extends BaseFragment
     boolean wasPhraseBefore = false;
 
     Handler handler = new Handler();
+    Runnable checkPhrase;
 
     @Override
     protected int getFragmentLayout() {
@@ -91,6 +93,13 @@ public class FragmentAddPhrase extends BaseFragment
     {
         super.onCreate(savedInstanceState);
         setRetainInstance(true);
+
+        mRealm = ((ActivityVocabulary) getActivity()).getRealm();
+    }
+
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
 
         mRealm = ((ActivityVocabulary) getActivity()).getRealm();
     }
@@ -199,58 +208,60 @@ public class FragmentAddPhrase extends BaseFragment
         Animation rotation = AnimationUtils.loadAnimation(getContext(), R.anim.rotate);
         rotation.setFillAfter(true);
 
+        checkPhrase = new Runnable() {
+            @Override
+            public void run() {
+                if (!isAdded())
+                    return;
+
+                mPhrase = mRealm.where(Phrase.class)
+                        .equalTo(Phrase.VOCABULARY_ID, mVocabulary.getId())
+                        .equalTo(Phrase.P1, mPhraseString).findFirst();
+                if (mPhrase != null) {
+                    animateExistingIn();
+                    //mViewUpdate.setAnimation(rotate);
+                    mEtMeaning.setText(mPhrase.getP2());
+
+                    if (!wasPhraseBefore) {
+                        mEtPhrase.setBackground(getResources().getDrawable(R.drawable.ripple_container_update_yellow_rounded));
+                        mEtMeaning.setBackground(getResources().getDrawable(R.drawable.ripple_container_update_yellow_rounded));
+                    }
+                    wasPhraseBefore = true;
+
+                    switch (mPhrase.calculateState()) {
+                        case Phrase.NEW:
+                            mViewState.setBackground(getContext().getResources().getDrawable(R.drawable.new_dot_blue));
+                            break;
+                        case Phrase.DONT_KNOW:
+                            mViewState.setBackground(getContext().getResources().getDrawable(R.drawable.new_dot_red));
+                            break;
+                        case Phrase.KINDA:
+                            mViewState.setBackground(getContext().getResources().getDrawable(R.drawable.new_dot_yellow));
+                            break;
+                        case Phrase.KNOW:
+                            mViewState.setBackground(getContext().getResources().getDrawable(R.drawable.new_dot_green));
+                            break;
+                    }
+                } else {
+                    mViewState.setBackground(getResources().getDrawable(R.drawable.new_dot_blue));
+
+                    if(!mAnimationInProcess && mExistingVisible)
+                        animateExistingOut();
+
+                    mEtMeaning.setText("");
+
+                    if (wasPhraseBefore) {
+                        mEtPhrase.setBackground(getResources().getDrawable(R.drawable.ripple_container_white_accent_rounded));
+                        mEtMeaning.setBackground(getResources().getDrawable(R.drawable.ripple_container_white_accent_rounded));
+                    }
+
+                    wasPhraseBefore = false;
+                }
+            }
+        };
 
         return root;
     }
-
-    Runnable checkPhrase = new Runnable() {
-        @Override
-        public void run() {
-            mPhrase = mRealm.where(Phrase.class)
-                    .equalTo(Phrase.VOCABULARY_ID, mVocabulary.getId())
-                    .equalTo(Phrase.P1, mPhraseString).findFirst();
-            if (mPhrase != null) {
-                animateExistingIn();
-                //mViewUpdate.setAnimation(rotate);
-                mEtMeaning.setText(mPhrase.getP2());
-
-                if (!wasPhraseBefore) {
-                    mEtPhrase.setBackground(getResources().getDrawable(R.drawable.ripple_container_update_yellow_rounded));
-                    mEtMeaning.setBackground(getResources().getDrawable(R.drawable.ripple_container_update_yellow_rounded));
-                }
-                wasPhraseBefore = true;
-
-                switch (mPhrase.calculateState()) {
-                    case Phrase.NEW:
-                        mViewState.setBackground(getContext().getResources().getDrawable(R.drawable.new_dot_blue));
-                        break;
-                    case Phrase.DONT_KNOW:
-                        mViewState.setBackground(getContext().getResources().getDrawable(R.drawable.new_dot_red));
-                        break;
-                    case Phrase.KINDA:
-                        mViewState.setBackground(getContext().getResources().getDrawable(R.drawable.new_dot_yellow));
-                        break;
-                    case Phrase.KNOW:
-                        mViewState.setBackground(getContext().getResources().getDrawable(R.drawable.new_dot_green));
-                        break;
-                }
-            } else {
-                mViewState.setBackground(getContext().getResources().getDrawable(R.drawable.new_dot_blue));
-
-                if(!mAnimationInProcess && mExistingVisible)
-                    animateExistingOut();
-
-                mEtMeaning.setText("");
-
-                if (wasPhraseBefore) {
-                    mEtPhrase.setBackground(getResources().getDrawable(R.drawable.ripple_container_light_blue_rounded));
-                    mEtMeaning.setBackground(getResources().getDrawable(R.drawable.ripple_container_light_blue_rounded));
-                }
-
-                wasPhraseBefore = false;
-            }
-        }
-    };
 
 
     public void animateExistingIn() {
