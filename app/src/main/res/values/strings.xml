@@ -83,7 +83,7 @@
     <string name="msg_title_change_successful">Title changed</string>
     <string name="edited">Edited</string>
     <string name="undo">Undo</string>
-    <string name="filter">Filter</string>
+    <string name="filter">Search</string>
     <string name="just_a_moment">Just a moment…</string>
     <string name="state">State:</string>
     <string name="state_new">It\'s new.</string>

@@ -14,16 +14,7 @@
 
         app:layout_constraintBottom_toBottomOf="parent"/>
 
-    <TextView android:id="@+id/tv_phrase"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/phrase"
-        android:textSize="20sp"
 
-        android:layout_marginTop="20dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
 
     <Button
         android:id="@+id/btn_check"
@@ -31,11 +22,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Check"
-        android:textColor="@color/colorAccent"
+        android:textColor="@color/white"
         android:textAllCaps="false"
 
         android:textSize="20sp"
-        android:background="@drawable/ripple_container_whit_accent_rounded"
+        android:background="@drawable/ripple_primary_rounded"
         android:elevation="2dp"
 
         android:layout_marginBottom="10dp"
@@ -54,7 +45,7 @@
         app:layout_constraintBottom_toTopOf="@id/btn_check"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_phrase"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.8">
 
         <Button
@@ -65,6 +56,8 @@
             android:layout_marginTop="5dp"
             android:textAllCaps="false"
 
+            android:layout_marginStart="7dp"
+            android:layout_marginEnd="7dp"
             android:textSize="16sp"
             android:background="@drawable/ripple_container_whit_accent_rounded"
             android:elevation="0dp" />
@@ -74,11 +67,13 @@
             style="?android:attr/borderlessButtonStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="1dp"
+            android:layout_marginBottom="2dp"
             android:textAllCaps="false"
 
+            android:layout_marginStart="7dp"
+            android:layout_marginEnd="7dp"
             android:textSize="16sp"
-            android:layout_marginTop="1dp"
+            android:layout_marginTop="2dp"
             android:background="@drawable/ripple_container_whit_accent_rounded"
             android:elevation="0dp" />
 
@@ -90,21 +85,24 @@
             android:layout_marginBottom="5dp"
             android:textAllCaps="false"
 
+            android:layout_marginStart="7dp"
+            android:layout_marginEnd="7dp"
             android:textSize="16sp"
             android:background="@drawable/ripple_container_whit_accent_rounded"
             android:elevation="0dp" />
 
     </LinearLayout>
 
-    <TextView
+    <TextView android:id="@+id/tv_phrase"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Choose the right translation:"
-        android:textSize="18sp"
+        android:text="@string/phrase"
+        android:textSize="30sp"
 
-        android:layout_marginStart="10dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toTopOf="@id/lt_buttons"/>
 
 </android.support.constraint.ConstraintLayout>

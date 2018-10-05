@@ -16,9 +16,9 @@ public final class R {
         public static final int x_showPwdDrawable = 0x7f010196;
     }
     public static final class drawable {
-        public static final int x_et_svg_ic_clear_24dp = 0x7f020105;
-        public static final int x_et_svg_ic_hide_password_24dp = 0x7f020106;
-        public static final int x_et_svg_ic_show_password_24dp = 0x7f020107;
+        public static final int x_et_svg_ic_clear_24dp = 0x7f020114;
+        public static final int x_et_svg_ic_hide_password_24dp = 0x7f020115;
+        public static final int x_et_svg_ic_show_password_24dp = 0x7f020116;
     }
     public static final class string {
         public static final int app_name = 0x7f09002d;

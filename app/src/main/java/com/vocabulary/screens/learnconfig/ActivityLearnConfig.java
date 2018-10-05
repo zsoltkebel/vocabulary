@@ -252,6 +252,11 @@ public class ActivityLearnConfig extends RealmActivity {
         selectStates();
     }
 
+    @OnClick(R.id.iv_click_back)
+    protected void onBackClicked() {
+        finish();
+    }
+
     @OnClick(R.id.lt_click_play)
     protected void onPlayClicked() {
         if (mRealm.where(LearnOverview.class).equalTo(LearnOverview.ID, mVocabulary.getId()).findFirst() == null) {

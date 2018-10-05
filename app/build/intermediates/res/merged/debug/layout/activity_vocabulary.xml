@@ -50,6 +50,8 @@
                 android:layout_margin="7dp"
                 android:clickable="true"
                 android:focusable="true"
+                android:elevation="1dp"
+                android:background="@drawable/ripple_white_rounded"
 
                 app:layout_constraintStart_toEndOf="@id/iv_click_back"
                 app:layout_constraintEnd_toStartOf="@id/iv_click_options"
@@ -63,9 +65,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@drawable/ripple_btn_primary_rounded"
-                    android:textColor="@color/white"
+                    android:background="@drawable/ripple_white_rounded"
+                    android:textColor="@color/black"
                     android:hint="@string/filter"
+                    android:textSize="15sp"
                     android:textColorHint="@color/page2"
                     android:singleLine="true"
                     android:paddingStart="35dp"
@@ -73,12 +76,12 @@
 
                 <View
                     android:id="@+id/v_filter"
-                    android:layout_width="15dp"
-                    android:layout_height="15dp"
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
                     android:background="@drawable/toggle_btn_filter"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="9dp"
+                    android:layout_marginEnd="9dp"
                     android:layout_alignParentStart="true"
                     android:layout_centerVertical="true"/>
 

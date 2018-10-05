@@ -175,11 +175,19 @@ public class ActivityChooseCorrect extends LearnActivity {
             for (int i = 0; i < 3; i++) {
                 mAnswerButtons.get(i).setClickable(false);
                 if (mAnswerButtons.get(i).getText().equals(mCorrectMeaning)) {
+
+                    mRealm.beginTransaction();
+                    if (mAnswerButtons.get(i).isActivated())
+                        mCurrentPhrase.setKnowCount(mCurrentPhrase.getKnowCount() + 1);
+                    else
+                        mCurrentPhrase.setDontKnowCount(mCurrentPhrase.getDontKnowCount() + 1);
+                    mRealm.commitTransaction();
+
                     mAnswerButtons.get(i).setActivated(false);
                     mAnswerButtons.get(i).setBackground(getResources().getDrawable(R.color.dot_green));
                     mIndexes.remove(index);
                 } else {
-                   mAnswerButtons.get(i).setAlpha(0.2f);
+                   mAnswerButtons.get(i).setAlpha(0.4f);
                    if (mAnswerButtons.get(i).isActivated()) {
                        mAnswerButtons.get(i).setActivated(false);
                        mAnswerButtons.get(i).setSelected(true);

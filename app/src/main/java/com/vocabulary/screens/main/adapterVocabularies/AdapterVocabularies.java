@@ -27,12 +27,14 @@ public class AdapterVocabularies extends RecyclerView.Adapter<RecyclerView.ViewH
     ActivityMain activity;
     private Context context;
     private RealmResults<Vocabulary> vocabularies;
+    private boolean showOnlyMarked;
 
     public AdapterVocabularies(ActivityMain activity, Realm realm) {
         this.activity = activity;
         this.context = activity.getBaseContext();
         this.realm = realm;
         this.vocabularies = activity.getVocabularies();
+        this.showOnlyMarked = false;
     }
 
     @Override
@@ -57,7 +59,12 @@ public class AdapterVocabularies extends RecyclerView.Adapter<RecyclerView.ViewH
             case HEADER:
                 ViewHolderHeader headerViewHolder = (ViewHolderHeader) holder;
 
-                if (realm.where(Vocabulary.class)
+                if (showOnlyMarked ?
+                        realm.where(Vocabulary.class)
+                        .equalTo(Vocabulary.LANGUAGE, vocabulary.getLanguage())
+                        .equalTo(Vocabulary.MARKED, true)
+                        .findAll().size() == 0
+                : realm.where(Vocabulary.class)
                         .equalTo(Vocabulary.LANGUAGE, vocabulary.getLanguage())
                         .findAll().size() == 1) {
                     RecyclerView.LayoutParams param = (RecyclerView.LayoutParams) headerViewHolder.itemView.getLayoutParams();
@@ -84,6 +91,21 @@ public class AdapterVocabularies extends RecyclerView.Adapter<RecyclerView.ViewH
             case VOCABULARY:
                 final ViewHolderVocabulary listItemViewHolder = (ViewHolderVocabulary) holder;
 
+                if (showOnlyMarked && !vocabulary.isMarked()) {
+                    RecyclerView.LayoutParams param = (RecyclerView.LayoutParams) listItemViewHolder.itemView.getLayoutParams();
+                    param.width = 0;
+                    param.height = 0;
+                    listItemViewHolder.itemView.setVisibility(View.GONE);
+                    listItemViewHolder.itemView.setLayoutParams(param);
+                    break;
+                } else {
+                    RecyclerView.LayoutParams param = (RecyclerView.LayoutParams) listItemViewHolder.itemView.getLayoutParams();
+                    param.width = LinearLayout.LayoutParams.MATCH_PARENT;
+                    param.height = LinearLayout.LayoutParams.WRAP_CONTENT;
+                    listItemViewHolder.itemView.setVisibility(View.VISIBLE);
+                    listItemViewHolder.itemView.setLayoutParams(param);
+                }
+
                 listItemViewHolder.titleTextView.setText(vocabulary.getTitle());
                 listItemViewHolder.titleTextView.setSelected(true); // to scroll text automatically
                 listItemViewHolder.phrasesTextView.setText(
@@ -105,12 +127,11 @@ public class AdapterVocabularies extends RecyclerView.Adapter<RecyclerView.ViewH
                 listItemViewHolder.clickMore.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        activity.getFragmentVocabularyList().getProgressDialog().show();
+                        //activity.getFragmentVocabularyList().getProgressDialog().show();
 
-                        activity.startActivityMore(vocabulary.getId());
-
+                        //activity.startActivityMore(vocabulary.getId());
                         activity.setSelectedVocabulary(vocabulary);
-
+                        activity.getFragmentVocabularyList().showMoreDialog();
                     }
                 });
 
@@ -119,6 +140,9 @@ public class AdapterVocabularies extends RecyclerView.Adapter<RecyclerView.ViewH
                     public boolean onLongClick(View v) {
                         vibrate();
                         changeMarkState(vocabulary);
+                        if (showOnlyMarked)
+                            for (int i = 0; i < getItemCount(); i++)
+                                notifyItemChanged(i);
                         return true;
                     }
                 });
@@ -127,6 +151,9 @@ public class AdapterVocabularies extends RecyclerView.Adapter<RecyclerView.ViewH
                     public boolean onLongClick(View v) {
                         vibrate();
                         changeMarkState(vocabulary);
+                        if (showOnlyMarked)
+                            for (int i = 0; i < getItemCount(); i++)
+                                notifyItemChanged(i);
                         return true;
                     }
                 });
@@ -163,6 +190,13 @@ public class AdapterVocabularies extends RecyclerView.Adapter<RecyclerView.ViewH
         }
     }
 
+    public void changeShowOnlyMarked(boolean showOnlyMarked) {
+        this.showOnlyMarked = showOnlyMarked;
+
+        for (int i = 0; i < getItemCount(); i++)
+            notifyItemChanged(i);
+    }
+
     private void changeMarkState(Vocabulary vocabulary) {
         realm.beginTransaction();
         vocabulary.setMarked(!vocabulary.isMarked());
@@ -174,7 +208,7 @@ public class AdapterVocabularies extends RecyclerView.Adapter<RecyclerView.ViewH
             Toast.makeText(context, "Unmarked", Toast.LENGTH_SHORT).show();
     }
 
-    private void vibrate() {
+    public void vibrate() {
         Vibrator v = (Vibrator) context.getSystemService(Context.VIBRATOR_SERVICE);
         if (v.hasVibrator())
             v.vibrate(10);

@@ -279,7 +279,7 @@ public class FragmentHome extends BaseFragment {
             if (numOfNewPhrases > 0)
             {
                 String info = "<font color='#e62e00'><b>" + numOfNewPhrases + "</b></font>";
-                Spanned infoText = Html.fromHtml(info + " add_new phrase has been imported");
+                Spanned infoText = Html.fromHtml(info + " add_new phrase has been mFile");
                 Toast.makeText(getContext(), infoText, Toast.LENGTH_SHORT).show();
             }
             else

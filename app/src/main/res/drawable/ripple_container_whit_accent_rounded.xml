@@ -3,14 +3,19 @@
     android:color="@color/transparent_black">
     <item>
         <shape>
-            <padding android:padding="1dp" />
+            <corners android:radius="15dp"/>
             <solid android:color="@color/white" />
         </shape>
     </item>
     <item>
         <selector>
             <item android:state_activated="true">
-                <color android:color="@color/page2_light" />
+                <shape>
+                    <corners android:radius="12dp"/>
+                    <stroke android:width="3dp"
+                        android:color="@color/colorAccent" />
+                    <solid android:color="@color/white" />
+                </shape>
             </item>
             <item android:state_selected="true">
                 <color android:color="@color/dot_red" />

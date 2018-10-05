@@ -2,9 +2,9 @@
 <resources>
     <color name="page1">#3C4448</color>
     <color name="page1_dark">#2e3538</color>
-    <color name="page2">#227baa</color>
+    <color name="page2">#00AFE0</color>
     <color name="page2_light">#bfe1f3</color>
-    <color name="page2_dark">#1d6b95</color>
+    <color name="page2_dark">#00a0cc</color>
     <color name="page3">#E2BC22</color>
     <color name="page3_dark">#cba81a</color>
 
@@ -70,5 +70,7 @@
     <color name="update_yellow">#F6AE2D</color>
     <color name="transparent_update_yellow">#26F6AE2D</color>
     <color name="new_blue">#227baa</color>
+
+    <color name="new_back">#c1eff0</color>
 
 </resources>

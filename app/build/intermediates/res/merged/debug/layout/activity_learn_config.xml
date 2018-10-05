@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -58,7 +59,7 @@
 
         app:layout_constraintBottom_toBottomOf="parent"/>
 
-    <android.support.constraint.ConstraintLayout
+    <android.support.constraint.ConstraintLayout android:id="@+id/footer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:elevation="1dp"
@@ -294,6 +295,46 @@
             app:layout_constraintBottom_toBottomOf="@id/icon_state_new"/>
     </android.support.constraint.ConstraintLayout>
 
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/askFor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/state_picker"
+        android:layout_marginTop="@dimen/endless_button_margin_top_big"
+        android:elevation="1dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_settings_item_title"
+            android:text="Ask for"
+
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phrase"
+            app:layout_constraintEnd_toStartOf="@+id/button4"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/meaning"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/button3" />
+
+    </android.support.constraint.ConstraintLayout>
+
     <FrameLayout
         android:id="@+id/flt_settings"
         android:layout_width="match_parent"
@@ -301,6 +342,6 @@
 
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/state_picker"
-        app:layout_constraintBottom_toTopOf="@id/lt_click_play"/>
+        app:layout_constraintTop_toBottomOf="@id/askFor"
+        app:layout_constraintBottom_toTopOf="@id/footer"/>
 </android.support.constraint.ConstraintLayout>

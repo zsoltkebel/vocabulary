@@ -27,6 +27,7 @@ public class Vocabulary extends RealmObject {
     public static final String LANGUAGE = "language";
     public static final String PHRASES = "phrases";
     public static final String SORT_STRING = "sortString";
+    public static final String MARKED = "marked";
 
     @PrimaryKey
     private String id;

@@ -147,6 +147,13 @@ public class ActivityMain extends RealmActivity {
     }
 
     @Override
+    protected void onStop() {
+        super.onStop();
+        if (getFragmentVocabularyList().getProgressDialog().isShowing())
+            getFragmentVocabularyList().getProgressDialog().cancel();
+    }
+
+    @Override
     public void onBackPressed() {
         if (mTabLayout.getSelectedTabPosition() != 1)
             mTabLayout.getTabAt(1).select();
@@ -180,9 +187,9 @@ public class ActivityMain extends RealmActivity {
         ImageView ivIcon2 = (ImageView) customTabView2.findViewById(R.id.iv_icon);
         TextView tvText2 = (TextView) customTabView2.findViewById(R.id.tv_text);
 
-        ivIcon2.setImageDrawable(getDrawable(R.drawable.book_selected));
+        ivIcon2.setImageDrawable(getDrawable(R.drawable.book_sel));
         tvText2.setText(getResources().getString(R.string.tab_vocabularies));
-        tvText2.setTextColor(getResources().getColor(R.color.colorAccent));
+        tvText2.setTextColor(getResources().getColor(R.color.page2));
         tvText2.setTypeface(tvText2.getTypeface(), Typeface.BOLD);
         mTabLayout.getTabAt(1).setCustomView(customTabView2);
 
@@ -217,8 +224,8 @@ public class ActivityMain extends RealmActivity {
                         ImageView ivIcon1 = (ImageView) customTabView1.findViewById(R.id.iv_icon);
                         TextView tvText1 = (TextView) customTabView1.findViewById(R.id.tv_text);
 
-                        ivIcon1.setImageDrawable(getDrawable(R.drawable.home_selected));
-                        tvText1.setTextColor(getResources().getColor(R.color.colorAccent));
+                        ivIcon1.setImageDrawable(getDrawable(R.drawable.home_sel));
+                        tvText1.setTextColor(getResources().getColor(R.color.page2));
                         tvText1.setTypeface(tvText1.getTypeface(), Typeface.BOLD);
                         mTabLayout.getTabAt(0).setCustomView(customTabView1);
                         break;
@@ -227,8 +234,8 @@ public class ActivityMain extends RealmActivity {
                         ImageView ivIcon2 = (ImageView) customTabView2.findViewById(R.id.iv_icon);
                         TextView tvText2 = (TextView) customTabView2.findViewById(R.id.tv_text);
 
-                        ivIcon2.setImageDrawable(getDrawable(R.drawable.book_selected));
-                        tvText2.setTextColor(getResources().getColor(R.color.colorAccent));
+                        ivIcon2.setImageDrawable(getDrawable(R.drawable.book_sel));
+                        tvText2.setTextColor(getResources().getColor(R.color.page2));
                         tvText2.setTypeface(tvText2.getTypeface(), Typeface.BOLD);
                         mTabLayout.getTabAt(1).setCustomView(customTabView2);
                         break;
@@ -237,8 +244,8 @@ public class ActivityMain extends RealmActivity {
                         ImageView ivIcon3 = (ImageView) customTabView3.findViewById(R.id.iv_icon);
                         TextView tvText3 = (TextView) customTabView3.findViewById(R.id.tv_text);
 
-                        ivIcon3.setImageDrawable(getDrawable(R.drawable.add_selected));
-                        tvText3.setTextColor(getResources().getColor(R.color.colorAccent));
+                        ivIcon3.setImageDrawable(getDrawable(R.drawable.add_sel));
+                        tvText3.setTextColor(getResources().getColor(R.color.page2));
                         tvText3.setTypeface(tvText3.getTypeface(), Typeface.BOLD);
                         mTabLayout.getTabAt(2).setCustomView(customTabView3);
                         break;
@@ -332,14 +339,9 @@ public class ActivityMain extends RealmActivity {
     }
 
     public void setSelectedVocabulary(final Vocabulary vocabulary) {
-        final String vocabularyId = vocabulary.getId();
-        mRealm.executeTransactionAsync(new Realm.Transaction() {
-            @Override
-            public void execute(Realm realm) {
-                mSelectedVocabulary = realm.copyFromRealm(realm.where(Vocabulary.class)
-                        .equalTo(Vocabulary.ID, vocabularyId).findFirst());
-            }
-        });
+        mRealm.beginTransaction();
+        mSelectedVocabulary = mRealm.copyFromRealm(vocabulary);
+        mRealm.commitTransaction();
 
         vocabulary.removeAllChangeListeners();
         vocabulary.addChangeListener(new RealmObjectChangeListener<RealmModel>() {
