@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\res\\merged\\debug\\values-v16\\values-v16.xml",
+            "outputFile": "/Users/zsoltkebel/Documents/repos/android_vocabulary/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\01cacde6e8e780317bbdfd53e64fe6ac\\res\\values-v16\\values-v16.xml",
+                    "source": "/Users/zsoltkebel/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/a36b9a06c8b9d86633086d190c58e359/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -12,20 +12,24 @@
                         "endColumns": "65",
                         "endOffsets": "116"
                     }
-                }
-            ]
-        },
-        {
-            "outputFile": "C:\\repos\\android_vocabulary\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
-            "map": [
+                },
                 {
-                    "source": "C:\\Users\\Kébel Zsolt\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.1.0.aar\\01cacde6e8e780317bbdfd53e64fe6ac\\res\\values-v16\\values-v16.xml",
+                    "source": "/Users/zsoltkebel/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/e8cf850a3c6799c4fffb87394dac59bb/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
                         "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "223"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "121",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "289"
                     }
                 }
             ]

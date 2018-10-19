@@ -52,7 +52,7 @@
     <TextView android:id="@+id/tv_done"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/done"
+        android:text="@string/btn_done"
         android:background="@drawable/ripple_btn_light_rounded"
         android:textColor="@color/colorAccent"
         android:textStyle="bold"

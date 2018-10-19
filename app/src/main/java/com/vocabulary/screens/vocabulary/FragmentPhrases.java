@@ -1,12 +1,12 @@
 package com.vocabulary.screens.vocabulary;
 
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.design.widget.Snackbar;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -20,6 +20,7 @@ import android.widget.TextView;
 
 import com.vocabulary.R;
 import com.vocabulary.realm.Phrase;
+import com.vocabulary.realm.RealmFragment;
 import com.vocabulary.realm.Vocabulary;
 import com.vocabulary.screens.edit.EditWord;
 
@@ -30,7 +31,6 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import droidninja.filepicker.fragments.BaseFragment;
 import io.realm.OrderedCollectionChangeSet;
 import io.realm.OrderedRealmCollectionChangeListener;
 import io.realm.Realm;
@@ -43,72 +43,40 @@ import static com.vocabulary.screens.vocabulary.ActivityVocabulary.PREFS_VOCABUL
  * Created by Kébel Zsolt on 2018. 03. 27..
  */
 
-public class FragmentPhrases extends BaseFragment {
+public class FragmentPhrases extends RealmFragment {
     public static final String PREFS_SORTING_FIELD = "sortingField";
     public static final String PREFS_SORTING_ASCENDING = "ascending";
 
-    Context context;
+    @BindView(R.id.rv_list) RecyclerView recyclerView;
+    @BindView(R.id.tv_numOfSelected) TextView tv_numberOfSelected;
+    @BindView(R.id.layout_options) LinearLayout options;
+    @BindView(R.id.btn_delSelected) ImageView deleteSelected;
+    @BindView(R.id.btn_edit) ImageView editSelected;
 
-    @BindView(R.id.rv_list)
-            protected RecyclerView recyclerView;
-    @BindView(R.id.tv_numOfSelected)
-            protected TextView tv_numberOfSelected;
-    @BindView(R.id.layout_options)
-            protected LinearLayout options;
-    @BindView(R.id.btn_delSelected)
-            protected ImageView deleteSelected;
-    @BindView(R.id.btn_edit)
-            protected ImageView editSelected;
-
-    private View root;
-    private Realm realm;
-    private Vocabulary vocabulary;
+    private View mRootView;
+    private Vocabulary mVocabulary;
 
     private AdapterPhrases adapter;
 
-    private ActivityVocabulary activity;
-
-    @Override
-    protected int getFragmentLayout() {
-        return R.layout.fragment_phrases;
-    }
-
-    @Override
-    public void onAttach(Context context) {
-        super.onAttach(context);
-        if (context instanceof Activity)
-            this.activity =(ActivityVocabulary) context;
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState)
-    {
-        super.onCreate(savedInstanceState);
-        setRetainInstance(true);
-
-        realm = activity.getRealm();
-    }
+    private ActivityVocabulary mActivityVocabulary;
+    private Context mContext;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         super.onCreateView(inflater, container, savedInstanceState);
-        root = inflater.inflate(getFragmentLayout(), container, false);
-        ButterKnife.bind(this, root);
+        mRootView = inflater.inflate(R.layout.fragment_phrases, container, false);
+        ButterKnife.bind(this, mRootView);
 
-        context = getContext();
-        vocabulary = activity.getVocabulary();
+        mActivityVocabulary = (ActivityVocabulary) mActivity;
 
-        getPrefs();
-
-
-        //recyclerView.setLayoutManager(add_new LinearLayoutManager(context));
+        mContext = getContext();
+        mVocabulary = mActivityVocabulary.getVocabulary();
 
         setAdapter();
 
-        recyclerView.setLayoutManager(new WrapContentLinearLayoutManager(context, LinearLayoutManager.VERTICAL, false));
+        recyclerView.setLayoutManager(new WrapContentLinearLayoutManager(mContext, LinearLayoutManager.VERTICAL, false));
 
-
-        return root;
+        return mRootView;
     }
 
     public class WrapContentLinearLayoutManager extends LinearLayoutManager {
@@ -127,53 +95,35 @@ public class FragmentPhrases extends BaseFragment {
         }
     }
 
-
-    @Override
-    public void onResume()
-    {
-        super.onResume();
-
-
-    }
-/*
-    public static void update()
-    {
-        DBHelper dbHelper = add_new DBHelper(ActivityVocabulary.context);
-        adapter.updateList(dbHelper.getVocabulary(vocabularyID));
-        adapter.recoverAllRemoved(null);
-        adapter.search(mFilter);
-        adapter.setSelectable(false);
-    }*/
-
     final ArrayList<Phrase> trashPhrases = new ArrayList<>();
     final ArrayList<Integer> trashIndexes = new ArrayList<>();
 
-    @OnClick(R.id.btn_delSelected)
-    protected void delete() {
+    @OnClick(R.id.btn_delSelected) void onDeleteClicked() {
         trashPhrases.clear();
         trashIndexes.clear();
 
         //TODO string resource and number of selected items
-        AlertDialog.Builder dialog = new AlertDialog.Builder(context);
+        AlertDialog.Builder dialog = new AlertDialog.Builder(mContext);
         dialog.setMessage(R.string.are_you_sure_delete);
 
         dialog.setNegativeButton(R.string.cancel, null);
         dialog.setPositiveButton(R.string.btn_delete, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                final String vocabularyId = vocabulary.getId();
+                final String vocabularyId = mVocabulary.getId();
                 final HashSet<String> idsOfSelected = new HashSet<>(adapter.getIdsOfSelected());
                 final List<Phrase> phrases = new ArrayList<>(adapter.getPhrases());
 
                 adapter.setSelectable(false);
 
-                realm.executeTransactionAsync(new Realm.Transaction() {
+                mRealm.executeTransactionAsync(new Realm.Transaction() {
                     @Override
-                    public void execute(Realm realm) {
+                    public void execute(@NonNull Realm realm) {
                         for (String id : idsOfSelected) {
                             Phrase phrase = realm.where(Phrase.class)
                                     .equalTo(Phrase.VOCABULARY_ID, vocabularyId)
                                     .equalTo(Phrase.DATE, id).findFirst();
+                            assert phrase != null;
                             trashPhrases.add(realm.copyFromRealm(phrase));
                             trashIndexes.add(phrases.indexOf(phrase));
                             phrase.deleteFromRealm();
@@ -182,14 +132,14 @@ public class FragmentPhrases extends BaseFragment {
                 }, new Realm.Transaction.OnSuccess() {
                     @Override
                     public void onSuccess() {
-                        Snackbar snackbar = Snackbar.make(root.findViewById(R.id.background),
+                        Snackbar snackbar = Snackbar.make(mRootView.findViewById(R.id.background),
                                 getResources().getString(R.string.message_deleted), Snackbar.LENGTH_LONG)
                                 .setAction(R.string.undo, new View.OnClickListener() {
                                     @Override
                                     public void onClick(View v) {
-                                        realm.executeTransactionAsync(new Realm.Transaction() {
+                                        mRealm.executeTransactionAsync(new Realm.Transaction() {
                                             @Override
-                                            public void execute(Realm realm) {
+                                            public void execute(@NonNull Realm realm) {
                                                 for (int i =trashPhrases.size() - 1; i >= 0; i--) {
                                                     final Phrase managedPhrase = realm.copyToRealm(trashPhrases.get(i));
                                                     if (realm.where(Vocabulary.class)
@@ -215,41 +165,54 @@ public class FragmentPhrases extends BaseFragment {
         dialog.create().show();
     }
 
-    @OnClick(R.id.btn_edit)
-    public void editWord() {
+    @OnClick(R.id.btn_edit) void editWord() {
         final HashSet<String> idsOfSelected = adapter.getIdsOfSelected();
 
         for (String id : idsOfSelected) {
-            Intent intent = new Intent(activity, EditWord.class);
-            intent.putExtra(Vocabulary.ID, vocabulary.getId());
-            intent.putExtra(Phrase.DATE, id);
+            Phrase phrase = mRealm.where(Phrase.class)
+                    .equalTo(Phrase.LANGUAGE, mVocabulary.getLanguage())
+                    .equalTo(Phrase.DATE, id).findFirst();
 
-            startActivityForResult(intent, 1);
+            if (phrase != null) {
+                Intent intent = EditWord.createIntent(getContext(), phrase);
+                startActivityForResult(intent, 0);
+            }
         }
         adapter.setSelectable(false);
     }
 
-    public void listRefresh(int position)
-    {
-        //adapter.notifyItemRangeChanged(0, mVocabulary.getNumOfWords());
-        //adapter.notifyItemChanged(position);
-        adapter.setSelectable(false);
+    public void setAdapter() {
+        if (adapter != null)
+            adapter.getPhrases().removeAllChangeListeners();
+
+        adapter = new AdapterPhrases(mActivityVocabulary, getSortingField(), getSorting());
+        recyclerView.setAdapter(adapter);
+
+        adapter.getPhrases().addChangeListener(new OrderedRealmCollectionChangeListener<RealmResults<Phrase>>() {
+            @Override
+            public void onChange(@NonNull RealmResults<Phrase> phrases, @NonNull OrderedCollectionChangeSet changeSet) {
+
+                // For deletions, the adapter has to be notified in reverse order.
+                OrderedCollectionChangeSet.Range[] deletions = changeSet.getDeletionRanges();
+                for (int i = deletions.length - 1; i >= 0; i--) {
+                    OrderedCollectionChangeSet.Range range = deletions[i];
+                    adapter.notifyItemRangeRemoved(range.startIndex, range.length);
+                    mActivityVocabulary.setNumOfPhrasesText();
+                }
+
+                OrderedCollectionChangeSet.Range[] insertions = changeSet.getInsertionRanges();
+                for (OrderedCollectionChangeSet.Range range : insertions) {
+                    adapter.notifyItemRangeInserted(range.startIndex, range.length);
+                    mActivityVocabulary.setNumOfPhrasesText();
+                }
+
+                OrderedCollectionChangeSet.Range[] modifications = changeSet.getChangeRanges();
+                for (OrderedCollectionChangeSet.Range range : modifications) {
+                    adapter.notifyItemRangeChanged(range.startIndex, range.length);
+                }
+            }
+        });
     }
-
-    private void getPrefs()
-    {
-        SharedPreferences prefs = activity.getSharedPreferences(PREFS_VOCABULARY, MODE_PRIVATE);
-
-
-        //mVocabulary = database.getVocabulary(indexOfVocabulary);
-    }
-
-    public void search(String filter)
-    {
-        //adapter.search(mFilter);
-        recyclerView.getLayoutManager().scrollToPosition(0);
-    }
-
 
 
     public boolean isSelectable()
@@ -273,18 +236,18 @@ public class FragmentPhrases extends BaseFragment {
     }
 
     public void setSorting(String sortingField, boolean ascending) {
-        SharedPreferences prefs = activity.getSharedPreferences(PREFS_VOCABULARY, MODE_PRIVATE);
+        SharedPreferences prefs = mActivityVocabulary.getSharedPreferences(PREFS_VOCABULARY, MODE_PRIVATE);
         prefs.edit().putString(PREFS_SORTING_FIELD, sortingField).apply();
         prefs.edit().putBoolean(PREFS_SORTING_ASCENDING, ascending).apply();
     }
 
     public String getSortingField() {
-        SharedPreferences prefs = activity.getSharedPreferences(PREFS_VOCABULARY, MODE_PRIVATE);
+        SharedPreferences prefs = mActivityVocabulary.getSharedPreferences(PREFS_VOCABULARY, MODE_PRIVATE);
         return prefs.getString(PREFS_SORTING_FIELD, Phrase.DATE);
     }
 
-    public boolean getSortingAscending() {
-        SharedPreferences prefs = activity.getSharedPreferences(PREFS_VOCABULARY, MODE_PRIVATE);
+    public boolean getSorting() {
+        SharedPreferences prefs = mActivityVocabulary.getSharedPreferences(PREFS_VOCABULARY, MODE_PRIVATE);
         return prefs.getBoolean(PREFS_SORTING_ASCENDING, false);
     }
 
@@ -293,51 +256,5 @@ public class FragmentPhrases extends BaseFragment {
             setAdapter();
         return adapter;
     }
-
-    public void setAdapter() {
-        try {
-            if (adapter != null)
-                adapter.getPhrases().removeAllChangeListeners();
-
-            adapter = new AdapterPhrases(activity, getSortingField(), getSortingAscending());
-            recyclerView.setAdapter(adapter);
-
-            adapter.getPhrases().addChangeListener(new OrderedRealmCollectionChangeListener<RealmResults<Phrase>>() {
-                @Override
-                public void onChange(RealmResults<Phrase> phrases, OrderedCollectionChangeSet changeSet) {
-                    // `null`  means the async query returns the first time.
-                    if (changeSet == null) {
-                        adapter.notifyDataSetChanged();
-                        return;
-                    }
-                    // For deletions, the adapter has to be notified in reverse order.
-                    OrderedCollectionChangeSet.Range[] deletions = changeSet.getDeletionRanges();
-                    for (int i = deletions.length - 1; i >= 0; i--) {
-                        OrderedCollectionChangeSet.Range range = deletions[i];
-                        adapter.notifyItemRangeRemoved(range.startIndex, range.length);
-                        try {
-                            activity.setNumOfPhrasesText();
-                        } catch (Exception e) {
-                        }
-                    }
-
-                    OrderedCollectionChangeSet.Range[] insertions = changeSet.getInsertionRanges();
-                    for (OrderedCollectionChangeSet.Range range : insertions) {
-                        adapter.notifyItemRangeInserted(range.startIndex, range.length);
-                        try {
-                            activity.setNumOfPhrasesText();
-                        } catch (Exception e) {
-                        }
-                    }
-
-                    OrderedCollectionChangeSet.Range[] modifications = changeSet.getChangeRanges();
-                    for (OrderedCollectionChangeSet.Range range : modifications) {
-                        adapter.notifyItemRangeChanged(range.startIndex, range.length);
-                    }
-                }
-            });
-        } catch (Exception e) {}
-    }
-
 
 }

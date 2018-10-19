@@ -4,31 +4,30 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
+import com.vocabulary.realm.RealmFragment;
+
 /**
  * Created by Kébel Zsolt on 2018. 03. 18..
  */
 
 public class PagerAdapter extends FragmentPagerAdapter {
 
-    private Fragment[] fragments = new Fragment[]{
-            new FragmentPhrases(),
-            new FragmentAddPhrase()
-    };
+    private RealmFragment[] mFragments;
 
-
-    public PagerAdapter(FragmentManager fm) {
+    PagerAdapter(FragmentManager fm, RealmFragment[] fragments) {
         super(fm);
+        mFragments = fragments;
     }
 
     @Override
     public int getCount() {
-        return fragments.length;
+        return mFragments.length;
     }
 
     @Override
     public Fragment getItem(int position) {
-        if(position < fragments.length){
-            return fragments[position];
+        if(position < mFragments.length){
+            return mFragments[position];
         }
         return null;
     }

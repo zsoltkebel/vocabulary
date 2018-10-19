@@ -14,6 +14,7 @@ import com.vocabulary.R;
 import com.vocabulary.realm.Phrase;
 import com.vocabulary.realm.Vocabulary;
 import com.vocabulary.screens.main.ActivityMain;
+import com.vocabulary.screens.main.FragmentVocabularies;
 import com.vocabulary.screens.vocabulary.ActivityVocabulary;
 
 import io.realm.Realm;
@@ -115,7 +116,7 @@ public class AdapterVocabularies extends RecyclerView.Adapter<RecyclerView.ViewH
                 listItemViewHolder.clickLayoutOpen.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        activity.getFragmentVocabularyList().getProgressDialog().show();
+                        activity.showProgressDialog(true);
 
                         Intent intent = ActivityVocabulary.createIntent(context, vocabulary.getId());
                         activity.startActivityForResult(intent, 0);
@@ -127,11 +128,8 @@ public class AdapterVocabularies extends RecyclerView.Adapter<RecyclerView.ViewH
                 listItemViewHolder.clickMore.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        //activity.getFragmentVocabularyList().getProgressDialog().show();
-
-                        //activity.startActivityMore(vocabulary.getId());
                         activity.setSelectedVocabulary(vocabulary);
-                        activity.getFragmentVocabularyList().showMoreDialog();
+                        ((FragmentVocabularies) activity.getFragment(ActivityMain.FRAGMENT_VOCABULARIES)).showMoreDialog();
                     }
                 });
 

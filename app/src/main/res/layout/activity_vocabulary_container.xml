@@ -43,7 +43,7 @@
                 android:layout_height="30dp"
                 android:layout_gravity="center" />
 
-            <com.vocabulary.ExtendedEditText
+            <EditText
                 android:id="@+id/editText"
                 style="@android:style/TextAppearance.Widget.EditText"
                 android:layout_width="0dp"

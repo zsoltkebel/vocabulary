@@ -39,10 +39,7 @@
         <activity android:name=".learn.ActivityVocabularyTest"
             android:configChanges="orientation"
             android:screenOrientation="portrait"/>
-        <activity android:name=".screens.settings.ActivityAbout"
-            android:configChanges="orientation"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".screens.settings.ActivitySettings"
+        <activity android:name=".screens.about.ActivityAbout"
             android:configChanges="orientation"
             android:screenOrientation="portrait"/>
         <activity android:name=".screens.more.ActivityMore"
@@ -51,7 +48,7 @@
         <activity android:name=".screens.merge.ActivityMerge"
             android:configChanges="orientation"
             android:screenOrientation="portrait"/>
-        <activity android:name=".screens.learnconfig.ActivityChooseCorrect"
+        <activity android:name=".screens.learnconfig.chooseCorrect.ActivityChooseCorrect"
             android:configChanges="orientation"
             android:screenOrientation="portrait"/>
 

@@ -7,7 +7,6 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.annotation.Nullable;
 import android.support.constraint.ConstraintLayout;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -27,20 +26,20 @@ import android.widget.Toast;
 
 import com.vocabulary.R;
 import com.vocabulary.realm.Phrase;
+import com.vocabulary.realm.RealmFragment;
 import com.vocabulary.realm.Vocabulary;
 import com.vocabulary.utils.LanguageHelper;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import droidninja.filepicker.fragments.BaseFragment;
 import io.realm.Realm;
 
 /**
  * Created by Kébel Zsolt on 2018. 03. 27..
  */
 
-public class FragmentAddPhrase extends BaseFragment
+public class FragmentAddPhrase extends RealmFragment
 {
     @BindView(R.id.et_phrase)
     protected EditText mEtPhrase;
@@ -68,10 +67,9 @@ public class FragmentAddPhrase extends BaseFragment
 
     ConstraintLayout btnAddPhrase;
 
-    Realm mRealm;
     Vocabulary mVocabulary;
     Phrase mPhrase;
-    ActivityVocabulary activity;
+    ActivityVocabulary mActivityVocabulary;
 
     private String mPhraseString = "";
     private String mExplanation = "";
@@ -84,32 +82,11 @@ public class FragmentAddPhrase extends BaseFragment
     Runnable checkPhrase;
 
     @Override
-    protected int getFragmentLayout() {
-        return R.layout.fragment_add_phrase;
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState)
-    {
-        super.onCreate(savedInstanceState);
-        setRetainInstance(true);
-
-        mRealm = ((ActivityVocabulary) getActivity()).getRealm();
-    }
-
-    @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-
-        mRealm = ((ActivityVocabulary) getActivity()).getRealm();
-    }
-
-    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        root = inflater.inflate(getFragmentLayout(), container, false);
+        root = inflater.inflate(R.layout.fragment_add_phrase, container, false);
         ButterKnife.bind(this, root);
 
-        activity = (ActivityVocabulary) getActivity();
+        mActivityVocabulary = (ActivityVocabulary) mActivity;
 
         mVocabulary = ((ActivityVocabulary) getActivity()).getVocabulary();
 
@@ -155,7 +132,7 @@ public class FragmentAddPhrase extends BaseFragment
                         }
                     });
 
-                    //activity.getFragmentPhrases().getAdapter().updateList(mRealm);
+                    //mActivityVocabulary.getFragmentPhrases().getAdapter().updateList(mRealm);
 
                 }
             }

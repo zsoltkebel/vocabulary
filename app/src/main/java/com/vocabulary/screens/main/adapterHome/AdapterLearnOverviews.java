@@ -67,7 +67,7 @@ public class AdapterLearnOverviews extends RecyclerView.Adapter<RecyclerView.Vie
         holderLearnOverView.clickLayoutOpen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                activity.getFragmentVocabularyList().getProgressDialog().show();
+                activity.showProgressDialog(true);
 
                 Intent intent = ActivityVocabulary.createIntent(context, vocabulary.getId());
                 activity.startActivityForResult(intent, 0);
@@ -79,9 +79,10 @@ public class AdapterLearnOverviews extends RecyclerView.Adapter<RecyclerView.Vie
         holderLearnOverView.clickMore.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                activity.getFragmentVocabularyList().getProgressDialog().show();
+                activity.showProgressDialog(true);
 
-                activity.startActivityMore(vocabulary.getId());
+                //TODO more
+                //activity.startActivityMore(vocabulary.getId());
 
                 activity.setSelectedVocabulary(vocabulary);
 

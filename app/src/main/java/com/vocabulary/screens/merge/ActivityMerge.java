@@ -31,34 +31,21 @@ import io.realm.Realm;
 import io.realm.RealmResults;
 
 public class ActivityMerge extends RealmActivity {
+    @BindView(R.id.iv_icon) ImageView ivIconCurrent;
+    @BindView(R.id.iv_icon_2) ImageView ivIconSelected;
+    @BindView(R.id.iv_icon_3) ImageView ivIconMerged;
+    @BindView(R.id.tv_language) TextView tvLanguageCurrent;
+    @BindView(R.id.tv_title) TextView tvTitleCurrent;
+    @BindView(R.id.tv_num_of_phrases) TextView tvNumOfPhrasesCurrent;
+    @BindView(R.id.tv_language_2) TextView tvLanguageSelected;
+    @BindView(R.id.tv_title_2) TextView tvTitleSelected;
+    @BindView(R.id.tv_num_of_phrases_2) TextView tvNumOfPhrasesSelected;
+    @BindView(R.id.tv_language_3) TextView tvLanguageMerged;
+    @BindView(R.id.tv_title_3) TextView tvTitleMerged;
+    @BindView(R.id.tv_num_of_phrases_3) TextView tvNumOfPhrasesMerged;
 
-    @BindView(R.id.iv_icon)
-            protected ImageView ivIconCurrent;
-    @BindView(R.id.tv_language)
-            protected TextView tvLanguageCurrent;
-    @BindView(R.id.tv_title)
-            protected TextView tvTitleCurrent;
-    @BindView(R.id.tv_num_of_phrases)
-            protected TextView tvNumOfPhrasesCurrent;
-    @BindView(R.id.iv_icon_2)
-            protected ImageView ivIconSelected;
-    @BindView(R.id.tv_language_2)
-            protected TextView tvLanguageSelected;
-    @BindView(R.id.tv_title_2)
-            protected TextView tvTitleSelected;
-    @BindView(R.id.tv_num_of_phrases_2)
-            protected TextView tvNumOfPhrasesSelected;
-    @BindView(R.id.iv_icon_3)
-            protected ImageView ivIconMerged;
-    @BindView(R.id.tv_language_3)
-            protected TextView tvLanguageMerged;
-    @BindView(R.id.tv_title_3)
-        protected TextView tvTitleMerged;
-    @BindView(R.id.tv_num_of_phrases_3)
-        protected TextView tvNumOfPhrasesMerged;
-
-    Vocabulary vocabularyCurrent;
-    Vocabulary vocabularySelected;
+    Vocabulary mVocabularyCurrent;
+    Vocabulary mVocabularySelected;
 
     AlertDialog selectDialog;
     String newName = null;
@@ -74,9 +61,7 @@ public class ActivityMerge extends RealmActivity {
         setContentView(R.layout.activity_merge);
         ButterKnife.bind(this);
 
-        mRealm = Realm.getDefaultInstance();
-
-        vocabularyCurrent = mRealm.where(Vocabulary.class)
+        mVocabularyCurrent = mRealm.where(Vocabulary.class)
                 .equalTo(Vocabulary.ID, getIntent().getStringExtra(Vocabulary.ID))
                 .findFirst();
 
@@ -105,14 +90,14 @@ public class ActivityMerge extends RealmActivity {
 
     @OnClick(R.id.lt_click_rename)
     protected void onRenameClicked() {
-        if (vocabularySelected == null)
+        if (mVocabularySelected == null)
             return;
 
         final AlertDialog.Builder builder = new AlertDialog.Builder(this);
 
         final View dialogView = getLayoutInflater().inflate(R.layout.dialog_rename_vocabulary, null);
         final EditText titleEditText = (EditText) dialogView.findViewById(R.id.editText_dic_name);
-        titleEditText.setText(vocabularySelected.getTitle());
+        titleEditText.setText(mVocabularySelected.getTitle());
         titleEditText.requestFocus();
         titleEditText.selectAll();
         //show keyboard
@@ -132,7 +117,7 @@ public class ActivityMerge extends RealmActivity {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 if (mRealm.where(Vocabulary.class)
-                        .equalTo(Vocabulary.LANGUAGE, vocabularySelected.getLanguage())
+                        .equalTo(Vocabulary.LANGUAGE, mVocabularySelected.getLanguage())
                         .equalTo(Vocabulary.TITLE, titleEditText.getText().toString())
                         .findFirst() == null) {
                     newName = titleEditText.getText().toString().trim();
@@ -153,11 +138,11 @@ public class ActivityMerge extends RealmActivity {
 
     @OnClick(R.id.lt_click_merge)
     protected void onMergeClicked() {
-        if (vocabularySelected == null)
+        if (mVocabularySelected == null)
             return;
 
-        final String vSelectedId = vocabularySelected.getId();
-        final String vCurrentId = vocabularyCurrent.getId();
+        final String vSelectedId = mVocabularySelected.getId();
+        final String vCurrentId = mVocabularyCurrent.getId();
 
         mRealm.executeTransactionAsync(new Realm.Transaction() {
             @Override
@@ -208,10 +193,10 @@ public class ActivityMerge extends RealmActivity {
     }
 
     private void setupCurrent() {
-        ivIconCurrent.setImageDrawable(vocabularyCurrent.getIconDrawable(this));
-        tvLanguageCurrent.setText(vocabularyCurrent.getLanguageReference(this));
-        tvTitleCurrent.setText(vocabularyCurrent.getTitle());
-        tvNumOfPhrasesCurrent.setText(String.valueOf(vocabularyCurrent.getPhrases().size()));
+        ivIconCurrent.setImageDrawable(mVocabularyCurrent.getIconDrawable(this));
+        tvLanguageCurrent.setText(mVocabularyCurrent.getLanguageReference(this));
+        tvTitleCurrent.setText(mVocabularyCurrent.getTitle());
+        tvNumOfPhrasesCurrent.setText(String.valueOf(mVocabularyCurrent.getPhrases().size()));
     }
 
     public RealmResults<Vocabulary> getVocabularies() {
@@ -219,7 +204,7 @@ public class ActivityMerge extends RealmActivity {
     }
 
     public Vocabulary getVocabularyCurrent() {
-        return vocabularyCurrent;
+        return mVocabularyCurrent;
     }
 
     public void setSelectedVocabulary(Vocabulary vocabulary) {
@@ -231,11 +216,11 @@ public class ActivityMerge extends RealmActivity {
         ivIconMerged.setImageDrawable(vocabulary.getIconDrawable(this));
         tvLanguageMerged.setText(vocabulary.getLanguageReference(this));
         if (tvTitleMerged.getText().toString().equals("...") ||
-                vocabularySelected.getTitle().equals(tvTitleMerged.getText().toString()))
+                mVocabularySelected.getTitle().equals(tvTitleMerged.getText().toString()))
             tvTitleMerged.setText(vocabulary.getTitle());
-        tvNumOfPhrasesMerged.setText(String.valueOf(vocabulary.getPhrases().size() + vocabularyCurrent.getPhrases().size()));
+        tvNumOfPhrasesMerged.setText(String.valueOf(vocabulary.getPhrases().size() + mVocabularyCurrent.getPhrases().size()));
 
-        this.vocabularySelected = vocabulary;
+        this.mVocabularySelected = vocabulary;
         selectDialog.dismiss();
     }
 }

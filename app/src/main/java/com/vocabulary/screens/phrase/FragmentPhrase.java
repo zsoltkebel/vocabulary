@@ -16,25 +16,14 @@ import butterknife.ButterKnife;
 
 public class FragmentPhrase extends Fragment {
 
-    @BindView(R.id.txtvWord)
-    protected TextView mTvP1;
-    @BindView(R.id.txtvMeaning)
-    protected TextView mTvP2;
-    @BindView(R.id.tv_state_text)
-    protected TextView mTvState;
-
-    @BindView(R.id.v_state_color)
-    protected View mViewStateColor;
-
-    private View mRoot;
+    @BindView(R.id.txtvWord) TextView mTvP1;
+    @BindView(R.id.txtvMeaning) TextView mTvP2;
+    @BindView(R.id.tv_state_text) TextView mTvState;
+    @BindView(R.id.v_state_color) View mViewStateColor;
 
     private Phrase mPhrase;
 
-    private String mPhraseId;
-    private String mVocabularyId;
-
     public static FragmentPhrase newInstance (String vocabularyId, String phraseId) {
-
         Bundle args = new Bundle();
         args.putString(Phrase.VOCABULARY_ID, vocabularyId);
         args.putString(Phrase.DATE, phraseId);
@@ -44,15 +33,14 @@ public class FragmentPhrase extends Fragment {
         return fragment;
     }
 
-    @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         super.onCreateView(inflater, container, savedInstanceState);
-        mRoot = inflater.inflate(R.layout.fragment_phrase, container, false);
+        View mRoot = inflater.inflate(R.layout.fragment_phrase, container, false);
         ButterKnife.bind(this, mRoot);
 
-        mVocabularyId = getArguments().getString(Phrase.VOCABULARY_ID);
-        mPhraseId = getArguments().getString(Phrase.DATE);
+        String mVocabularyId = getArguments().getString(Phrase.VOCABULARY_ID);
+        String mPhraseId = getArguments().getString(Phrase.DATE);
 
         mPhrase = ((ActivityPhrase) getActivity()).getRealm().where(Phrase.class)
                 .equalTo(Phrase.VOCABULARY_ID, mVocabularyId)

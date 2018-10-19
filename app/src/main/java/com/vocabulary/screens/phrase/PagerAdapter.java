@@ -12,7 +12,6 @@ import io.realm.RealmResults;
 
 public class PagerAdapter extends FragmentPagerAdapter {
 
-
     ArrayList<Fragment> fragments = new ArrayList<>();
 
     public PagerAdapter (FragmentManager fragmentManager, RealmResults<Phrase> phrases) {

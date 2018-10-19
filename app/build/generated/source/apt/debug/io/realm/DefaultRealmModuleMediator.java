@@ -27,8 +27,8 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
     static {
         Set<Class<? extends RealmModel>> modelClasses = new HashSet<Class<? extends RealmModel>>(4);
         modelClasses.add(com.vocabulary.realm.LearnOverview.class);
-        modelClasses.add(com.vocabulary.realm.Phrase.class);
         modelClasses.add(com.vocabulary.realm.Test.class);
+        modelClasses.add(com.vocabulary.realm.Phrase.class);
         modelClasses.add(com.vocabulary.realm.Vocabulary.class);
         MODEL_CLASSES = Collections.unmodifiableSet(modelClasses);
     }
@@ -37,8 +37,8 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
     public Map<Class<? extends RealmModel>, OsObjectSchemaInfo> getExpectedObjectSchemaInfoMap() {
         Map<Class<? extends RealmModel>, OsObjectSchemaInfo> infoMap = new HashMap<Class<? extends RealmModel>, OsObjectSchemaInfo>(4);
         infoMap.put(com.vocabulary.realm.LearnOverview.class, io.realm.com_vocabulary_realm_LearnOverviewRealmProxy.getExpectedObjectSchemaInfo());
-        infoMap.put(com.vocabulary.realm.Phrase.class, io.realm.com_vocabulary_realm_PhraseRealmProxy.getExpectedObjectSchemaInfo());
         infoMap.put(com.vocabulary.realm.Test.class, io.realm.com_vocabulary_realm_TestRealmProxy.getExpectedObjectSchemaInfo());
+        infoMap.put(com.vocabulary.realm.Phrase.class, io.realm.com_vocabulary_realm_PhraseRealmProxy.getExpectedObjectSchemaInfo());
         infoMap.put(com.vocabulary.realm.Vocabulary.class, io.realm.com_vocabulary_realm_VocabularyRealmProxy.getExpectedObjectSchemaInfo());
         return infoMap;
     }
@@ -50,11 +50,11 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
         if (clazz.equals(com.vocabulary.realm.LearnOverview.class)) {
             return io.realm.com_vocabulary_realm_LearnOverviewRealmProxy.createColumnInfo(schemaInfo);
         }
-        if (clazz.equals(com.vocabulary.realm.Phrase.class)) {
-            return io.realm.com_vocabulary_realm_PhraseRealmProxy.createColumnInfo(schemaInfo);
-        }
         if (clazz.equals(com.vocabulary.realm.Test.class)) {
             return io.realm.com_vocabulary_realm_TestRealmProxy.createColumnInfo(schemaInfo);
+        }
+        if (clazz.equals(com.vocabulary.realm.Phrase.class)) {
+            return io.realm.com_vocabulary_realm_PhraseRealmProxy.createColumnInfo(schemaInfo);
         }
         if (clazz.equals(com.vocabulary.realm.Vocabulary.class)) {
             return io.realm.com_vocabulary_realm_VocabularyRealmProxy.createColumnInfo(schemaInfo);
@@ -69,11 +69,11 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
         if (clazz.equals(com.vocabulary.realm.LearnOverview.class)) {
             return "LearnOverview";
         }
-        if (clazz.equals(com.vocabulary.realm.Phrase.class)) {
-            return "Phrase";
-        }
         if (clazz.equals(com.vocabulary.realm.Test.class)) {
             return "Test";
+        }
+        if (clazz.equals(com.vocabulary.realm.Phrase.class)) {
+            return "Phrase";
         }
         if (clazz.equals(com.vocabulary.realm.Vocabulary.class)) {
             return "Vocabulary";
@@ -91,11 +91,11 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
             if (clazz.equals(com.vocabulary.realm.LearnOverview.class)) {
                 return clazz.cast(new io.realm.com_vocabulary_realm_LearnOverviewRealmProxy());
             }
-            if (clazz.equals(com.vocabulary.realm.Phrase.class)) {
-                return clazz.cast(new io.realm.com_vocabulary_realm_PhraseRealmProxy());
-            }
             if (clazz.equals(com.vocabulary.realm.Test.class)) {
                 return clazz.cast(new io.realm.com_vocabulary_realm_TestRealmProxy());
+            }
+            if (clazz.equals(com.vocabulary.realm.Phrase.class)) {
+                return clazz.cast(new io.realm.com_vocabulary_realm_PhraseRealmProxy());
             }
             if (clazz.equals(com.vocabulary.realm.Vocabulary.class)) {
                 return clazz.cast(new io.realm.com_vocabulary_realm_VocabularyRealmProxy());
@@ -120,11 +120,11 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
         if (clazz.equals(com.vocabulary.realm.LearnOverview.class)) {
             return clazz.cast(io.realm.com_vocabulary_realm_LearnOverviewRealmProxy.copyOrUpdate(realm, (com.vocabulary.realm.LearnOverview) obj, update, cache));
         }
-        if (clazz.equals(com.vocabulary.realm.Phrase.class)) {
-            return clazz.cast(io.realm.com_vocabulary_realm_PhraseRealmProxy.copyOrUpdate(realm, (com.vocabulary.realm.Phrase) obj, update, cache));
-        }
         if (clazz.equals(com.vocabulary.realm.Test.class)) {
             return clazz.cast(io.realm.com_vocabulary_realm_TestRealmProxy.copyOrUpdate(realm, (com.vocabulary.realm.Test) obj, update, cache));
+        }
+        if (clazz.equals(com.vocabulary.realm.Phrase.class)) {
+            return clazz.cast(io.realm.com_vocabulary_realm_PhraseRealmProxy.copyOrUpdate(realm, (com.vocabulary.realm.Phrase) obj, update, cache));
         }
         if (clazz.equals(com.vocabulary.realm.Vocabulary.class)) {
             return clazz.cast(io.realm.com_vocabulary_realm_VocabularyRealmProxy.copyOrUpdate(realm, (com.vocabulary.realm.Vocabulary) obj, update, cache));
@@ -140,10 +140,10 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
 
         if (clazz.equals(com.vocabulary.realm.LearnOverview.class)) {
             io.realm.com_vocabulary_realm_LearnOverviewRealmProxy.insert(realm, (com.vocabulary.realm.LearnOverview) object, cache);
-        } else if (clazz.equals(com.vocabulary.realm.Phrase.class)) {
-            io.realm.com_vocabulary_realm_PhraseRealmProxy.insert(realm, (com.vocabulary.realm.Phrase) object, cache);
         } else if (clazz.equals(com.vocabulary.realm.Test.class)) {
             io.realm.com_vocabulary_realm_TestRealmProxy.insert(realm, (com.vocabulary.realm.Test) object, cache);
+        } else if (clazz.equals(com.vocabulary.realm.Phrase.class)) {
+            io.realm.com_vocabulary_realm_PhraseRealmProxy.insert(realm, (com.vocabulary.realm.Phrase) object, cache);
         } else if (clazz.equals(com.vocabulary.realm.Vocabulary.class)) {
             io.realm.com_vocabulary_realm_VocabularyRealmProxy.insert(realm, (com.vocabulary.realm.Vocabulary) object, cache);
         } else {
@@ -165,10 +165,10 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
 
             if (clazz.equals(com.vocabulary.realm.LearnOverview.class)) {
                 io.realm.com_vocabulary_realm_LearnOverviewRealmProxy.insert(realm, (com.vocabulary.realm.LearnOverview) object, cache);
-            } else if (clazz.equals(com.vocabulary.realm.Phrase.class)) {
-                io.realm.com_vocabulary_realm_PhraseRealmProxy.insert(realm, (com.vocabulary.realm.Phrase) object, cache);
             } else if (clazz.equals(com.vocabulary.realm.Test.class)) {
                 io.realm.com_vocabulary_realm_TestRealmProxy.insert(realm, (com.vocabulary.realm.Test) object, cache);
+            } else if (clazz.equals(com.vocabulary.realm.Phrase.class)) {
+                io.realm.com_vocabulary_realm_PhraseRealmProxy.insert(realm, (com.vocabulary.realm.Phrase) object, cache);
             } else if (clazz.equals(com.vocabulary.realm.Vocabulary.class)) {
                 io.realm.com_vocabulary_realm_VocabularyRealmProxy.insert(realm, (com.vocabulary.realm.Vocabulary) object, cache);
             } else {
@@ -177,10 +177,10 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
             if (iterator.hasNext()) {
                 if (clazz.equals(com.vocabulary.realm.LearnOverview.class)) {
                     io.realm.com_vocabulary_realm_LearnOverviewRealmProxy.insert(realm, iterator, cache);
-                } else if (clazz.equals(com.vocabulary.realm.Phrase.class)) {
-                    io.realm.com_vocabulary_realm_PhraseRealmProxy.insert(realm, iterator, cache);
                 } else if (clazz.equals(com.vocabulary.realm.Test.class)) {
                     io.realm.com_vocabulary_realm_TestRealmProxy.insert(realm, iterator, cache);
+                } else if (clazz.equals(com.vocabulary.realm.Phrase.class)) {
+                    io.realm.com_vocabulary_realm_PhraseRealmProxy.insert(realm, iterator, cache);
                 } else if (clazz.equals(com.vocabulary.realm.Vocabulary.class)) {
                     io.realm.com_vocabulary_realm_VocabularyRealmProxy.insert(realm, iterator, cache);
                 } else {
@@ -198,10 +198,10 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
 
         if (clazz.equals(com.vocabulary.realm.LearnOverview.class)) {
             io.realm.com_vocabulary_realm_LearnOverviewRealmProxy.insertOrUpdate(realm, (com.vocabulary.realm.LearnOverview) obj, cache);
-        } else if (clazz.equals(com.vocabulary.realm.Phrase.class)) {
-            io.realm.com_vocabulary_realm_PhraseRealmProxy.insertOrUpdate(realm, (com.vocabulary.realm.Phrase) obj, cache);
         } else if (clazz.equals(com.vocabulary.realm.Test.class)) {
             io.realm.com_vocabulary_realm_TestRealmProxy.insertOrUpdate(realm, (com.vocabulary.realm.Test) obj, cache);
+        } else if (clazz.equals(com.vocabulary.realm.Phrase.class)) {
+            io.realm.com_vocabulary_realm_PhraseRealmProxy.insertOrUpdate(realm, (com.vocabulary.realm.Phrase) obj, cache);
         } else if (clazz.equals(com.vocabulary.realm.Vocabulary.class)) {
             io.realm.com_vocabulary_realm_VocabularyRealmProxy.insertOrUpdate(realm, (com.vocabulary.realm.Vocabulary) obj, cache);
         } else {
@@ -223,10 +223,10 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
 
             if (clazz.equals(com.vocabulary.realm.LearnOverview.class)) {
                 io.realm.com_vocabulary_realm_LearnOverviewRealmProxy.insertOrUpdate(realm, (com.vocabulary.realm.LearnOverview) object, cache);
-            } else if (clazz.equals(com.vocabulary.realm.Phrase.class)) {
-                io.realm.com_vocabulary_realm_PhraseRealmProxy.insertOrUpdate(realm, (com.vocabulary.realm.Phrase) object, cache);
             } else if (clazz.equals(com.vocabulary.realm.Test.class)) {
                 io.realm.com_vocabulary_realm_TestRealmProxy.insertOrUpdate(realm, (com.vocabulary.realm.Test) object, cache);
+            } else if (clazz.equals(com.vocabulary.realm.Phrase.class)) {
+                io.realm.com_vocabulary_realm_PhraseRealmProxy.insertOrUpdate(realm, (com.vocabulary.realm.Phrase) object, cache);
             } else if (clazz.equals(com.vocabulary.realm.Vocabulary.class)) {
                 io.realm.com_vocabulary_realm_VocabularyRealmProxy.insertOrUpdate(realm, (com.vocabulary.realm.Vocabulary) object, cache);
             } else {
@@ -235,10 +235,10 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
             if (iterator.hasNext()) {
                 if (clazz.equals(com.vocabulary.realm.LearnOverview.class)) {
                     io.realm.com_vocabulary_realm_LearnOverviewRealmProxy.insertOrUpdate(realm, iterator, cache);
-                } else if (clazz.equals(com.vocabulary.realm.Phrase.class)) {
-                    io.realm.com_vocabulary_realm_PhraseRealmProxy.insertOrUpdate(realm, iterator, cache);
                 } else if (clazz.equals(com.vocabulary.realm.Test.class)) {
                     io.realm.com_vocabulary_realm_TestRealmProxy.insertOrUpdate(realm, iterator, cache);
+                } else if (clazz.equals(com.vocabulary.realm.Phrase.class)) {
+                    io.realm.com_vocabulary_realm_PhraseRealmProxy.insertOrUpdate(realm, iterator, cache);
                 } else if (clazz.equals(com.vocabulary.realm.Vocabulary.class)) {
                     io.realm.com_vocabulary_realm_VocabularyRealmProxy.insertOrUpdate(realm, iterator, cache);
                 } else {
@@ -256,11 +256,11 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
         if (clazz.equals(com.vocabulary.realm.LearnOverview.class)) {
             return clazz.cast(io.realm.com_vocabulary_realm_LearnOverviewRealmProxy.createOrUpdateUsingJsonObject(realm, json, update));
         }
-        if (clazz.equals(com.vocabulary.realm.Phrase.class)) {
-            return clazz.cast(io.realm.com_vocabulary_realm_PhraseRealmProxy.createOrUpdateUsingJsonObject(realm, json, update));
-        }
         if (clazz.equals(com.vocabulary.realm.Test.class)) {
             return clazz.cast(io.realm.com_vocabulary_realm_TestRealmProxy.createOrUpdateUsingJsonObject(realm, json, update));
+        }
+        if (clazz.equals(com.vocabulary.realm.Phrase.class)) {
+            return clazz.cast(io.realm.com_vocabulary_realm_PhraseRealmProxy.createOrUpdateUsingJsonObject(realm, json, update));
         }
         if (clazz.equals(com.vocabulary.realm.Vocabulary.class)) {
             return clazz.cast(io.realm.com_vocabulary_realm_VocabularyRealmProxy.createOrUpdateUsingJsonObject(realm, json, update));
@@ -276,11 +276,11 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
         if (clazz.equals(com.vocabulary.realm.LearnOverview.class)) {
             return clazz.cast(io.realm.com_vocabulary_realm_LearnOverviewRealmProxy.createUsingJsonStream(realm, reader));
         }
-        if (clazz.equals(com.vocabulary.realm.Phrase.class)) {
-            return clazz.cast(io.realm.com_vocabulary_realm_PhraseRealmProxy.createUsingJsonStream(realm, reader));
-        }
         if (clazz.equals(com.vocabulary.realm.Test.class)) {
             return clazz.cast(io.realm.com_vocabulary_realm_TestRealmProxy.createUsingJsonStream(realm, reader));
+        }
+        if (clazz.equals(com.vocabulary.realm.Phrase.class)) {
+            return clazz.cast(io.realm.com_vocabulary_realm_PhraseRealmProxy.createUsingJsonStream(realm, reader));
         }
         if (clazz.equals(com.vocabulary.realm.Vocabulary.class)) {
             return clazz.cast(io.realm.com_vocabulary_realm_VocabularyRealmProxy.createUsingJsonStream(realm, reader));
@@ -297,11 +297,11 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
         if (clazz.equals(com.vocabulary.realm.LearnOverview.class)) {
             return clazz.cast(io.realm.com_vocabulary_realm_LearnOverviewRealmProxy.createDetachedCopy((com.vocabulary.realm.LearnOverview) realmObject, 0, maxDepth, cache));
         }
-        if (clazz.equals(com.vocabulary.realm.Phrase.class)) {
-            return clazz.cast(io.realm.com_vocabulary_realm_PhraseRealmProxy.createDetachedCopy((com.vocabulary.realm.Phrase) realmObject, 0, maxDepth, cache));
-        }
         if (clazz.equals(com.vocabulary.realm.Test.class)) {
             return clazz.cast(io.realm.com_vocabulary_realm_TestRealmProxy.createDetachedCopy((com.vocabulary.realm.Test) realmObject, 0, maxDepth, cache));
+        }
+        if (clazz.equals(com.vocabulary.realm.Phrase.class)) {
+            return clazz.cast(io.realm.com_vocabulary_realm_PhraseRealmProxy.createDetachedCopy((com.vocabulary.realm.Phrase) realmObject, 0, maxDepth, cache));
         }
         if (clazz.equals(com.vocabulary.realm.Vocabulary.class)) {
             return clazz.cast(io.realm.com_vocabulary_realm_VocabularyRealmProxy.createDetachedCopy((com.vocabulary.realm.Vocabulary) realmObject, 0, maxDepth, cache));

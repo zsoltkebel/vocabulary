@@ -34,7 +34,7 @@ public class FragmentFlashCardConfig extends LearnConfigFragment {
     public void startTest(Context context) {
         Intent intent = new Intent(context, LearnActivity.class);
         intent.putExtra(Vocabulary.ID, ((ActivityLearnConfig) getActivity()).getIndexOfVocabulary());
-        intent.putIntegerArrayListExtra(Phrase.STATE, new ArrayList<>(((ActivityLearnConfig) getActivity()).getStateFilters()));
+        intent.putIntegerArrayListExtra(Phrase.STATE, new ArrayList<>(((ActivityLearnConfig) getActivity()).getStates()));
         context.startActivity(intent);
     }
 

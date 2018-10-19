@@ -20,6 +20,7 @@ import com.vocabulary.JSONParser;
 import com.vocabulary.R;
 import com.vocabulary.Subject;
 import com.vocabulary.realm.Phrase;
+import com.vocabulary.realm.RealmFragment;
 import com.vocabulary.realm.Vocabulary;
 import com.vocabulary.screens.main.adapterHome.AdapterLearnOverviews;
 import com.vocabulary.screens.more.ActivityMore;
@@ -33,7 +34,6 @@ import java.util.ArrayList;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import droidninja.filepicker.fragments.BaseFragment;
 import io.realm.OrderedCollectionChangeSet;
 import io.realm.OrderedRealmCollectionChangeListener;
 import io.realm.Realm;
@@ -43,7 +43,7 @@ import io.realm.RealmResults;
  * Created by Kébel Zsolt on 2018. 03. 18..
  */
 
-public class FragmentHome extends BaseFragment {
+public class FragmentHome extends RealmFragment {
 
     @BindView(R.id.rv_learn_overviews)
     protected RecyclerView mRvLearnOverviews;
@@ -53,17 +53,6 @@ public class FragmentHome extends BaseFragment {
 
     AdapterLearnOverviews adapterLearnOverviews;
 
-    Realm realm;
-
-    @Override
-    public void onCreate(Bundle savedInstanceState)
-    {
-        super.onCreate(savedInstanceState);
-        setRetainInstance(true);
-
-        realm = ((ActivityMain) getActivity()).getRealm();
-    }
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
     {
@@ -71,7 +60,7 @@ public class FragmentHome extends BaseFragment {
         root = inflater.inflate(R.layout.fragment_home, container, false);
         ButterKnife.bind(this, root);
 
-        adapterLearnOverviews = new AdapterLearnOverviews((ActivityMain) getActivity(), realm);
+        adapterLearnOverviews = new AdapterLearnOverviews((ActivityMain) getActivity(), mRealm);
 
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getContext());
         mRvLearnOverviews.setLayoutManager(mLayoutManager);
@@ -105,10 +94,6 @@ public class FragmentHome extends BaseFragment {
         return root;
     }
 
-    @Override
-    protected int getFragmentLayout() {
-        return 0;
-    }
 
     public void importVocabulary()
     {
@@ -168,7 +153,7 @@ public class FragmentHome extends BaseFragment {
             importedVocabulary = new Vocabulary();
             importedVocabulary.set(language, name);
 
-            realm.executeTransactionAsync(new Realm.Transaction() {
+            mRealm.executeTransactionAsync(new Realm.Transaction() {
                 @Override
                 public void execute(Realm realm) {
                     realm.copyToRealmOrUpdate(importedVocabulary);

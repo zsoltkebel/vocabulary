@@ -23,14 +23,10 @@ import static com.vocabulary.screens.vocabulary.FragmentPhrases.PREFS_SORTING_FI
 
 public class ActivityPhrase extends RealmActivity {
 
-    @BindView(R.id.vp_phrase)
-    protected ViewPager mVpPhrase;
-
-    private String idOfVocabulary;
-    private String idOfPhrase;
+    @BindView(R.id.vp_phrase) ViewPager mVpPhrase;
 
     private RealmResults<Phrase> mPhrases;
-    private Phrase phrase;
+    private Phrase mCurrentPhrase;
 
     @Override
     protected Activity getActivity() {
@@ -43,8 +39,8 @@ public class ActivityPhrase extends RealmActivity {
         setContentView(R.layout.activity_phrase);
         ButterKnife.bind(this);
 
-        idOfVocabulary = getIntent().getStringExtra(Vocabulary.ID);
-        idOfPhrase = getIntent().getStringExtra(Phrase.DATE);
+        String idOfVocabulary = getIntent().getStringExtra(Vocabulary.ID);
+        String idOfPhrase = getIntent().getStringExtra(Phrase.DATE);
 
         if (getSortingAscending())
             mPhrases = mRealm.where(Phrase.class)
@@ -57,14 +53,14 @@ public class ActivityPhrase extends RealmActivity {
                     .findAll()
                     .sort(getSortingField(), Sort.DESCENDING);
 
-        phrase = mRealm.where(Phrase.class)
+        mCurrentPhrase = mRealm.where(Phrase.class)
                 .equalTo(Phrase.VOCABULARY_ID, idOfVocabulary)
                 .equalTo(Phrase.DATE, idOfPhrase).findFirst();
 
         final PagerAdapter pagerAdapter = new PagerAdapter(getSupportFragmentManager(), mPhrases);
 
         mVpPhrase.setAdapter(pagerAdapter);
-        mVpPhrase.setCurrentItem(mPhrases.indexOf(phrase));
+        mVpPhrase.setCurrentItem(mPhrases.indexOf(mCurrentPhrase));
 
         mVpPhrase.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
@@ -74,7 +70,7 @@ public class ActivityPhrase extends RealmActivity {
 
             @Override
             public void onPageSelected(int position) {
-                phrase = ((FragmentPhrase) pagerAdapter.getItem(position)).getPhrase();
+                mCurrentPhrase = ((FragmentPhrase) pagerAdapter.getItem(position)).getPhrase();
             }
 
             @Override
@@ -83,8 +79,6 @@ public class ActivityPhrase extends RealmActivity {
             }
         });
 
-        //registerForContextMenu(findViewById(R.id.imageButton));
-        //openContextMenu(findViewById(R.id.imageButton));
     }
 
     @OnClick(R.id.iv_click_back)
@@ -92,30 +86,9 @@ public class ActivityPhrase extends RealmActivity {
         finish();
     }
 
-    public void showPopup(View view){
-
-        //PopupMenu popup = add_new PopupMenu(ActivityPhrase.this, findViewById(R.id.imageButton));
-        //Inflating the Popup using xml file
-        //popup.getMenuInflater().inflate(R.menu.menu, popup.getMenu());
-
-        //registering popup with OnMenuItemClickListener
-        //.setOnMenuItemClickListener(add_new PopupMenu.OnMenuItemClickListener() {
-        //    public boolean onMenuItemClick(MenuItem item) {
-        //        Toast.makeText(ActivityPhrase.this,"You Clicked : " + item.getTitle(),Toast.LENGTH_SHORT).show();
-        //        return true;
-        //    }
-        //});
-
-        //popup.show();//showing popup menu
-    }
-
     @Override
     public void onBackPressed() {
         finish();
-    }
-
-    public void setCurrentPhrase(Phrase phrase) {
-        this.phrase = phrase;
     }
 
     public String getSortingField() {

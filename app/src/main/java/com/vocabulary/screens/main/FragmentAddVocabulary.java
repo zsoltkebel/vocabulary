@@ -25,6 +25,7 @@ import com.vocabulary.JSONParser;
 import com.vocabulary.R;
 import com.vocabulary.Subject;
 import com.vocabulary.realm.Phrase;
+import com.vocabulary.realm.RealmFragment;
 import com.vocabulary.realm.Vocabulary;
 import com.vocabulary.screens.more.ActivityMore;
 
@@ -38,53 +39,42 @@ import java.util.ArrayList;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import droidninja.filepicker.fragments.BaseFragment;
 import io.realm.Realm;
 
 /**
  * Created by Kébel Zsolt on 2018. 03. 18..
  */
+//TODO cleanup
+public class FragmentAddVocabulary extends RealmFragment {
+    @BindView(R.id.iv_click_back) ImageView mIvClickBack;
+    @BindView(R.id.lv_flags) ListView mListView;
 
-public class FragmentAddVocabulary extends BaseFragment
-{
-    @BindView(R.id.iv_click_back)
-    protected ImageView mIvClickBack;
-
-    @BindView(R.id.lv_flags)
-    protected ListView mListView;
-
-    private View mRoot;
-
-    private ActivityMain mActivity;
-
-    private Realm mRealm;
-
-    private LanguageMenuListViewAdapter adapter;
+    private ActivityMain mActivityMain;
+    private LanguageMenuListViewAdapter mAdapter;
 
     private boolean mDuplicatingAccepted = false;
 
     @Override
-    protected int getFragmentLayout() {
-        return R.layout.fragment_add_vocabulary;
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setRetainInstance(true);
-
-        mRealm = ((ActivityMain) getActivity()).getRealm();
-    }
-
-    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        super.onCreateView(inflater, container, savedInstanceState);
-        mRoot = inflater.inflate(R.layout.fragment_add_vocabulary, container, false);
-        mActivity = (ActivityMain) getActivity();
+        View mRoot = inflater.inflate(R.layout.fragment_add_vocabulary, container, false);
         ButterKnife.bind(this, mRoot);
+        mActivityMain = (ActivityMain) mActivity;
 
-        adapter = new LanguageMenuListViewAdapter(getContext(), JSONParser.getSubjects(getContext()));
-        mListView.setAdapter(adapter);
+        setupList();
+
+        mIvClickBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mActivityMain.onBackPressed();
+            }
+        });
+
+        return mRoot;
+    }
+
+    private void setupList() {
+        mAdapter = new LanguageMenuListViewAdapter(getContext(), JSONParser.getSubjects(getContext()));
+        mListView.setAdapter(mAdapter);
 
         mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -118,7 +108,7 @@ public class FragmentAddVocabulary extends BaseFragment
                     @Override
                     public void onClick(View v) {
                         final String name = dicName.getText().toString();
-                        final String language = adapter.getItem(position).getSubject();
+                        final String language = mAdapter.getItem(position).getSubject();
 
                         final Vocabulary vocabulary = new Vocabulary();
                         vocabulary.set(language, name);
@@ -138,11 +128,6 @@ public class FragmentAddVocabulary extends BaseFragment
 
                                     Toast.makeText(getContext(), R.string.added_msg, Toast.LENGTH_SHORT).show();
 
-                                    if (mRealm.where(Vocabulary.class)
-                                            .equalTo(Vocabulary.LANGUAGE, vocabulary.getLanguage())
-                                            .findAll().size() == 2)
-                                        ((ActivityMain) getActivity()).getFragmentVocabularyList().notifyRecyclerViewItemRangeChanged();
-
                                     dialog.dismiss();
                                 }
                             });
@@ -155,20 +140,6 @@ public class FragmentAddVocabulary extends BaseFragment
                 });
             }
         });
-
-        mIvClickBack.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                mActivity.onBackPressed();
-            }
-        });
-
-        return mRoot;
-    }
-
-    public View getRoot()
-    {
-        return mRoot;
     }
 
     public boolean getDuplicatingAccepted() {
@@ -181,13 +152,11 @@ public class FragmentAddVocabulary extends BaseFragment
 
 
 
-    @OnClick(R.id.lt_click_import)
-    protected void onImportClicked() {
+    @OnClick(R.id.lt_click_import) protected void onImportClicked() {
         importVocabulary();
     }
 
-    public void importVocabulary()
-    {
+    public void importVocabulary() {
         Intent intent = new Intent(Intent.ACTION_OPEN_DOCUMENT);
         intent.setType("text/plain");
         startActivityForResult(intent, 0);
@@ -214,12 +183,6 @@ public class FragmentAddVocabulary extends BaseFragment
             inputStream = getActivity().getContentResolver().openInputStream(uri);
             //TODO encoding? most utf-8
             reader = new BufferedReader(new InputStreamReader(inputStream));
-
-            if (false)
-            {
-                Toast.makeText(getContext(), "Wrong format in txt", Toast.LENGTH_SHORT).show();
-                return;
-            }
 
             String language;
             String name;

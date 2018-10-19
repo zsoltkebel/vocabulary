@@ -18,17 +18,17 @@ import android.widget.Spinner;
 
 import com.vocabulary.R;
 import com.vocabulary.realm.LearnOverview;
-import com.vocabulary.screens.settings.ActivityAbout;
+import com.vocabulary.realm.RealmFragment;
+import com.vocabulary.screens.about.ActivityAbout;
 
 import java.util.Locale;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import droidninja.filepicker.fragments.BaseFragment;
 
 import static android.content.Context.MODE_PRIVATE;
 
-public class FragmentSettings extends BaseFragment {
+public class FragmentSettings extends RealmFragment {
     final static String ENGLISH = "English";
     final static String HUNGARIAN = "Magyar";
     public static final String PREFS_SETTINGS = "settingsData";
@@ -47,11 +47,6 @@ public class FragmentSettings extends BaseFragment {
     private View root;
 
     int language;
-
-    @Override
-    protected int getFragmentLayout() {
-        return R.layout.fragment_settings;
-    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {

@@ -11,14 +11,14 @@ import com.vocabulary.screens.main.ActivityMain;
 
 import java.util.Locale;
 
-import static com.vocabulary.screens.settings.ActivitySettings.PREFS_LANGUAGE;
-import static com.vocabulary.screens.settings.ActivitySettings.PREFS_SETTINGS;
-
 /**
  * Created by Kébel Zsolt on 1/19/2017.
  */
 
 public class MainActivity extends AppCompatActivity {
+
+    public static final String PREFS_SETTINGS = "settingsData";
+    public static final String PREFS_LANGUAGE = "language";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

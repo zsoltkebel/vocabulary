@@ -21,13 +21,9 @@ public class FragmentVocabularyInfo extends Fragment {
     final static private String TITLE = "title";
     final static private String NUM_OF_PHRASES = "numOfPhrases";
 
-    @BindView(R.id.imageView_wordList_flag)
-    protected ImageView mIvIcon;
-
-    @BindView(R.id.txt_language)
-    protected TextView mTvTitle;
-    @BindView(R.id.txt_num_of_words)
-    protected TextView mTvNumOfPhrases;
+    @BindView(R.id.imageView_wordList_flag) ImageView mIvIcon;
+    @BindView(R.id.txt_language) TextView mTvTitle;
+    @BindView(R.id.txt_num_of_words) TextView mTvNumOfPhrases;
 
     private View mRoot;
 
@@ -50,8 +46,7 @@ public class FragmentVocabularyInfo extends Fragment {
 
         mIvIcon.setImageDrawable(getContext().getDrawable(getArguments().getInt(ICON_RESOURCE)));
         mTvTitle.setText(getArguments().getString(TITLE));
-        // to scroll automatically if the text is too long
-        mTvTitle.setSelected(true);
+        mTvTitle.setSelected(true); // to scroll automatically if the text is too long
         mTvNumOfPhrases.setText(String.valueOf(getArguments().getInt(NUM_OF_PHRASES)));
 
         return mRoot;

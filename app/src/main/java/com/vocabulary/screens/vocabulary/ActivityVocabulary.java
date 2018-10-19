@@ -8,7 +8,6 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Build;
 import android.os.Bundle;
-import android.os.Handler;
 import android.support.annotation.RequiresApi;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
@@ -31,6 +30,7 @@ import android.widget.Switch;
 import com.vocabulary.R;
 import com.vocabulary.realm.Phrase;
 import com.vocabulary.realm.RealmActivity;
+import com.vocabulary.realm.RealmFragment;
 import com.vocabulary.realm.Vocabulary;
 import com.vocabulary.screens.FragmentVocabularyInfo;
 import com.vocabulary.screens.learnconfig.ActivityLearnConfig;
@@ -46,34 +46,24 @@ import static com.vocabulary.Preferences.SORT_DATE;
 import static com.vocabulary.screens.vocabulary.FragmentPhrases.PREFS_SORTING_ASCENDING;
 import static com.vocabulary.screens.vocabulary.FragmentPhrases.PREFS_SORTING_FIELD;
 
+//TODO cleanup
 public class ActivityVocabulary extends RealmActivity {
     public static final String PREFS_VOCABULARY = "prefVocabulary";
     public static final String PREFS_INDEX = "prefIndex";
 
+    public static final int FRAGMENT_LIST = 0;
+    public static final int FRAGMENT_ADD = 1;
+
     public static final int SORT_ABC_MEANING = 2;
 
-    @BindView(R.id.v_clear_search)
-    protected ImageView mIvClearSearch;
-
-    @BindView(R.id.et_search)
-    protected EditText mEtSearch;
-
-    @BindView(R.id.v_filter)
-    protected View mViewFilter;
-
-    @BindView(R.id.pb_filtering)
-    protected ProgressBar mPbFiltering;
-
-    @BindView(R.id.touch)
-    protected RelativeLayout mRltTouch;
-    @BindView(R.id.flt_vocabulary_info)
-    protected FrameLayout mFltVocabularyInfo;
-
-    @BindView(R.id.tab_layout)
-    protected TabLayout mTabLayout;
-
-    @BindView(R.id.view_pager)
-    protected ViewPager mViewPager;
+    @BindView(R.id.v_clear_search) ImageView mIvClearSearch;
+    @BindView(R.id.et_search) EditText mEtSearch;
+    @BindView(R.id.v_filter) View mViewFilter;
+    @BindView(R.id.pb_filtering) ProgressBar mPbFiltering;
+    @BindView(R.id.touch) RelativeLayout mRltTouch;
+    @BindView(R.id.flt_vocabulary_info) FrameLayout mFltVocabularyInfo;
+    @BindView(R.id.tab_layout) TabLayout mTabLayout;
+    @BindView(R.id.view_pager) ViewPager mViewPager;
 
 
     private String mFilter = null;
@@ -81,9 +71,15 @@ public class ActivityVocabulary extends RealmActivity {
     private PagerAdapter mPagerAdapter = null;
 
     private FragmentPhrases mFragmentPhrases = null;
+    private FragmentAddPhrase mFragmentAddPhrase = null;
     private FragmentVocabularyInfo mFragmentVocabularyInfo;
 
     private Vocabulary mVocabulary = null;
+
+    private RealmFragment[] mFragments = new RealmFragment[]{
+            new FragmentPhrases(),
+            new FragmentAddPhrase()
+    };
 
     public static Intent createIntent(Context context, String vocabularyId) {
         Intent intent = new Intent(context, ActivityVocabulary.class);
@@ -122,30 +118,7 @@ public class ActivityVocabulary extends RealmActivity {
             }
         });
 
-        mViewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
-            @Override
-            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-                if (((FragmentAddPhrase) mPagerAdapter.getItem(1)).mEtPhrase.getText().toString().equals(""))
-                   ((FragmentAddPhrase) mPagerAdapter.getItem(1)).mEtPhrase.setText("");
-            }
 
-            @Override
-            public void onPageSelected(int position) {
-                if (position > 0) {
-                    mEtSearch.clearFocus();
-                    ((FragmentAddPhrase) mPagerAdapter.getItem(1)).mEtPhrase.requestFocus();
-                    //((FragmentAddPhrase) mPagerAdapter.getItem(1)).mEtPhrase.clearFocus();
-
-                    setKeyboardVisible(null, true);
-                } else
-                    setKeyboardVisible(mViewPager, false);
-            }
-
-            @Override
-            public void onPageScrollStateChanged(int state) {
-
-            }
-        });
 
 
         mEtSearch.setOnFocusChangeListener(new View.OnFocusChangeListener() {
@@ -155,20 +128,6 @@ public class ActivityVocabulary extends RealmActivity {
                     navigateToTab(0);
             }
         });
-
-
-
-        final Handler handler = new Handler();
-        final Runnable filtering = new Runnable() {
-            @Override
-            public void run() {
-                mPbFiltering.setVisibility(View.VISIBLE);
-                //if (getFragmentPhrases().getAdapter() != null)
-                    //getFragmentPhrases().getAdapter().getFilter().filter(getFilterString());
-                //else
-                    //Toast.makeText(ActivityVocabulary.this, "error", Toast.LENGTH_SHORT).show();
-            }
-        };
 
 
         mEtSearch.addTextChangedListener(new TextWatcher() {
@@ -222,6 +181,46 @@ public class ActivityVocabulary extends RealmActivity {
         }
     }
 
+    private void setUpTabs() {
+        mPagerAdapter = new PagerAdapter(getSupportFragmentManager(), mFragments);
+
+        mViewPager.setAdapter(mPagerAdapter);
+        mTabLayout.setupWithViewPager(mViewPager);
+        mTabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
+
+        mTabLayout.getTabAt(FRAGMENT_LIST).setText("Phrases");
+        mTabLayout.getTabAt(FRAGMENT_ADD).setText("Add");
+        mTabLayout.getTabAt(FRAGMENT_LIST).select();
+
+        mFragmentPhrases = (FragmentPhrases) mPagerAdapter.getItem(FRAGMENT_LIST);
+        mFragmentAddPhrase = (FragmentAddPhrase) mPagerAdapter.getItem(FRAGMENT_ADD);
+
+        mViewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+                //TODO other solution: now only for start animation
+                if (mFragmentAddPhrase.mEtPhrase.getText().toString().equals(""))
+                    mFragmentAddPhrase.mEtPhrase.setText("");
+            }
+
+            @Override
+            public void onPageSelected(int position) {
+                if (position > 0) {
+                    mEtSearch.clearFocus();
+                    mFragmentAddPhrase.mEtPhrase.requestFocus();
+
+                    setKeyboardVisible(null, true);
+                } else
+                    setKeyboardVisible(mViewPager, false);
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int state) {
+
+            }
+        });
+    }
+
     public void setKeyboardVisible(View view, boolean visible) {
         if (visible) {
             //show keyboard
@@ -268,41 +267,6 @@ public class ActivityVocabulary extends RealmActivity {
 
     public void navigateToTab(int position) {
         mTabLayout.getTabAt(position).select();
-    }
-
-    private void setUpTabs()
-    {
-        mTabLayout.addTab(mTabLayout.newTab().setText(R.string.Phrases));
-        mTabLayout.addTab(mTabLayout.newTab().setText(R.string.add));
-        mTabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
-
-        mPagerAdapter = new PagerAdapter(getSupportFragmentManager());
-
-        mFragmentPhrases = (FragmentPhrases) mPagerAdapter.getItem(0);
-
-        mViewPager.setAdapter(mPagerAdapter);
-
-
-        mTabLayout.setupWithViewPager(mViewPager);
-
-        mTabLayout.getTabAt(0).setText(R.string.Phrases);
-        mTabLayout.getTabAt(1).setText(R.string.Add);
-
-        mTabLayout.getTabAt(0).select();
-    }
-
-    public void rcListRefresh(int position)
-    {
-        ((FragmentPhrases) mPagerAdapter.getItem(0)).listRefresh(position);
-    }
-
-
-    public CharSequence getFilterCharSequence() {
-        return mEtSearch.getText();
-    }
-
-    public void clearFilter() {
-        mEtSearch.setText("");
     }
 
     @Override
@@ -405,7 +369,7 @@ public class ActivityVocabulary extends RealmActivity {
                                 break;
                         }
 
-                        ascendingSwitch.setChecked(!getFragmentPhrases().getSortingAscending());
+                        ascendingSwitch.setChecked(!getFragmentPhrases().getSorting());
 
                         builder.setView(dialog_layout);
                         builder.setTitle(R.string.sort_title);

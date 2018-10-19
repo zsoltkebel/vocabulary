@@ -6,36 +6,31 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AlertDialog;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.Switch;
 import android.widget.Toast;
 
 import com.vocabulary.R;
-import com.vocabulary.learn.FragmentCardTest;
-import com.vocabulary.learn.FragmentVocabularyTest;
 import com.vocabulary.learn.LearnActivity;
 import com.vocabulary.realm.LearnOverview;
 import com.vocabulary.realm.Phrase;
 import com.vocabulary.realm.RealmActivity;
 import com.vocabulary.realm.Vocabulary;
 import com.vocabulary.screens.FragmentVocabularyInfo;
+import com.vocabulary.screens.learnconfig.chooseCorrect.FragmentConfigChooseCorrect;
 
 import java.util.HashSet;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import droidninja.filepicker.fragments.BaseFragment;
 
 import static com.vocabulary.screens.main.FragmentVocabularies.KEY_INDEX_OF_VOCABULARY;
 
@@ -89,18 +84,17 @@ public class ActivityLearnConfig extends RealmActivity {
     Switch swCheating;
     Switch swNumberOfPhrases;
     Switch swIsTest;
-    EditText editTextNumber;
-    LinearLayout customNumber;
-    LinearLayout layout;
 
     Spinner spConfig;
 
     int shows;
     int timeToAnswer;
     boolean cheatingEnabled;
+    boolean mIsP1Asked = true;
     boolean isTest;
     boolean isCustom;
     int numberOfAsked;
+    int mP1Asked;
 
     private String indexOfVocabulary;
 
@@ -111,7 +105,6 @@ public class ActivityLearnConfig extends RealmActivity {
     Vocabulary mVocabulary;
 
     final String[] languages = new String[]{"Flashcard", "Choose the correct"};
-
 
     private HashSet<Integer> mStateFilters = new HashSet<>();
 
@@ -338,7 +331,11 @@ public class ActivityLearnConfig extends RealmActivity {
         return indexOfVocabulary;
     }
 
-    public HashSet<Integer> getStateFilters() {
+    public boolean getIsP1Asked() {
+        return mIsP1Asked;
+    }
+
+    public HashSet<Integer> getStates() {
         return mStateFilters;
     }
 
@@ -372,7 +369,7 @@ public class ActivityLearnConfig extends RealmActivity {
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, items);
 //set the spinners adapter to the previously created one.
         spConfig.setAdapter(adapter);
-
+/*
 
         spConfig.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
@@ -401,22 +398,7 @@ public class ActivityLearnConfig extends RealmActivity {
 
             }
         });
-/*
-        // Create fragment and give it an argument specifying the article it should show
-        ArticleFragment newFragment = add_new ArticleFragment();
-        Bundle args = add_new Bundle();
-        args.putInt(ArticleFragment.ARG_POSITION, position);
-        newFragment.setArguments(args);
-
-
-
-// Replace whatever is in the fragment_container view with this fragment,
-// and add the transaction to the back stack so the user can navigate back
-
-        transaction.addToBackStack(null);
 */
-// Commit the transaction
-
     }
 
     public void back(View view)
